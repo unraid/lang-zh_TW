@@ -587,6 +587,7 @@ remaining=剩餘
 Remote access=遠程訪問
 Replace Key=更換密鑰
 Reset Password Now=立即重置密碼
+Searching=
 Secure remote access=安全進行遠程訪問
 See also here=另見此
 Server Offline=服務器脫機
@@ -659,7 +660,7 @@ What is Unraidnet=Unraid.net 是什麼？
 Whether you need to add a share container or virtual machine do it all from the webGui from anytime and anywhere using HTTPS=無論您需要添加共享容器還是虛擬機，都可以隨時隨地使用HTTPS 通過webGui 完成所有操作
 While we strive to respond to all requests as quickly as possible please allow for up to 3 business days for a response=我們努力盡快答复所有請求，請等待最多3 個工作日
 With an Unraidnet account you can start using My Servers beta which gives you access to the following features=使用Unraid.net 帳戶，您可以開始使用My Servers (beta)，它讓您可以訪問以下功能：
-You are all set 👍= 大功告成👍
+You are all set 👍=大功告成👍
 You can safely close this window=您可以安全關閉本窗口
 You have %s remaining on your Trial key=您的試用版密鑰還可以使用%s 天
 You have an open pop-up=您有一個打開的彈出窗口
@@ -692,7 +693,7 @@ Resend Email Verification Code=
 We have sent a verifcation email to %s=
 You will no longer have access to this server using this url=You will no longer have access to this server using <abbr title="%s" class="italic">this url</abbr>
 
-; Dynamix File Manager - 2022-05-07
+; Dynamix File Manager - 2022-05-20
 %s year ago=
 %s years ago=
 Action=
@@ -748,6 +749,7 @@ New file name=
 New folder name=
 New owner=
 New permission=
+No results found=
 Not allowed to mix disk and user shares=不允許混合使用磁盤和用戶共享
 Objects to change=
 Objects to copy=
@@ -766,6 +768,8 @@ Rename Folder=重命名文件夾
 rename to=
 Renaming=正在重命名中
 Save=
+Search=
+Search string=
 Share name=共享名稱
 SHARE=
 Source device=源設備
@@ -805,7 +809,7 @@ Updating=正在更新中
 year=年
 years=年
 
-; My Servers refactor - 2022-05-07
+; My Servers refactor - 2022-05-20
 
 A Trial key provides all the functionality of a Pro Registration key=
 All you need is an active internet connection, an Unraidnet account, and the <span>My Servers<span> plugin=All you need is an active internet connection, an Unraid.net account, and the <span class="inline-block">My Servers</span> plugin
@@ -845,6 +849,7 @@ Redeem Activation Code=
 Registration keys are bound to your USB Flash boot device serial number GUID=Registration keys are bound to your USB Flash boot device serial number (GUID)
 Remove My Servers plugin=
 Removing My Servers plugin=
+Replace Key Ineligible=
 Restart unraid-api=
 Restarting=
 Sign In Up=Sign In / Up
@@ -853,7 +858,7 @@ Stop unraid-api=
 Thank you for choosing Unraid OS and My Servers=
 Thank you installing My Servers=
 This will connect your server to My Servers <sup>BETA</sup>=
-To support more storage devices as your server grows click the Open Dropdown button=
+To support more storage devices as your server grows click the Open Dropdown button=To support more storage devices as your server grows click the *Open Dropdown* button
 To support more storage devices as your server grows click the Open Dropdown button=To support more storage devices as your server grows click the *Open Dropdown* button
 To support more storage devices as your server grows click Upgrade Key=如果您的服務器增多，需要提供更多存儲設備支持，請單擊“升級密鑰”。
 Transparent 2FA Token timed out=
@@ -861,4 +866,4 @@ Your server will not be usable until you purchase a Registration key or install 
 Your Unraid registration key is ineligible for replacement as it is blacklisted=
 Oh no Are you pirating Unraid OS<br>Are you ready to buy a real license=Oh no! Are you pirating Unraid OS?<br>Are you ready to buy a real license?
 
-; Note: May 20, 2022 - 106 missing translations
+; Note: May 20, 2022 - 97 missing translations
