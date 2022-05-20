@@ -2,13 +2,13 @@
 anonymous=匿名
 Author=作者
 Check For Updates=檢查更新
-Checking connectivty=正在檢查連通性
-checking= 
-Click here to install version %s=點擊這里安裝版本%s 
+Checking connectivity=
+checking=
+Click here to install version %s=點擊這里安裝版本%s
 Delete Plugin=刪除插件
-DOWNGRADE TO VERSION=**降級至版本** 
-Enter URL of remote plugin file or local plugin file=輸入遠程插件文件或本地插件文件的URL 
-ERROR=**錯誤** 
+DOWNGRADE TO VERSION=**降級至版本**
+Enter URL of remote plugin file or local plugin file=輸入遠程插件文件或本地插件文件的URL
+ERROR=**錯誤**
 Install Plugin=安裝插件
 Install=安裝
 install=安裝
@@ -21,7 +21,7 @@ No release notes available=沒有可用的發行說明
 No response, aborting=沒有響應，正在中止
 Plugin File=插件文件
 Plugin File Install Errors=
-Plugin History= 
+Plugin History=
 Plugin Update Check=插件更新檢查
 Plugin=插件
 Release Notes=發行說明
@@ -29,7 +29,7 @@ Remove Plugin=移除插件
 remove=移除
 Select local plugin file=選擇本地插件文件
 Stable=穩定
-STALE=**舊版** 
+STALE=**舊版**
 Support Thread=支持論壇
 Uninstall=卸載
 Update All Plugins=更新所有插件
@@ -37,4 +37,4 @@ Update Plugin=更新插件
 Upgrade=升級
 View Release Notes=查看發行說明
 
-; Note: April 2, 2022 - 3 missing translations
+; Note: May 20, 2022 - 4 missing translations

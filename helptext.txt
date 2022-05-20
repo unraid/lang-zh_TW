@@ -1,4 +1,4 @@
-:main_array_devices_help: 
+:main_array_devices_help:
 **彩色狀態指示器**彩色指示器在*陣列設備*中每行開頭的意義如下：
 
 <i class='fa fa-circle orb green-orb'></i>正常運行，設備處於活動狀態。
@@ -26,7 +26,7 @@
 還可以在[顯示首選項] (Settings/DisplaySettings) 頁面上配置單位。
 由於文件系統開銷，空磁盤使用的空間量也不會為零。
 
-*注意：對於多設備緩存池，此數據是btrfs 返回的整個池的數據。* 
+*注意：對於多設備緩存池，此數據是btrfs 返回的整個池的數據。*
 
 **讀取, 寫入**是發送到設備I/O 驅動程序的I/O 請求的計數。這些統計數據可以
 隨時清除，請參閱下面的陣列狀態部分。
@@ -58,14 +58,14 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 
 單擊設備名稱以配置各個設備設置，並啟動某些實用程序。作為多設備池。
 當配置為單一設備時，您可以使用任何受支持的文件系統（btrfs、reiserfs、
-:end 
+:end
 
-:main_slots_help: 
+:main_slots_help:
 **插槽**選擇服務器中為陣列設備指定的設備插槽數。
 陣列插槽的最小數量為2，並且必須至少為該陣列分配一個設備。
-:end 
+:end
 
-:cache_devices_help: 
+:cache_devices_help:
 **彩色狀態指示器**彩色指示器在*池設備*中每行開頭的意義如下：
 
 <i class='fa fa-circle orb green-orb'></i>正常運行，設備處於可用狀態。
@@ -94,20 +94,20 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 自動使用池設備，以加快寫入速度。
 可以計劃一個稱為*mover* 的特殊後台進程
 定期運行，以將用戶共享文件從緩存移到陣列。
-:end 
+:end
 
-:cache_slots_help: 
+:cache_slots_help:
 **插槽**選擇服務器中為緩存設備指定的設備插槽數。
-:end 
+:end
 
 :boot_device_help:
 重要的陣列配置會保留在USB 閃存設備上；因此，必須
 保持插入服務器。單擊［閃存］(/Main/Flash?name=flash) 以查看GUID 和
 註冊信息，並配置導出設置。由於USB 閃存設備是使用FAT 文件系統格式化，
 因此只能使用SMB 協議將其導出。
-:end 
+:end
 
-:array_status_help: 
+:array_status_help:
 **彩色狀態指示器***陣列*中的彩色指示器的意義如下：
 
 <i class='fa fa-circle orb green-orb'></i>陣列已啟動且奇偶校驗有效。
@@ -118,9 +118,9 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 
 <i class='fa fa-warning orb grey-orb'></i>陣列已停止，奇偶校驗無效。
 
-:end 
+:end
 
-:array_devices_help: 
+:array_devices_help:
 #### 分配設備
 
 一個unRAID 磁盤陣列由一個奇偶校驗磁盤和多個數據磁盤組成。數據磁盤
@@ -130,7 +130,7 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 請注意，在引用陣列存儲設備時，我們會慎用*磁盤*一詞。
 當引用實際硬盤驅動器(HDD) 設備時，我們使用*硬盤驅動器*（有時也稱為*驅動器*）一詞。
 這是因為在RAID 系統中，可以讀取/寫入的陣列磁盤的相應
-硬盤驅動器可能已禁用甚至已丟失! 
+硬盤驅動器可能已禁用甚至已丟失!
 另外，懂得詢問“將哪個設備 分配為奇偶校驗磁盤？” 或“哪個設備對應於disk2 ？”都很有用。
 
 因此我們需要一種方法來將硬盤驅動器分配給陣列磁盤。當陣列停止時，
@@ -177,12 +177,12 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 並啟動陣列。
 :end
 
-:encryption_help: 
+:encryption_help:
 #### 加密輸入
 
 陣列停止後，用戶可以指定一個新的加密密鑰。請注意，當使用
 特定密鑰格式化設備後，只有使用相同的密鑰才能將其打開。更改加密密鑰需要
-重新格式化已加密設備，**導致這些設備上所有的現有數據永久丟失。** 
+重新格式化已加密設備，**導致這些設備上所有的現有數據永久丟失。**
 
 #### 密碼
 
@@ -193,52 +193,52 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 請參考[cryptsetup FAQ]（https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects）
 以了解構成*安全*密碼的元素。
 
-**記住**這個密碼。**如果丟失密碼，已加密的內容將無法恢復！** 
+**記住**這個密碼。**如果丟失密碼，已加密的內容將無法恢復！**
 
 #### 密鑰文件
 
 選擇具有存儲的加密密鑰的本地密鑰文件或二進製文件。密鑰文件的最大大小為8M（8388608 字節）。
 
-**備份**您的本地密鑰文件.**如果丟失，已加密的內容將無法恢復！** 
+**備份**您的本地密鑰文件.**如果丟失，已加密的內容將無法恢復！**
 :end
 
-:info_warning_temp_help: 
+:info_warning_temp_help:
 *警告磁盤溫度*設置此硬盤溫度的警告閾值，超過此閾值將導致警告通知。
 
 值為0 將禁用警告閾值（包括通知）。
-:end 
+:end
 
-:info_critical_temp_help: 
+:info_critical_temp_help:
 *危險磁盤溫度*設置此硬盤溫度的危險閾值。超過此閾值將導致警報通知。
 
 值為0 將禁用危險閾值（包括通知）。
-:end 
+:end
 
 :info_file_system_help:
 輸入所需的文件系統類型。更改設備的文件系統類型將允許您使用新文件系統
 重新格式化該設備。請注意，**設備上所有現有數據將會丟失**。
-:end 
+:end
 
 :info_comments_help:
 此文本將顯示在Windows 資源管理器中共享的*註釋*列下。
 可輸入任何內容，最多256 個字符。
-:end 
+:end
 
-:info_warning_utilization_help: 
+:info_warning_utilization_help:
 *警告磁盤利用率*設置此硬盤利用率的警告閾值。超過此閾值將導致警告通知。
 
 當警告閾值設置等於或大於危險閾值時，將僅發出危險通知（不發出警告）。
 
 值為0 將禁用警告閾值（包括通知）。
-:end 
+:end
 
-:info_critical_utilization_help: 
+:info_critical_utilization_help:
 *危險磁盤利用率*設置此硬盤利用率的危險閾值。超過此閾值將導致警報通知。
 
 值為0 將禁用危險閾值（包括通知）。
 :end
 
-:info_btrfs_balance_help: 
+:info_btrfs_balance_help:
 **平衡**將運行*btrfs balance* 程序以重新條帶化所有池設備上的盤區，例如，將池從raid1 轉換為raid0，或從raid0 轉換為raid1。
 
 當執行*完全平衡*時，基本上是將所有內容重寫到當前文件系統中。
@@ -251,27 +251,27 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 
 `-dconvert=raid1 -mconvert=raid1`
 
-有關更完整的文檔，請參閱btrfs-balance [管理](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance) 
+有關更完整的文檔，請參閱btrfs-balance [管理](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
 
-*注意：raid5 和raid6 一般仍被Linux 社區視為**實驗性*** 
-:end 
+*注意：raid5 和raid6 一般仍被Linux 社區視為**實驗性***
+:end
 
-:info_balance_cancel_help: 
+:info_balance_cancel_help:
 **取消**將取消進行中的平衡操作。
-:end 
+:end
 
-:info_btrfs_scrub_help: 
+:info_btrfs_scrub_help:
 **清理**運行*btrfs scrub* 程序，該程序將從所有設備讀取所有數據和元數據塊
 並驗證校驗和。
 
 在選中*修復已損壞的塊*的情況下，如果有正確副本可用，*btrfs scrub* 將修復損壞的塊。
 :end
 
-:info_scrub_cancel_help: 
+:info_scrub_cancel_help:
 **取消**將取消進行中的清理操作。
-:end 
+:end
 
-:info_btrfs_check_help: 
+:info_btrfs_check_help:
 **檢查**將運行*btrfs check* 程序以檢查設備上的文件系統完整性。
 
 *選項*字段使用*--readonly* 初始化，該字段指定僅檢查。如果需要修復，應運行
@@ -281,13 +281,13 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 以及可能存在的錯誤，此操作可能需要**很長時間**才能完成（以小時計）。
 窗口中沒有打印太多信息，但可以在主頁上觀察設備讀/寫計數器的增加
 來驗證操作是否正在運行。
-:end 
+:end
 
-:info_check_cancel_help: 
+:info_check_cancel_help:
 **取消**將取消進行中的檢查操作。
-:end 
+:end
 
-:info_reiserfs_check_help: 
+:info_reiserfs_check_help:
 **檢查**將運行*reiserfsck* 程序，以檢查設備上的文件系統完整性。
 
 *選項*字段中可以填寫特定選項，以用於修復文件系統問題。通常，
@@ -298,13 +298,13 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 
 窗口中沒有打印太多信息，但可以在主頁上觀察設備讀/寫計數器的增加
 來驗證操作是否正在運行。
-:end 
+:end
 
-:info_reiserfs_cancel_help: 
+:info_reiserfs_cancel_help:
 **取消**將取消進行中的檢查操作。
-:end 
+:end
 
-:info_xfs_check_help: 
+:info_xfs_check_help:
 **檢查**將運行*xfs_repair* 程序，以檢查設備上的文件系統完整性。
 
 *選項*字段使用*-n* 初始化，該字段指定僅檢查。如果需要修復，應在*選項*設置留空的情況下運行
@@ -314,11 +314,11 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 以及可能存在的錯誤，此操作可能需要**很長時間**才能完成（以小時計）。
 窗口中沒有打印太多信息，但可以在主頁上觀察設備讀/寫計數器的增加
 來驗證操作是否正在運行。
-:end 
+:end
 
-:info_xfs_cancel_help: 
+:info_xfs_cancel_help:
 **取消**將取消進行中的檢查操作。
-:end 
+:end
 
 :info_smart_notifications_help:
 當屬性的RAW 值增加到或NORMALIZED 值減少到製造商的預定義閾值時，將生成SMART 通知。
@@ -330,14 +330,14 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 可提供一個容差級別以防止因細微更改而導致發出通知。設置過高的容差級別可能導致重大更改下也不發出通知。
 
 每個磁盤都可能有自己的特定設置，而不是'默認' 的設置（請參閱磁盤設置下的全局SMART 設置）。
-:end 
+:end
 
 :info_controller_type_help:
 默認情況下，smartctl 會自動選擇控制器，以讀取SMART 信息。但某些控制器需要特定設置才能使smartctl 正常工作。
 使用此設置選擇您的控制器類型，並根據情況填寫特定的磁盤索引和設備名稱。使用製造商的文檔來查找相關信息。
 
 每個磁盤都可能有自己的特定設置，而不是'默認' 的設置（請參閱磁盤設置下的全局SMART 設置）。
-:end 
+:end
 
 :info_attribute_notifications_help:
 用戶可以為給定的SMART 屬性啟用或禁用通知。建議保留默認值，即所有選定的屬性，
@@ -346,24 +346,24 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 如果選擇了不合適的SMART 屬性，這可能會導致海量通知。
 
 每個磁盤都可能有自己的特定設置，而不是'默認' 的設置（請參閱磁盤設置下的全局SMART 設置）。
-:end 
+:end
 
 :selftest_history_help:
 按**顯示**以查看保存在磁盤上的自檢歷史記錄。
 僅當磁盤處於活動模式時，此功能才可用。
-:end 
+:end
 
 :selftest_error_log_help:
 按**顯示**以查看保存在磁盤上的錯誤報告。
 僅當磁盤處於活動模式時，此功能才可用。
-:end 
+:end
 
 :selftest_short_test_help:
 開始*快速* SMART 自檢，可以在*功能*部分下查看預計持續時間。這通常是幾分鐘。
 
 當磁盤休眠後，將中止所有正在運行的自檢。
 僅當磁盤處於活動模式時，此功能才可用。
-:end 
+:end
 
 :selftest_long_test_help:
 啟動*完整* SMART 自檢，可以在*功能*部分下查看預計持續時間。這通常是幾小時。
@@ -372,12 +372,12 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 以免中斷此自檢。
 
 僅當磁盤處於活動模式時，此功能才可用。
-:end 
+:end
 
 :selftest_result_help:
 如果沒有運行中的測試，這裡將顯示最新獲得的自測結果（如有）。
 否則將顯示正在運行的測試進度指示器（百分比值）。
-:end 
+:end
 
 :smart_attributes_help:
 此列表顯示此磁盤支持的SMART 屬性。有關每個SMART 屬性的更多信息，建議在線搜索。
@@ -385,31 +385,31 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 *橙色*的屬性可能需要注意。它們的**原始值**大於零，可能表示磁盤故障處於掛起狀態。
 
 當特定屬性的原始值開始隨時間增加時，這需要格外注意。如有疑問，請在Limetech 論壇中尋求建議。
-:end 
+:end
 
 :smart_capabilities_help:
 此列表顯示此磁盤支持的SMART 功能。
 
 在此處觀察SMART 快速和完整自檢的預計持續時間。
-:end 
+:end
 
 :smart_identity_help:
 此列表顯示此磁盤的SMART 身份信息
-:end 
+:end
 
 :open_devices_help:
 這些是已安裝在服務器中但未分配給受奇偶校驗保護的陣列
 或緩存磁盤/池的設備。
-:end 
+:end
 
 :flash_backup_help:
 使用*閃存備份*以創建包含當前閃存設備內容的單個zip 文件，並保存到您的計算機上。
-:end 
+:end
 
 :syslinux_cfg_help:
 使用此頁面可以更改您的'syslinux.cfg' 文件。
 您需要重啟服務器，以使這些更改生效。
-:end 
+:end
 
 :syslinux_button_help:
 單擊**默認**按鈕以使用出廠默認內容
@@ -418,7 +418,7 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 
 單擊**應用**按鈕以提交當前編輯。單擊**重置**
 以撤消所做的任何更改（保存之前）。單擊**完成**以退出此頁面。
-:end 
+:end
 
 :info_free_space_help:
 這為卷中剩餘的可用空間量定義了一個'基底'。
@@ -426,60 +426,60 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 
 輸入具有其中以下後綴之一的數值：
 
-**KB** = 1,000<br> 
-**MB** = 1,000,000<br> 
-**GB** = 1,000,000,000<br> 
-**TB** = 1,000,000,000,000<br> 
-**K** = 1,024（即2^10）<br> 
-**M** = 1,048,576（即2^20）<br> 
-**G** = 1,073,741,824（即2^30）<br> 
+**KB** = 1,000<br>
+**MB** = 1,000,000<br>
+**GB** = 1,000,000,000<br>
+**TB** = 1,000,000,000,000<br>
+**K** = 1,024（即2^10）<br>
+**M** = 1,048,576（即2^20）<br>
+**G** = 1,073,741,824（即2^30）<br>
 **T** = 1,099,511,627,776（即2^40）<br>
 
 如果沒有後綴，將假定為1024 字節的塊。
-:end 
+:end
 
-:share_list_help: 
+:share_list_help:
 **彩色狀態指示器** -- *用戶共享*中每行開頭的顏色指示器的意義如下：
 
 <i class='fa fa-circle orb green-orb'></i>所有文件都在受保護的存儲區中。
 
 <i class='fa fa-warning orb yellow-orb'></i>部分或全部文件位於不受保護的存儲區中。
 
-**安全模式：** 
+**安全模式：**
 
 + '-' -- 用戶共享未導出並且在網絡上不可用
 +*公用*-- 所有用戶包括訪客都具有完全讀/寫訪問權限（開放式訪問）
 +*安全*-- 所有用戶包括訪客都具有讀取權限，根據用戶設置寫入權限（受限訪問）
 +*專用*-- 完全沒有訪客訪問權限，根據用戶設置讀/寫或只讀訪問權限（封閉式訪問）
 
-**特殊模式：** 
+**特殊模式：**
 
 + 以*斜體*顯示的SMB 安全模式表示已導出隱藏用戶共享。
 + 以*斜體*顯示的AFP 安全模式表示已導出time-machine 用戶共享。
 + NFS 沒有用於用戶共享的特殊模式。
-:end 
+:end
 
-:disk_list_help: 
+:disk_list_help:
 **彩色狀態指示器** -- *磁盤共享*中每行開頭的顏色指示器的意義如下：
 
 <i class='fa fa-circle orb green-orb'></i>已掛載，基礎設備具有冗餘/保護功能。
 
 <i class='fa fa-warning orb yellow-orb'></i>已掛載，基礎設備沒有冗餘/保護功能。
 
-**安全模式：** 
+**安全模式：**
 
 + '-'
 +*安全*-- 所有用戶包括訪客都具有讀取權限，根據用戶設置寫入權限（受限訪問）
 +*專用*-- 完全沒有訪客訪問權限，根據用戶設置讀/寫或只讀訪問權限（封閉式訪問）
 
-**特殊模式：** 
+**特殊模式：**
 
 + 以*斜體*顯示的SMB 安全模式表示已導出隱藏磁盤共享。
 + 以*斜體*顯示的AFP 安全模式表示已導出time-machine 磁盤共享。
 + NFS 沒有用於磁盤共享的特殊模式。
-:end 
+:end
 
-:share_edit_global1_help: 
+:share_edit_global1_help:
 *共享*，也稱為*用戶共享*，是一個或多個存儲設備（陣列和緩存）上
 存在的頂級目錄的名稱。每個共享可以導出以進行網絡訪問。瀏覽共享時，我們會返回
 每個存儲設備上都有該頂級目錄的所有文件和子目錄的組合視圖。
@@ -487,13 +487,13 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 *讀取設置自*用於預設新共享的設置與現有共享的設置。
 
 選擇所需的共享名稱，然後按**讀取**以從所選來源複製設置。
-:end 
+:end
 
-:share_edit_global2_help: 
+:share_edit_global2_help:
 *設置寫入到*用於將當前共享的設置複製到一個或多個其他現有共享。
 
 選擇所需的目的地，然後按**寫入**將設置複製到所選共享。
-:end 
+:end
 
 :share_edit_name_help:
 共享名稱最多可以包含40 個字符，區分大小寫，並具有以下限制：
@@ -502,11 +502,11 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 *不能是保留共享名稱之一：flash, cache, cache2, .., disk1, disk2, ..
 
 強烈建議避免使用特殊字符。
-:end 
+:end
 
 :share_edit_comments_help:
 您喜歡的任何字符，最多256 個字符。
-:end 
+:end
 
 :share_edit_allocation_method_help:
 此設置確定在創建新文件或目錄時，Unraid OS 如何選擇要使用的磁盤：
@@ -526,7 +526,7 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 
 **最多可用**
 選擇當前具有最大可用空間的磁盤。
-:end 
+:end
 
 :share_edit_free_space_help:
 *最小可用空間*可用於寫入屬於該共享的任何磁盤。<br>
@@ -560,15 +560,15 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 當需要在共享中創建新文件或子目錄時，Unraid OS 將僅考慮
 已存在父目錄的磁盤。
 :end
- 
+
 :share_edit_included_disks_help:
 指定共享可以使用的磁盤。默認情況下所有磁盤都包括在內；也就是說，
 如果未在此處選擇特定磁盤，則共享可能會擴展到*所有*陣列磁盤。
-:end 
+:end
 
 :share_edit_excluded_disks_help:
 指定共享*不能*使用的磁盤。默認情況下不排除任何磁盤。
-:end 
+:end
 
 :share_edit_cache_pool_help:
 指定是否可以將共享中寫入的新文件和目錄寫入到緩存磁盤/池中。
@@ -588,14 +588,16 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 
 **首選**表示應將所有新文件和子目錄寫入緩存磁盤/池，前提是
 緩存磁盤/池中存在足夠的可用空間。
-如果緩存磁盤/池上的可用空間不足，則會在陣列上創建新的文件和目錄。 
+如果緩存磁盤/池上的可用空間不足，則會在陣列上創建新的文件和目錄。
+:end
+
 :smb_security_help:
 當調用*Mover* 時，文件和子目錄從陣列轉移到緩存磁盤/池。
 
 **注意：**Mover 決不會移動當前正在使用的任何文件。
 這意味著如果要移動與Docker 或虛擬機等
 系統服務關聯的文件，則需要在Mover 運行時禁用這些服務。
-:end 
+:end
 
 :share_edit_copy_on_write_help:
 設置為**否**會導致在使用*btrfs* 文件系統格式化的設備上創建共享目錄時，
@@ -605,16 +607,17 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 此設置對非btrfs 文件系統無效。
 
 設為**自動**即可正常運行，這意味著COW 在以*btrfs* 格式化的設備上**將會**生效。
-:end 
+:end
 
 :share_edit_status_help:
 共享*不*包含任何數據，如不再需要，可將其刪除。
-:end 
+:end
 
 :share_edit_delete_help:
 只要共享包含數據就*不能*將其刪除。請注意，某些數據可以隱藏。另請參見[SMB 設置] (/Settings/SMB) -> 隱藏'點' 文件。
-:end 
+:end
 
+:smb_security_help:
 *讀取設置自*用於使用現有共享的設置來預設當前所選共享的SMB 安全設置。
 
 選擇所需的共享名，然後按**讀取**以從所選來源複製SMB 安全設置。
@@ -622,17 +625,17 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 *寫入設置到*用於將當前所選共享的SMB 安全設置複製到一個或多個其他現有共享。
 
 選擇所需的目的地，然後按**寫入**將SMB 安全設置複製到所選共享。
-:end 
+:end
 
 :smb_export_help:
 此設置確定共享是否可見和/或可訪問。選擇'是（隱藏）' 設置將在*瀏覽*中
 *隱藏*共享，但是如果您知道共享名稱，則仍可訪問。
-:end 
+:end
 
 :smb_time_machine_volume_help:
 這限制報告的捲大小，從而阻止Time Machine 使用實際的全部磁盤空間進行備份。
 例如，將此值設置為'1024' 會將報告的磁盤空間限制為1GB。
-:end 
+:end
 
 :smb_case_sensitive_names_help:
 控製文件名是否區分大小寫。
@@ -651,7 +654,7 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 換句話說，無論在Windows 端創建了何種大小寫混用的名稱，都將以全小寫來存儲和訪問該名稱。
 這樣可以確保所有Windows 應用程序正確查找無論大小寫如何的任何文件，但大小寫不會保留在文件夾列表中。
 請注意，僅應為新共享配置此設置。
-:end 
+:end
 
 :smb_security_modes_help:
 安全模式摘要：
@@ -663,9 +666,9 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 
 **專用** 完全沒有訪客訪問權限，由您選擇哪些用戶具有讀/寫
 或只讀訪問權限。
-:end 
+:end
 
-:smb_secure_access_help: 
+:smb_secure_access_help:
 *讀取設置自*用於使用現有共享的設置來預設當前所選共享的SMB 用戶訪問設置。
 
 選擇所需的共享名稱，然後按**讀取**以從所選來源複製SMB 安全設置。
@@ -673,9 +676,9 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 *寫入設置到*用於將當前共享的SMB 用戶訪問設置複製到一個或多個其他現有共享。
 
 選擇所需的目的地，然後按**寫入**將SMB 用戶訪問設置複製到所選共享。
-:end 
+:end
 
-:smb_private_access_help: 
+:smb_private_access_help:
 *讀取設置自*用於使用現有共享的設置來預設當前所選共享的SMB 用戶訪問設置。
 
 選擇所需的共享名稱，然後按**讀取**以從所選來源複製SMB 安全設置。
@@ -683,9 +686,9 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 *寫入設置到*用於將當前共享的SMB 用戶訪問設置複製到一個或多個其他現有共享。
 
 選擇所需的目的地，然後按**寫入**將SMB 用戶訪問設置複製到所選共享。
-:end 
+:end
 
-:nfs_security_help: 
+:nfs_security_help:
 *讀取設置自*用於使用現有共享的設置來預設當前所選共享的NFS 安全設置。
 
 選擇所需的共享名，然後按**讀取**以從所選來源複製NFS 安全設置。
@@ -693,32 +696,32 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 *寫入設置到*用於將當前所選共享的NFS 安全設置複製到一個或多個其他現有共享。
 
 選擇所需的目的地，然後按**寫入**將NFS 安全設置複製到所選共享。
-:end 
+:end
 
 :user_add_username_help:
 用戶名最多可以包含40 個字符，並且必須以**小寫字母**或下劃線開頭，
 其後跟隨**小寫字母**、數字、下劃線或短劃線。它們可以以美元符號結尾。
 :end
- 
+
 :user_add_description_help:
 最多64個字符。不允許使用＆字符(&)、引號(") 和冒號(:)。
-:end 
+:end
 
 :user_add_custom_image_help:
 映像將縮放至48x48 像素大小。映像文件的最大上傳大小為95 kB (97,280 字節)。
-:end 
+:end
 
 :user_password_help:
 最多128個字符。
-:end 
+:end
 
 :user_edit_description_help:
 最多64個字符。不允許使用＆字符(&)、引號(") 和冒號(:)。
-:end 
+:end
 
 :user_edit_custom_image_help:
 映像將縮放至48x48 像素大小。映像文件的最大上傳大小為512 kB（524,288 字節）。
-:end 
+:end
 
 :cpu_vms_help:
 此頁面提供虛擬機當前CPU 綁定分配的總視圖。<br>
@@ -730,7 +733,7 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 按下***應用***時，將執行掃描以查找更改，隨後僅並行修改含有更改的虛擬機。
 
 *重要提示：請等待所有更新完成，然後才退出此頁面*。
-:end 
+:end
 
 :cpu_pinning_help:
 此頁面提供了Docker 容器當前CPU 綁定分配的總視圖。<br>
@@ -749,14 +752,14 @@ UnRAID 陣列由一個或兩個奇偶校驗磁盤和多個數據磁盤組成。�
 不要為**已隔離**的容器選擇核心。
 當選擇多個隔離的核心時，按照設計，容器將僅使用單個核心（編號最小的核心）。<br>
 這通常不是用戶選擇多個核心時想要的結果。
-:end 
+:end
 
-:cpu_isolation_help: 
+:cpu_isolation_help:
 CPU 隔離允許用戶指定要顯式保留用於分配（給虛擬機或Docker 容器）的CPU 核心。
 
 這對於遊戲虛擬機的平穩運行極為重要，因為即使您手動固定Docker 容器使其不與遊戲虛擬機重疊，
 主機OS 仍可以使用與來賓虛擬機相同的核心來進行各種操作，例如為webGui 返迴響應、運行奇偶校驗、btrfs 操作等
-:end 
+:end
 
 :timezone_help:
 從下拉列表中選擇您適用的時區。
@@ -767,42 +770,42 @@ CPU 隔離允許用戶指定要顯式保留用於分配（給虛擬機或Docker 
 **強烈**建議使用網絡時間服務器，特別是如果打算使用Active Directory。
 
 注意：如果使用'pool.ntp.org' 時間服務器，也請參考[其文檔] (http://www.pool.ntp.org/en/use.html)。
-:end 
+:end
 
 :ntp_server1_help:
 這是要使用的主要NTP 服務器。輸入FQDN 或IP 地址。
-:end 
+:end
 
 :ntp_server2_help:
 如果NTP 服務器1 關閉，這就是備用NTP 服務器。
-:end 
+:end
 
 :ntp_server3_help:
 如果NTP 服務器1 和2 都關閉，這就是備用NTP 服務器。
-:end 
+:end
 
 :ntp_server4_help:
 如果NTP 服務器1、2 和3 都關閉，這就是備用NTP 服務器。
-:end 
+:end
 
 :current_time_help:
 輸入當前時間。使用格式YYYY-MM-DD HH:MM:SS。使用NTP 時顯示為灰色。
-:end 
+:end
 
 :disk_enable_autostart_help:
 在設置為'是' 的情況下，如果服務器啟動時
 設備配置正確，則陣列將自動啟動並導出共享。<br>
 如果設置為'否'，必須自行啟動陣列。
-:end 
+:end
 
 :disk_spindown_delay_help:
 該設置定義'默認' 的超時，用於在經過一段沒有I/O 活動的時間後
 將硬盤驅動器休眠。在某個磁盤的磁盤設置頁面上，您可以覆蓋該磁盤的默認值。
-:end 
+:end
 
 :disk_spinup_groups_help:
 設置為'是' 時，將啟用[喚醒陣列] (/Help) 功能。
-:end 
+:end
 
 :disk_default_partition_format_help:
 定義在格式化**僅** 2TB 及以下容量的硬盤驅動器時
@@ -818,22 +821,22 @@ MBR 樣式分區表的*傳統*設置。
 需要該選項以提供合適的支持。
 
 除非您擁有特定的需求，否則請不要對默認的**MBR：4K-對齊**設置進行更改。
-:end 
+:end
 
 :disk_default_file_system_help:
 定義在格式化*不可掛載的*陣列設備時，要創建的默認文件系統類型。
 
 對於單設備或多設備的緩存，默認的文件系統類型始終為Btrfs。
-:end 
+:end
 
 :disk_shutdown_timeout_help:
 在關閉服務器時，該選項定義了在進行強制關機之前，等待多少秒
 以實現*正常*關閉。
-:end 
+:end
 
 :disk_tunable_poll_attributes_help:
 該選項以秒為單位，定義磁盤SMART 的輪詢間隔。設為0 值將禁用SMART 輪詢（不推薦）。
-:end 
+:end
 
 :disk_tunable_enable_ncq_help:
 設置為**否**則會禁用所有支持NCQ 的陣列設備的*原生命令排序*。
@@ -841,7 +844,7 @@ MBR 樣式分區表的*傳統*設置。
 設置為**自動**時，每個設備的設置將保持原樣。
 
 備註：在選擇“自動”後，必須重新啟動以使設置生效。
-:end 
+:end
 
 :disk_tunable_nr_requests_help:
 該選項為所有陣列設備定義'nr_requests' 設備驅動程序設置。
@@ -850,84 +853,84 @@ MBR 樣式分區表的*傳統*設置。
 
 備註：若是將此選項留空並單擊“應用”，該設置將恢復為默認值，系統必須重新啟動以使設置生效。
 :end
-設置為**自動**時，每個設備的設置將保持原樣(mq-deadline)。
- 
-:disk_tunable_scheduler_help:
-為所有陣列設備選擇內核I/O 調度程序。 
-:disk_default_warning_utilization_help:
 
+:disk_tunable_scheduler_help:
+設置為**自動**時，每個設備的設置將保持原樣(mq-deadline)。
+
+為所有陣列設備選擇內核I/O 調度程序。
 
 備註：在選擇“自動”後，必須重新啟動以使設置生效。
-:end 
+:end
 
 :disk_tunable_md_num_stripes_help:
 該選項設置*條帶池*的*條帶*數大小。*條帶*是指一種特殊的數據結構，
 可促進奇偶校驗受保護陣列所需的並行4K 讀/寫操作。
 
 備註：若是將此選項留空並單擊“應用”，該設置將恢復為默認值，系統必須重新啟動以使設置生效。
-:end 
+:end
 
 :disk_tunable_md_queue_limit_help:
 該選項是一個位於[1..100] 區間內的數值，是允許使用的條帶池的最大穩定負載百分比。
 
 備註：若是將此選項留空並單擊“應用”，該設置將恢復為默認值。
-:end 
+:end
 
 :disk_tunable_md_sync_limit_help:
 該選項是一個位於[0..100] 區間內的數值，是存在其他I/O 時分配給奇偶校驗同步/檢查的條帶池的最大百分比。
 
 備註：若是將此選項留空並單擊“應用”，該設置將恢復為默認值。
-:end 
+:end
 
 :disk_tunable_md_write_method_help:
 選擇寫入到奇偶校驗保護陣列中的可用磁盤時採用的方式。
 
 設為*自動*時會選擇'讀取/修改/寫入'。
-:end 
+:end
 
+:disk_default_warning_utilization_help:
 *磁盤警告利用率*為所有硬盤利用率設置默認的警告閾值。超出該閾值將發出警告通知。
 
 當警告閾值設為等於或大於危險閾值時，僅發出危險通知（不存在警告通知）。
 
 設為0 值將禁用警告閾值（包括通知）。
-:end 
+:end
 
-:disk_default_critical_utilization_help: 
+:disk_default_critical_utilization_help:
 *磁盤危險利用率*為所有硬盤利用率設置默認的危險閾值。超出該閾值將發出警報通知。
 
 設為0 值將禁用危險閾值（包括通知）。
-:end 
+:end
 
-:disk_default_warning_temperature_help: 
+:disk_default_warning_temperature_help:
 *磁盤警告溫度*為所有硬盤溫度設置默認的警告閾值。超出該閾值將發出警告通知。
 
 設為0 值將禁用警告閾值（包括通知）。
-:end 
+:end
 
-:disk_default_critical_temperature_help: 
+:disk_default_critical_temperature_help:
 *磁盤危險溫度*為所有硬盤溫度設置默認的危險閾值。超出該閾值將發出警報通知。
 
 設為0 值將禁用危險閾值（包括通知）。
-:end 
+:end
 
 :disk_default_smart_notification_help:
 當屬性的RAW 值增加到或NORMALIZED 值減少到製造商的預定義閾值時，將生成SMART通知。
 
 此部分用於對所有磁盤進行全局設置。也可以調整各個磁盤的設置。
 :end
- 
+
 :disk_default_smart_tolerance_help:
 可提供一個容差級別以防止因細微更改而導致發出通知。設置過高的容差級別可能導致重大更改下也不發出通知。
 
 此部分用於對所有磁盤進行全局設置。也可以調整各個磁盤的設置。
-:end 
+:end
 
 :disk_default_smart_controller_help:
 默認情況下，smartctl 會自動選擇控制器，以讀取SMART 信息。但某些控制器需要特定設置才能使smartctl 正常工作。
 使用此設置選擇您的控制器類型，並根據情況填寫特定的磁盤索引和設備名稱。使用製造商的文檔來查找相關信息。
 
 此部分用於對所有磁盤進行全局設置。也可以調整各個磁盤的設置。
-:end 
+:end
 
 :disk_default_smart_attribute_help:
 用戶可以為給定的SMART 屬性啟用或禁用通知。建議保留默認值，即所有選定的屬性，
@@ -937,26 +940,26 @@ MBR 樣式分區表的*傳統*設置。
 如果選擇了不合適的SMART 屬性，這可能會導致海量通知。
 
 此部分用於對所有磁盤進行全局設置。也可以調整各個磁盤的設置。
-:end 
+:end
 
 :docker_repositories_help:
 使用該字段添加模板存儲庫。
 使用Docker 模板方便創建和重建Docker 容器。每行僅設置一個。
 
-有關社區支持的常用存儲庫列表，請訪問此處：<a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a> 
-:end 
+有關社區支持的常用存儲庫列表，請訪問此處：<a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
+:end
 
 :docker_enable_help:
 在第一次運行Docker 服務之前，請指定一個用於安裝Docker 的映像文件。
 
 完成首次啟動之後，Docker 總是會在陣列啟動後自動啟動。
-:end 
+:end
 
 :docker_vdisk_size_help:
 如果系統需要創建新的docker 映像文件，可以使用此選項指定默認大小(GB)。
 
 要調整現有映像文件的大小，請在此處指定新的大小。下次啟動Docker 服務時，文件（及文件系統）將增至新的大小（但絕不會減小）。
-:end 
+:end
 
 :docker_vdisk_location_help:
 必須為Docker 指定映像文件。系統會在Docker 服務首次啟動時自動創建該文件。
@@ -965,7 +968,7 @@ MBR 樣式分區表的*傳統*設置。
 
 建議將該映像文件創建在陣列之外，例如在緩存池中創建。為獲得最佳性能，首選SSD 設備。
 :end
- 
+
 :docker_appdata_location_help:
 您可以指定一個文件夾，用於自動生成和存儲包含每個Docker 應用配置文件的子文件夾（通過/config 映射的捲）。
 
@@ -974,139 +977,140 @@ MBR 樣式分區表的*傳統*設置。
 建議將該映像文件創建在陣列之外，例如在緩存池中創建。為獲得最佳性能，首選SSD 設備。
 
 只在添加新的Docker 應用時使用。編輯現有Docker 應用不影響該設置。
-:end 
+:end
 
 :docker_log_rotation_help:
 默認禁用日誌輪換，並創建單個不限大小的日誌文件。
 
 啟用日誌輪換可限制日誌文件的大小，並指定保存在輪換方案中的文件數。
-:end 
+:end
 
 :docker_log_file_size_help:
 指定最大的日誌大小。超出時將發生日誌輪換。
-:end 
+:end
 
 :docker_log_file_number_help:
 指定完成日誌輪換時的日誌文件數。
-:end 
+:end
 
 :docker_authoring_mode_help:
 如果設為**是**，在創建/編輯容器時，界面將呈現一些與模板創作相關的額外字段。
-:end 
+:end
 
 :docker_custom_network_access_help:
 允許主機和容器間利用自定義的(macvlan) 網絡直接通信。<br>
 默認禁用該選項。
 :end
 
-:docker_user_defined_network_help: 
-:docker_exclude_interface_vlan_ipv6_help:
+:docker_user_defined_network_help:
 用戶定義的網絡是指用戶在GUI 外部創建的網絡。<br>
 默認從Docker 中移除用戶定義的網絡。這樣是為了防止與自動生成的自定義網絡發生潛在衝突。
 
 更改這一設置以保留用戶定義的網絡，但用戶有責任確保這些項目正確工作且不會發生衝突。
-:end 
+:end
 
 :docker_include_interface_vlan_ipv4_help:
 包含或排除（默認）上述作為Docker 自定義網絡的接口或VLAN。
 
-輸入所分配的每個子網的池範圍，Docker 使用該範圍進行DHCPv4 分配。例如192.168.1.128/25 
-:end 
+輸入所分配的每個子網的池範圍，Docker 使用該範圍進行DHCPv4 分配。例如192.168.1.128/25
+:end
 
 :docker_exclude_interface_vlan_ipv4_help:
 包含或排除（默認）上述作為Docker 自定義網絡的接口或VLAN。
 
-輸入所分配的每個子網的池範圍，Docker 使用該範圍進行DHCPv4 分配。例如192.168.1.128/25 
-:end 
+輸入所分配的每個子網的池範圍，Docker 使用該範圍進行DHCPv4 分配。例如192.168.1.128/25
+:end
 
 :docker_include_interface_vlan_ipv6_help:
 包含或排除（默認）上述作為Docker 自定義網絡的接口或VLAN。
 
-輸入所分配的每個子網的池範圍，Docker 使用該範圍進行DHCPv6 分配。例如2a02:abcd:9ef5:100:1::/72 
+輸入所分配的每個子網的池範圍，Docker 使用該範圍進行DHCPv6 分配。例如2a02:abcd:9ef5:100:1::/72
 :end
 
+
+:docker_exclude_interface_vlan_ipv6_help:
 包含或排除（默認）上述作為Docker 自定義網絡的接口或VLAN。
 
-輸入所分配的每個子網的池範圍，Docker 使用該範圍進行DHCPv6 分配。例如2a02:abcd:9ef5:100:1::/72 
-:end 
+輸入所分配的每個子網的池範圍，Docker 使用該範圍進行DHCPv6 分配。例如2a02:abcd:9ef5:100:1::/72
+:end
 
 :docker_version_help:
 這是活躍的Docker 版本。
-:end 
+:end
 
 :docker_vdisk_location_active_help:
 這是Docker 映像的位置。
-:end 
+:end
 
 :docker_appdata_location_active_help:
 這是Docker 容器的存儲位置。
-:end 
+:end
 
 :docker_log_rotation_active_help:
 默認創建一個不限大小的日誌文件。否則在啟用日誌輪換時，日誌文件的大小及文件數將受限。
-:end 
+:end
 
 :docker_custom_network_active_help:
 允許主機和容器間利用自定義的(macvlan) 網絡直接通信。<br>
 默認禁用該選項。
-:end 
+:end
 
 :docker_user_defined_network_active_help:
 顯示是為Docker 移除還是保留在GUI 之外創建的網絡。當設為保留時，容器的*網絡類型*下拉列表中將出現*用戶定義網絡*。
 :end
- 
+
 :docker_scrub_help:
 **清理**運行*btrfs scrub* 程序以檢查文件系統的完整性。
 
 如需修復，應當檢查*糾正文件系統錯誤*並再次運行清理；*btrfs scrub* 將修復文件系統。
-:end 
+:end
 
-:docker_cancel_help: 
+:docker_cancel_help:
 **取消**將會取消正在進行的清理操作。
-:end 
+:end
 
 :id_server_name_help:
 服務器的網絡標識。也稱作*主機名*或*短主機名*。在Windows 網絡
 中稱為*NetBIOS 名稱*，且長度必須小於或等於15 個字符。
 僅可使用字母數字字符（也即"AZ"、"az" 以及"0-9" ）、短劃線("-") 和點(".") ；
 並且第一個和最後一個字符必須是字母數字。
-:end 
+:end
 
 :id_description_help:
 在網絡或文件資源管理器(Windows) 或訪達(macOS) 中列示服務器時，會
 在旁邊顯示該文本字段。
-:end 
+:end
 
 :id_model_help:
 這是服務器型號。
-:end 
+:end
 
 :mgmt_start_page_help:
 選擇進入GUI 時首次打開的頁面。默認選擇*主*頁面。
 :end
- 
+
 :mgmt_use_telnet_help:
 默認為啟用TELNET 訪問。不過，TELNET 是一種不安全的CLI 訪問類型，
 強烈建議您改為使用SSH 訪問，並禁用TELNET 訪問。
-:end 
+:end
 
 :mgmt_telnet_port_help:
 輸入TELNET 端口，默認端口是23。
-:end 
+:end
 
 :mgmt_use_ssh_help:
 默認啟用SSH 以提供安全的CLI 訪問類型。如果尚無SSH 密鑰，
 系統一旦啟動便會立即自動生成SSH 密鑰，
 並存儲在閃存設備的*/config/ssh* 文件夾中。
-:end 
+:end
 
 :mgmt_ssh_port_help:
 輸入SSH 端口，默認端口是22。
-:end 
+:end
 
 :mgmt_use_upnp_help:
 啟用（默認）或禁用服務器的UPnP 功能。此功能允許自動轉發路由器上的端口，僅在路由器上也啟用了UPnP 時才適用。
-:end 
+:end
 
 :mgmt_use_ssl_tls_help:
 確定webGUI 如何響應HTTP和/或HTTPS 協議。
@@ -1122,7 +1126,7 @@ MBR 樣式分區表的*傳統*設置。
 預配證書後，webGUI 將自動切換至https 模式。此外，
 還將啟用兩個後台進程：
 
--*updatedns*- 該進程在服務器重啟完畢30 秒後啟動，並聯繫Lime Technology 
+-*updatedns*- 該進程在服務器重啟完畢30 秒後啟動，並聯繫Lime Technology
 DNS 服務以註冊服務器本地IP 地址。此後將每10 分鐘喚醒一次，以防止
 本地IP 地址再次變化。
 
@@ -1134,38 +1138,38 @@ DNS 服務以註冊服務器本地IP 地址。此後將每10 分鐘喚醒一次�
 備註：在預配Let's Encrypt SSL 證書後，您可以將該字段更改為**是**，
 以關閉*updatedns* 和*newcert* 後台進程。
 
-**nginx 證書處理詳細信息** 
+**nginx 證書處理詳細信息**
 
-nginx 啟動腳本將在USB 引導閃存中以如下順序查找SSL 證書：<br> 
-`config/ssl/certs/certificate_bundle.pem`<br> 
+nginx 啟動腳本將在USB 引導閃存中以如下順序查找SSL 證書：<br>
+`config/ssl/certs/certificate_bundle.pem`<br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem`
 
 如果這兩個文件都不存在，則會自動創建自簽名的SSL 證書並存儲在<br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem`<br> 中
 
-通過預配Let's Encrypt 證書，該證書將寫入到<br> 
-`config/ssl/certs/certificate_bundle.pem`<br> 
+通過預配Let's Encrypt 證書，該證書將寫入到<br>
+`config/ssl/certs/certificate_bundle.pem`<br>
 
-**nginx stapling 支持** 
+**nginx stapling 支持**
 
-nginx 是否啟用OCSP Staping 取決於使用了下列哪個證書：<br> 
-`config/ssl/certs/certificate_bundle.pem` => 是<br> 
+nginx 是否啟用OCSP Staping 取決於使用了下列哪個證書：<br>
+`config/ssl/certs/certificate_bundle.pem` => 是<br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem` => 否
-:end 
+:end
 
 :mgmt_http_port_help:
 輸入HTTP 端口，默認端口是80。
-:end 
+:end
 
 :mgmt_https_port_help:
 輸入HTTPS 端口，默認端口是443。
-:end 
+:end
 
 :mgmt_local_tld_help:
 輸入本地頂級域名。可以留空。
-:end 
+:end
 
-:mgmt_certificate_expiration_help: 
+:mgmt_certificate_expiration_help:
 **預配**可用於分配來自於[Let's Encrypt](https:
 並隨後上傳到服務器。備註：**強烈**建議在此情況下使用靜態IP 地址。
 
@@ -1184,94 +1188,94 @@ DNS 重新綁定保護的來源之一可能是您的ISP DNS 服務商。這種�
 
 **DD-WRT:** 如果您正在使用啟用了DNS 重新綁定保護的"dnsmasq"，可以在路由器的配置文件中添加下面這一行：
 
-`rebind-domain-ok=/unraid.net/` 
+`rebind-domain-ok=/unraid.net/`
 
 **pfSense:**如果您正在使用pfSense 內部DNS 解析器服務，可以添加以下自定義選項行：
 
-`server:`<br> 
-`private-domain: "unraid.net"` 
+`server:`<br>
+`private-domain: "unraid.net"`
 
 **Ubiquiti USG router:**您可以添加以下配置行：
 
-`set service dns forwarding options rebind-domain-ok=/unraid.net/` 
+`set service dns forwarding options rebind-domain-ok=/unraid.net/`
 
-**OpenDNS:** 轉到“設置-> 安全”，然後*移除*位於“可疑回應   
+**OpenDNS:** 轉到“設置-> 安全”，然後*移除*位於“可疑回應
  - 阻止內部IP 地址”旁的複選框。這是一個全有或全無的設置。
- 
+
 若以上方法均告失敗，可以在電腦的*host* 文件中創建一個條目，以覆蓋外部DNS，
 並直接將您服務器的unraid.net FQDN 解析到它的本地IP 地址。
-:end 
+:end
 
 :ftp_server_help:
 啟用或禁用FTP 服務器守護程序。默認為啟用FTP 服務器。
 這一設置不會保存，也就是說，一旦系統重新啟動，它將恢復為默認設置。
-:end 
+:end
 
 :ftp_users_help:
 輸入允許使用FTP 訪問服務器的用戶名（使用空格分開）。
 要禁止任何用戶的訪問，請清除該項設置。
 
 **注意：**不要輸入用戶名`root`，因為這可能在日後引發某些問題。
-:end 
+:end
 
-:ftp_overview_help: 
+:ftp_overview_help:
 ### 概述
 
 Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十分
 簡單：上面輸入的**所有**用戶名都可以通過FTP 訪問服務器，並且擁有
 對整個服務器的*完全讀取/寫入/刪除權限*，因此請謹慎使用。
-:end 
+:end
 
 :smb_enable_help:
 選擇'是（工作組）'以啟用SMB （Windows 網絡） 協議支持。這也會
 啟用Windows 主機發現。
 
 選擇'是(Active Directory) '以啟用Active Directory 集成。
-:end 
+:end
 
 :smb_hide_files_help:
 如果設為'是'，那麼以'.' （句點）開頭的文件將會顯示為*隱藏文件*，並且通常
 不會出現在Windows 文件夾列表中，除非您在Windows 文件夾選項中啟用了
  “顯示隱藏的文件、文件夾和驅動器”。
- 
+
 如果設為'否'，那麼句點開頭的文件將同其他文件一樣出現在文件夾列表中。
-:end 
+:end
 
 :smb_enhanced_macos_help:
 當設置為'是'時，將增強與Apple SMB 客戶端的兼容性，例如可以加快訪達瀏覽速度，
 以及可以導出到Time Machine 共享。不過，這可能會導致Windows 客戶端出現某些問題。
 請參閱[VFS_FRUIT MAN PAGE] (https://www.mankier.com/8/vfs_fruit)。
-:end 
+:end
 
 :smb_enable_netbios_help:
 選擇'是'以啟用NEtBios。如果啟用，則可以識別SMBv1 協議。如果禁用，
 客戶端必須使用SMBv2 或更高版本。
-:end 
+:end
 
 :smb_enable_wsd_help:
 選擇'是'以啟用WSD（WS 發現）。只有在您運行基於SMBv1 的老舊LAN 設置時，
 才需要關閉這一項。
-:end 
+:end
 
 :smb_wsd_options_help:
 這是啟動時傳遞給WSD 守護程序的命令行選項字符串。
 除非支持人員指示在其中填寫某些信息，
 否則請將此字段留空。
-:end 
+:end
 
 :smb_extra_conf_help:
 使用該頁面來修改`smb-extra.conf` 文件。為使更改生效，需要
 重新啟動Samba。
-:end 
+:end
 
 :smb_extra_button_help:
 單擊**應用**按鈕以提交當前的編輯。單擊**重置**以撤銷您
 所作的任何更改（在保存之前）。單擊**完成**以退出當前頁面。
-:end 
+:end
 
 :smb_workgroup_help:
 輸入您的本地網絡工作組名。通常輸入"WORKGROUP"。
-:end 
+:end
 
 :smb_local_master_help:
 如果設為'是'，服務器將全面參與瀏覽器競選，在沒有其他服務器的情況下，
@@ -1280,7 +1284,7 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 
 :nfs_enable_help:
 選擇'是'以啟用NFS 協議。
-:end 
+:end
 
 :nfs_tunable_fuse_remember_help:
 當啟用NFS 時，這一可調選項可用於減輕或解決您可能在NFS 客戶端上遇到的
@@ -1312,16 +1316,16 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 除非您*了解*自己在做什麼。這可能會引發數據丟失，並且不受支持。
 
 如果設為'自動'，只能導出未參與用戶共享的磁盤共享。
-:end 
+:end
 
 :shares_enable_shares_help:
 如果設為'是'，將會激活用戶共享特性。
-:end 
+:end
 
 :shares_included_disks_help:
 該設置定義在用戶共享中*包含*的一組陣列磁盤。
 取消選中所有磁盤將包含**所有**陣列磁盤。
-:end 
+:end
 
 :shares_excluded_disks_help:
 該設置定義*排除*在用戶共享之外的一組陣列磁盤。
@@ -1329,7 +1333,7 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 
 **備註：**每個單獨的用戶共享還包括自身“包含”和“排除”的一組磁盤，
 這些磁盤代表此處定義的“包含/排除”的磁盤的一部分。
-:end 
+:end
 
 :shares_tunable_hard_links_help:
 如果設為是，則支持link() 操作。
@@ -1340,70 +1344,70 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 
 *如果設為是，當較舊的媒體和dvd/bluray 播放器使用NFS 訪問共享時可能會產生問題。
 *無論該項如何設置，**mover** 都能夠正確處理檢測到的任何硬鏈接。
-:end 
+:end
 
-:shares_tunable_direct_io_help: 
+:shares_tunable_direct_io_help:
 **實驗性**：如果設為是，則通過FUSE*direct_io* 掛載選項來掛載用戶共享文件系統。
 這將增強寫入性能，但有可能會降低讀取性能。
 
 *自動*選擇否。
-:end 
+:end
 
 :syslog_local_server_help:
 讓服務器發揮中心系統日誌服務器的作用，並從其他系統收集系統日誌信息。
 服務器可以通過可選的端口號偵聽UDP、TCP，或二者同時偵聽。
 
 系統日誌信息根據每個IP 地址單獨存儲。也即每個系統都有自身的系統日誌文件。
-:end 
+:end
 
 :syslog_local_folder_help:
 選擇存儲系統日誌的共享文件夾。
 建議使用位於緩存驅動器上的共享，以防止陣列磁盤喚醒。
-:end 
+:end
 
 :syslog_local_rotation_help:
 默認禁用日誌輪換，並創建一個不限大小的日誌文件。
 
 啟用日誌輪換可限制日誌文件的大小，並指定保存在輪換方案中的文件數。
 :end
- 
+
 :syslog_local_file_size_help:
 指定最大的日誌大小。超出時將發生日誌輪換。
 :end
 
 :syslog_local_file_number_help:
 指定輪換方案中保留的附加文件數。
-:end 
+:end
 
 :syslog_remote_server_help:
 輸入遠程系統日誌服務器的名稱或IP 地址。
 系統日誌消息副本將發送到指定的服務器。
-:end 
+:end
 
 :syslog_mirror_flash_help:
 該選項默認設置為否，並且必須謹慎使用，以避免不必要地插拔USB 設備。
 
 在需要故障排除，且無法得到常規的診斷信息時，將此設置更改為是。
 系統日誌文件的鏡像存儲在閃存設備的**logs** 文件夾中。
-:end 
+:end
 
 :confirm_reboot_help:
 如果重啟或關閉服務器時需要顯示確認複選框，請選擇此選項。
-:end 
+:end
 
 :confirm_array_stop_help:
 如果停止陣列時需要顯示確認複選框，請選擇此選項。
-:end 
+:end
 
 :display_settings_help:
 以下顯示設置確定了各項目在屏幕上的顯示方式，利用這些設置調整成您喜愛的視覺效果。
 
 您可以根據需要來試驗這些設置，它們只影響視覺屬性。
-:end 
+:end
 
-:display_font_size_help: 
+:display_font_size_help:
 此設置取決於相應的設備
-:end 
+:end
 
 :display_wwn_device_id_help:
 全局名稱(WWN) 是用於SAS 連接設備的唯一標識符。
@@ -1411,29 +1415,29 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 選擇*已禁用*將不會對設備標識附加WWN
 
 選擇*自動*將對SAS 設備標識附加WWN（對於SAS 設備）
-:end 
+:end
 
 :display_custom_text_color_help:
 確定標題中默認的文本顏色。該選項可用於匹配文本顏色與背景圖片。
-:end 
+:end
 
 :display_custom_background_color_help:
 確定標題中默認的背景顏色。該選項可用於匹配背景色與自定義的文本顏色。
-:end 
+:end
 
 :display_custom_banner_help:
 圖片將縮放到1920x90 像素。上傳圖片文件的最大大小為512 kB（524,288 字節）。
-:end 
+:end
 
 :display_temperature_unit_help:
 選擇磁盤溫度閾值的溫度單位。更改此單位將相應調整磁盤溫度閾值中現有的值。
 
 請確保任何新輸入的值對應於所選的溫度單位。
-:end 
+:end
 
 :vms_enable_help:
 停止虛擬機管理器時，首先會嘗試關閉所有正在運行的虛擬機。60 秒後，將終止其餘所有虛擬機實例。
-:end 
+:end
 
 :vms_libvirt_volume_help:
 這是libvirt 卷。
@@ -1442,19 +1446,19 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 :vms_libvirt_vdisk_size_help:
 如果系統需要創建新的libvirt 映像文件，這便是指定的默認大小(GB)。
 要調整現有映像文件的大小，請在此處指定新的大小。下次啟動Libvirt 服務時，文件（及文件系統）將增大到新的大小（但絕不會減小）。
-:end 
+:end
 
 :vms_libvirt_location_help:
 必須為Libvirt 定義映像文件。首次啟動Libvirt 服務時，系統將自動創建此文件。
-:end 
+:end
 
 :vms_libvirt_storage_help:
 指定包含所有虛擬機子目錄及虛擬磁盤的用戶共享
-:end 
+:end
 
 :vms_libvirt_iso_storage_help:
 指定包含操作系統所有安裝介質的用戶共享
-:end 
+:end
 
 :vms_virtio_driver_help:
 指定包含Fedora 項目提供的VirtIO Windows 驅動程序的虛擬CD-ROM (ISO)。
@@ -1464,7 +1468,7 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 請在菜單中單擊“瀏覽”，並定位到附加的CD-ROM。此處將會有針對不同Windows 版本的不同文件夾。
 請打開您所安裝的Windows 版本對應的文件夾，然後選擇裡面的AMD64 子文件夾（即使您使用的是Intel 系統，也請選擇AMD64）。
 您將會看到3個驅動程序。請全選，並單擊下一步，就會出現您分配的虛擬磁盤。
-:end 
+:end
 
 :vms_network_bridge_help:
 選擇您希望用作虛擬機默認設置的網橋名稱，
@@ -1473,19 +1477,19 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 在網絡設置下創建虛擬網橋之後，將會呈現更多的可選項。
 
 備註：您也可以根據虛擬機指定網橋。
-:end 
+:end
 
 :vms_host_shutdown_help:
 該選項定義關閉服務器時要對正在運行的虛擬機執行的操作。如果選中*休眠虛擬機*，
 虛擬機將收到休眠指令（如果受到支持），否則會嘗試關閉虛擬機。
-:end 
+:end
 
 :vms_shutdown_timeout_help:
 該選項定義關閉服務器時，等待多少秒進行虛擬機*正常*關機未果後繼續進行強制關機。
 備註：建議從該虛擬機中關閉客戶虛擬機。
 :end
 
-:vms_acs_override_help: 
+:vms_acs_override_help:
 *PCIe ACS 覆蓋*允許各種硬件組件作為隔離設備公開。
 通常隔離*下游*端口便足矣。
 硬件組件可能需要設置為*多功能*或*兩者*，才能進一步隔離不同的硬件功能。<br>
@@ -1493,7 +1497,7 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 
 **警告：使用此設置可能導致某些硬件配置下發生數據損壞。**
 請訪問[Lime Technology 論壇](https://forums.unraid.net/forum/51-vm-engine-kvm) 以獲取更多信息。
-:end 
+:end
 
 :vms_vfio_interupts_help:
 如果您的系統不支持中斷重新映射，則可允許不安全的中斷，以實現這一點。<br>
@@ -1502,36 +1506,36 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 **警告：使用此設置可能導致某些硬件配置下發生數據損壞。**
 請訪問[Lime Technology 論壇](https://forums.unraid.net/forum/51-vm-engine-kvm) 以獲取更多信息。
 :end
- 
-:vms_libvirt_log_help:
-查看libvirt 日誌：<a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a> 
-:end 
 
-:vms_scrub_help: 
+:vms_libvirt_log_help:
+查看libvirt 日誌：<a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
+:end
+
+:vms_scrub_help:
 **清理**運行*btrfs scrub* 程序以檢查文件系統的完整性。
 若如需修復，應當檢查*糾正文件系統錯誤*並再次運行清理；*btrfs scrub* 將修復文件系統。
-:end 
+:end
 
-:vms_cancel_help: 
+:vms_cancel_help:
 **取消**將取消正在進行的清理操作。
-:end 
+:end
 
 :eth_interface_description_help:
 使用該選填字段提供關於連接用途的額外信息。
-:end 
+:end
 
 :eth_mac_address_help:
 此處為接口的硬件地址。
 在啟用了標記時，此接口上的所有VLAN 將共享相同的硬件地址。
-:end 
+:end
 
-:eth_enable_bonding_help: 
+:eth_enable_bonding_help:
 綁定是一種將多個物理以太網接口合併為單獨一個*綁定*接口（名稱為**bond0**）的特性。
 該選項可用於提高連接冗餘和/或系統的吞吐量。
 支持多種不同的綁定模式（如下），但某些模式需要適當的交換機支持。
-:end 
+:end
 
-:eth_bonding_mode_help: 
+:eth_bonding_mode_help:
 **模式0（平衡- rr）**<br>
 該模式將按順序傳輸數據包，從第一個可用的從屬接口一直傳輸到最後一個接口。
 如果兩個實際接口是該綁定中的從屬接口，並且有兩個數據包到達綁定接口之外的位置，則第一個數據包在第一個從屬接口中傳輸，第二個數據包在第二個從屬接口中傳輸。
@@ -1568,116 +1572,116 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 以便不同的客戶端對該服務器使用不同的硬件地址。
 
 *建議設置為模式1（主動備份）。其他模式雖然允許您設置特定的環境，但可能需要適當的交換機支持。
-選擇不支持的模式可能導致通信中斷。* 
-:end 
+選擇不支持的模式可能導致通信中斷。*
+:end
 
 :eth_bonding_members_help:
 選擇哪些接口作為*綁定*接口的成員。默認情況下，eth0 是成員之一，其他接口選用。
 :end
- 
+
 :eth_enable_bridging_help:
 橋接是一種用於創建虛擬網橋，並允許虛擬機和Docker 容器直接通過物理以太網端口通信的功能。
 綁定和橋接可結合使用，這樣虛擬機或容器便可通過*綁定*接口通信。
-:end 
+:end
 
 :eth_bridging_members_help:
 選擇哪些接口作為*橋接*接口的成員。默認情況下， eth0 是成員之一，其他接口選用。
-:end 
+:end
 
 :eth_network_protocol_help:
 選擇使用哪個（些）協議。默認為僅使用IPV4。<br>
 同時選擇IPV4 和IPV6 時，每個協議可以單獨配置。
-:end 
+:end
 
 :eth_ipv4_address_assignment_help:
 可以進行以下設置：
 
-*自動*- 服務器將嘗試從本地DHCP 服務器獲取IPv4 地址<br> 
-*靜態*- 為此接口手動設置IPv4 地址<br> 
+*自動*- 服務器將嘗試從本地DHCP 服務器獲取IPv4 地址<br>
+*靜態*- 為此接口手動設置IPv4 地址<br>
 *無*- 不為接口分配IPv4 地址（僅適用於VLAN ）
-:end 
+:end
 
 :eth_ipv4_address_help:
 使用自動IP 分配時顯示為灰色。否則，請在此處指定係統的IPv4 地址和掩碼。
-:end 
+:end
 
 :eth_ipv4_default_gateway_help:
 使用自動IP 分配時顯示為灰色。否則請在此處指定路由器的IPv4 地址。
-:end 
+:end
 
 :eth_ipv4_dns_server_assignment_help:
 如果設置為*自動*，服務器將使用本地自動分配返回的IPv4 DNS 服務器。<br>
 如果設置為*靜態*，則可以輸入自己的列表。
 
 這在Active Directory 配置中很有用，在該配置中，您需要將第一個DNS 服務器條目設置為AD Domain 服務器的IP 地址。
-:end 
+:end
 
 :eth_ipv4_dns_server_help:
 這是要使用的主要IPv4 DNS 服務器。輸入IPv4 地址。
 
 注意：對於*Active Directory*，您**必須**確保將其設置為AD Domain 服務器的IP 地址。
-:end 
+:end
 
 :eth_ipv4_dns_server2_help:
 這是IPv4 DNS 服務器1 關閉時要使用的IPv4 DNS 服務器。
-:end 
+:end
 
 :eth_ipv4_dns_server3_help:
 這是IPv4 DNS 服務器1 和2 都關閉時要使用的IPv4 DNS 服務器。
-:end 
+:end
 
 :eth_ipv6_address_assignment_help:
 可以進行以下設置：
 
-*自動*- 服務器將嘗試從本地DHCP 服務器或路由器通告(RA) 獲取IPv6 地址<br> 
+*自動*- 服務器將嘗試從本地DHCP 服務器或路由器通告(RA) 獲取IPv6 地址<br>
 *靜態*- 為此接口手動設置IPv6 地址<br>
 *無*- 不為接口分配IPv6 地址（僅適用於VLAN ）
-:end 
-:eth_ipv6_dns_server3_help:
- 
+:end
+
 :eth_ipv6_address_help:
 使用自動IP 分配時顯示為灰色。否則請在此處指定係統的IPv6 地址。
-:end 
+:end
 
 :eth_ipv6_default_gateway_help:
 使用自動IP 分配時顯示為灰色。否則請在此處指定路由器的IPv6 地址。
-:end 
+:end
 
 :eth_ipv6_privacy_extensions_help:
 根據RFC4941 啟用或禁用生成隨機IPv6 接口標識符。這與Windows 計算機中臨時生成IPv6 地址的情況相似。
-:end 
+:end
 
 :eth_ipv6_dns_server_assignment_help:
 如果設置為*自動*，服務器將使用本地自動分配返回的IPv6 DNS 服務器。<br>
 如果設置為“靜態”，則可以輸入自己的列表。
-:end 
+:end
 
 :eth_ipv6_dns_server_help:
 這是要使用的主要IPv6 DNS 服務器。輸入IPv6 地址。
-:end 
+:end
 
 :eth_ipv6_dns_server2_help:
 這是IPv6 DNS 服務器1 關閉時要使用的IPv6 DNS 服務器。
 :end
 
+:eth_ipv6_dns_server3_help:
 這是IPv6 DNS 服務器1 和2 都關閉時要使用的IPv6 DNS 服務器。
-:end 
+:end
 
 :eth_desired_mtu_help:
 這是物理以太網接口中使用的MTU 大小。
 如果留空，則將自動確定MTU（默認為1500 字節）。
-:end 
+:end
 
 :eth_enable_vlans_help:
 默認為不配置任何VLAN。<br>
 啟用VLAN 可將邏輯連接數擴展到同一物理連接。
 
 注意：使用此功能時，您的路由器和交換機必須支持VLAN。
-:end 
+:end
 
 :eth_vlan_number_help:
 為每個VLAN 分配唯一標識符。編號範圍為1 到4095。
-:end 
+:end
 
 :eth_network_rules_help:
 此處可以更改接口分配規則，設置用於管理Unraid 的首選接口時，可能必須進行更改-*謹慎使用，通常無需更改*。
@@ -1687,7 +1691,7 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 
 接口分配存儲在閃存設備上的*/config/network-rules.cfg* 下。可以使用任何編輯器查看此文件，但是建議僅通過webGUI 進行更改。<br>
 若是從閃存設備中刪除文件*network-rules.cfg*，系統重啟後將恢復自動接口分配。
-:end 
+:end
 
 :eth_routing_table_help:
 輸入*nnn.nnn.nnn.nnn/xx* 格式的有效IPv4 路由，例如*192.168.1.0/24*<br>
@@ -1696,30 +1700,30 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 從下拉列表中選擇網關，或輸入有效的IPv4/IPv6 地址作為網關值。
 
 度量值選填，默認值為1。當同一路由存在多個條目時，可使用它來選擇首選網關。
-:end 
+:end
 
 :apc_ups_daemon_help:
 設置為“是”以啟用apcupsd 並啟動守護程序，設置為“否”以禁用apcupsd 並停止守護程序。
-:end 
+:end
 
 :apc_ups_cable_help:
 定義將UPS 連接到計算機的電纜類型。``電纜''的一般選項有：
 
 + USB、簡單、智能、以太或自定義（用於指定特殊電纜）。
-:end 
+:end
 
 :apc_ups_custom_cable_help:
 通過型號指定特殊電纜，僅在*UPS 電纜*設置為“自定義”時適用。
 
-+ 940-0119A, 940-0127A, 940-0128A, 940-0020B 
-+ 940-0020C, 940-0023A, 940-0024B, 940-0024C 
-+ 940-1524C, 940-0024G, 940-0095A, 940-0095B 
-+ 940-0095C, 940-0625A, M-04-02-2000 
-:end 
++ 940-0119A, 940-0127A, 940-0128A, 940-0020B
++ 940-0020C, 940-0023A, 940-0024B, 940-0024C
++ 940-1524C, 940-0024G, 940-0095A, 940-0095B
++ 940-0095C, 940-0625A, M-04-02-2000
+:end
 
 :apc_ups_type_help:
 定義您的UPS 對應的*UPS 類型*（有關更多詳細信息，請參見說明）。
- 
+
 + **USB** - 大多數新UPS 為USB 類型
 + **APCsmart** - 較新的串行字符設備，適用於使用串行電纜（非USB）的SmartUPS 型號
 + **Net** - 通過apcupsd 的網絡信息服務器連接到主apcupsd 的網絡鏈路。如果為計算機供電的UPS 連接到另一台計算機進行監視，則使用此項設置
@@ -1727,28 +1731,28 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 + **Dumb** - 用於簡單信號示意UPS 的舊式串行字符設備
 + **PCnet** - PowerChute 網絡關閉協議，可與AP9617 系列智能插槽卡一起用作SNMP 的替代協議
 + **ModBus** - 與支持MODBUS 協議的最新SmartUPS 型號一起使用的串行設備
-:end 
+:end
 
 :apc_ups_device_help:
 輸入與您的情況相對應的*設備*，僅在*UPS 類型*未設置為USB 時適用。
 
-+ **apcsmart**- /dev/tty** 
-+ **net**- 主機名：端口。主機名是NIS 服務器的IP 地址。默認端口為3551 
++ **apcsmart**- /dev/tty**
++ **net**- 主機名：端口。主機名是NIS 服務器的IP 地址。默認端口為3551
 + **snmp**- 主機名：端口：供應商：社區。主機名是網絡上UPS 的IP 地址或主機名。主機名是網絡上UPS 的IP 地址或主機名。供應商可以是"APC" 或"APC_NOTRAP"。
 如果是"APC_NOTRAP"，將禁用SNMP 陷阱捕獲; 您通常需要使用"APC"。端口通常是161。社區通常是“私有”
-當然- 在測試時- 如果您拔下電源插頭，將其設置為60 會導致系統快速關閉。 
+當然- 在測試時- 如果您拔下電源插頭，將其設置為60 會導致系統快速關閉。
 + **dumb**- /dev/tty**
-+ **pcnet**- ipaddr：用戶名：密碼：端口。ipaddr 是UPS 管理卡的IP 地址。用戶名和密碼是已配置卡的憑據。端口是用於偵聽來自UPS 的消息的端口號，通常為3052。如果此參數為空或缺失，將使用默認值3052 
-+ **modbus**- /dev/tty** 
-:end 
++ **pcnet**- ipaddr：用戶名：密碼：端口。ipaddr 是UPS 管理卡的IP 地址。用戶名和密碼是已配置卡的憑據。端口是用於偵聽來自UPS 的消息的端口號，通常為3052。如果此參數為空或缺失，將使用默認值3052
++ **modbus**- /dev/tty**
+:end
 
 :apc_battery_level_help:
 如果在電源故障期間，剩餘電池百分比（由UPS 報告）低於或等於*電池電量*，apcupsd 將啟動系統關機。
-:end 
+:end
 
 :apc_runtime_left_help:
 如果在電源故障期間，剩餘運行時間（由UPS 內部計算，單位為分鐘）低於或等於此字段之值，apcupsd 將啟動系統關閉。
-:end 
+:end
 
 :apc_battery_time_help:
 如果在電源故障期間，UPS 依靠電池運行*超時*數秒或更長時間；apcupsd 將啟動系統關閉。零值將禁用此計時器。
@@ -1757,32 +1761,32 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 這樣，您的UPS 將繼續使用電池，直到剩餘電量百分比降至或低於*電池電量*或剩餘電池運行時間降至或低於*分鐘*值。
 
 如果您使用的是舊式UPS，則將其設置為小於您可以使用電池供電的時間。
-:end 
+:end
 
-:apc_note_help: 
-**注意：***電池電量*、*剩餘運行時間*和*電池續航時間*協同工作，因此以上任何一項最先發生將啟動關機。 
-:end 
+:apc_note_help:
+**注意：***電池電量*、*剩餘運行時間*和*電池續航時間*協同工作，因此以上任何一項最先發生將啟動關機。
+:end
 
 :apc_killups_help:
 設置為*是*以在關機後關閉UPS的電源。
-:end 
+:end
 
 :parity_check_scheduled_help:
 默認情況下不計劃奇偶校驗檢查。在此處選擇所需的計劃。這可以是預設的每日、每週、每月、每年或自定義計劃。
-:end 
+:end
 
 :parity_day_of_the_week_help:
 當選擇了**每週**或**自定義**計劃後，請在此處選擇首選的*周中日期*，在其他計劃中，此設置將不被使用且不可用。
-:end 
+:end
 
 :parity_week_of_the_month_help:
 當選擇**每月**或**每年**計劃後，請在此處選擇首選的*月中日期*。
 當選擇了**自定義**計劃後，請在此處選擇首選的*月中周數*，在其他計劃中，此設置將不被使用且不可用。
-:end 
+:end
 
 :parity_time_of_the_day_help:
 選擇所需的*當日時間*以啟動計劃。時間粒度為半小時。
-:end 
+:end
 
 :parity_month_of_the_year_help:
 當選擇了**每年**或**自定義**計劃後，請在此處選擇首選的*年中月數*，在其他計劃中，此設置將不被使用且不可用。
@@ -1791,60 +1795,60 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 :parity_write_corrections_help:
 在*摘要*視圖中，僅計算未讀通知數並顯示在每個類別的菜單標題中。<br>
 在此處選擇是否需要在奇偶校驗磁盤上更正檢查期間發現的任何奇偶校驗錯誤。
-:end 
+:end
 
 :mover_schedule_help:
 選擇每小時、每天、每周和每月的Mover 計劃。
 
 間隔時間確定Mover 在後台運行的速度。
-:end 
+:end
 
 :mover_day_of_the_week_help:
 選擇每週計劃後，要選定一天。否則將禁用。
-:end 
+:end
 
 :mover_day_of_the_month_help:
 選擇每月計劃後，要選定一個日期。否則將禁用。
-:end 
+:end
 
 :mover_time_of_the_day_help:
 選擇每小時計劃後，將以小時為單位設置間隔時間。間隔時間始終始於整點（0 分鐘）。
 
 對於其他計劃，請在此處選擇Mover 在當天啟動的時間。
-:end 
+:end
 
 :mover_logging_help:
 將Mover 消息寫入系統日誌文件。
-:end 
+:end
 
 :notifications_display_help:
 在*詳細*視圖中，所有通知會立即顯示在屏幕上。<br>
 通知可以單獨確認，也可以一次全部確認。
 
 單擊計數器以確認或查看未讀的通知。
-:end 
+:end
 
 :notifications_date_format_help:
 選擇在通知存檔中所使用的日期格式。推薦使用年—月—日，這樣可使日期／時間列以合理的方式排序。
-:end 
+:end
 
 :notifications_time_format_help:
 選擇在通知存檔中所使用的時間格式。推薦使用24小時制，這樣可使日期／時間列以合理的方式排序。
-:end 
+:end
 
 :notifications_display_position_help:
 選擇通知在屏幕上出現的位置。多個通知會從下到上或從上到下堆疊顯示，具體取決於所選的佈置。
-:end 
+:end
 
 :notifications_store_flash_help:
 默認情況下，通知將存儲在RAM 磁盤上，在系統重新引導時這些通知將丟失。
 通知可永久存儲在閃存驅動器的文件夾'/boot/config/plugins/dynamix' 下。
-:end 
+:end
 
 :notifications_system_help:
 默認為禁用通知系統。在此處啟用它以開始接收通知。
 以下各節提供了有關發送哪些類型通知的更多選項。
-:end 
+:end
 
 :notifications_os_update_help:
 啟動定期驗證，並在檢測到新版本的Unraid OS 系統時通知用戶。
@@ -1854,98 +1858,98 @@ Unraid 涵蓋廣受歡迎的`vsftpd` FTP 服務器。`vsftp` 的設置現在十�
 :notifications_plugins_update_help:
 啟動定期驗證，並在檢測到一個或多個已安裝插件的新版本時通知用戶。
 使用下面的複選框選擇通知發送方式；通過瀏覽器、通過電子郵件和/或通過自定義代理。
-:end 
+:end
 
 :notifications_docker_update_help:
 啟動定期驗證，並在檢測到一個或多個已安裝Docker 的新版本時通知用戶。
 使用下面的複選框選擇通知發送方式；通過瀏覽器、通過電子郵件和/或通過自定義代理。
-:end 
+:end
 
 :notifications_array_status_help:
 啟動定期陣列運行狀況檢查（預防性維護），並將檢查結果通知用戶。
-:end 
+:end
 
 :notifications_agent_selection_help:
-使用上面的複選框選擇需要發出通知的內容和方式；通過瀏覽器、通過電子郵件和/或通過服務。<br> 
+使用上面的複選框選擇需要發出通知的內容和方式；通過瀏覽器、通過電子郵件和/或通過服務。<br>
 <b> 提示：</b> 您可以使用自定義通知代理；只需將它們添加到"/boot/config/plugins/dynamix/notification/agents" 目錄並選中“代理”即可。
-:end 
+:end
 
 :notifications_classification_help:
 通知分類為：
 
 *注意*- 這些是描述性的通知，並不表示出現問題，例如有新版本可用<br>
-*警告*- 這些是需要注意的通知，可能指示將來發生的問題，例如硬盤溫度比平時更高<br> 
-*警報*- 這些是嚴重的通知，需要立即關注，例如發生故障的硬盤<br> 
+*警告*- 這些是需要注意的通知，可能指示將來發生的問題，例如硬盤溫度比平時更高<br>
+*警報*- 這些是嚴重的通知，需要立即關注，例如發生故障的硬盤<br>
 
 為每個分類選擇獲取通知的方式。
-:end 
+:end
 
 :smtp_preset_service_help:
 選擇一個預設服務以設定基本服務設置。
-:end 
+:end
 
 :smtp_email_address_help:
 您的郵件帳戶的電子郵件地址。該地址用作通知的發送者。
-:end 
+:end
 
 :smtp_recipients_help:
 狀態和錯誤通知的接收者。指定一個或多個電子郵件地址，用空格分隔多個電子郵件地址。
-:end 
+:end
 
 :smtp_priority_help:
 當unRaid 出現問題時，請將電子郵件標頭設置為高度重要。
-:end 
+:end
 
 :smtp_subject_prefix_help:
 設置前綴以便識別Unraid 消息。
-:end 
+:end
 
 :smtp_mail_server_help:
 指定電子郵件服務器的名稱。使用預設服務選擇來自動填寫此內容。
-:end 
+:end
 
 :smtp_mail_server_port_help:
 指定電子郵件服務器的端口。使用預設服務選擇來自動填寫此內容。
-:end 
+:end
 
 :smtp_use_ssl_tls_help:
 指定是否使用SSL/TLS 與SMTP 服務器對話。
-:end 
+:end
 
 :smtp_use_starttls_help:
-指定在開始SSL 協商之前是否使用STARTTLS - 請參閱RFC 2487。 
-:end 
+指定在開始SSL 協商之前是否使用STARTTLS - 請參閱RFC 2487。
+:end
 
 :smtp_define_tls_cert_help:
 僅當您具有通信所需的證書時才選擇。
-:end 
+:end
 
 :smtp_tls_cert_location_help:
 用於TLS 的RSA 證書的文件名- 必填。
-:end 
+:end
 
 :smtp_authentication_method_help:
 為您的電子郵件服務器選擇正確的身份驗證方法。使用測試來驗證訪問是否正常運作。
-:end 
+:end
 
 :smtp_username_password_help:
 輸入用戶名和密碼以登錄到您的電子郵件帳戶。請注意，存儲在電子郵件配置文件中的密碼並未加密。
-:end 
+:end
 
 :plugin_install_help:
 要下載並安裝插件，請輸入plg 文件網址，然後單擊**安裝**。隨即會打開一個窗口顯示安裝進度。
 在安裝完成之前，請勿關閉此窗口。您也可以指定擴展的本地文件名。
-:end 
+:end
 
 :plugin_error_help:
-由於某種安裝錯誤，未安裝這些插件。您應刪除這些插件，然後**重啟**服務器。* 
-:end 
+由於某種安裝錯誤，未安裝這些插件。您應刪除這些插件，然後**重啟**服務器。*
+:end
 
 :plugin_stale_help:
 由於已經存在更新的代碼，因此未安裝這些插件。只需將刪除它們就可。
-:end 
+:end
 
-:docker_client_general_help: 
+:docker_client_general_help:
 Docker Registry 上應用程序的存儲庫。格式為作者名稱/應用名稱。
 模板是在Unraid 服務器上設置Docker 容器的更快方法。有兩種類型的模板：
 
@@ -1960,61 +1964,59 @@ Docker Registry 上應用程序的存儲庫。格式為作者名稱/應用名稱
 如要重建，只需從用戶定義列表中選擇先前加載的應用程序，容器的所有設置將顯示為先前設置中的狀態。
 單擊創建將重新下載該應用程序所需的文件，並恢復到正常工作狀態。
 要刪除用戶定義模板，請從上面的列表中選擇，然後單擊它右邊的紅色X。
-:end 
+:end
 
 :docker_client_name_help:
 為容器命名或保留默認名稱。
-:end 
+:end
 
 :docker_client_overview_help:
 應用程序容器的描述。支持基本的HTML 標記。
-:end 
+:end
 
-:docker_client_repository_help: 
+:docker_client_repository_help:
 （可選）您可以在應用名稱之後添加'：'，並請求容器映像的特定版本。
-:end 
+:end
 
 :docker_client_support_thread_help:
 鏈接到Lime-Technology 論壇上的支持主題。
-:end 
+:end
 
 :docker_client_project_page_help:
 鏈接到項目頁面（例如：www.plex.tv ）
-:end 
-
-
+:end
 
 :docker_client_hub_url_help:
 容器在Docker Hub上的存儲庫位置的路徑。
-:end 
+:end
 
 :docker_client_template_url_help:
 此URL用於保持模板更新。
-:end 
+:end
 
 :docker_client_icon_url_help:
 指向您應用程序圖標的鏈接（如果“顯示設置” 下的“顯示儀表板應用程序” 設置為“圖標”，則僅顯示在儀表板上）。
-:end 
+:end
 
 :docker_client_webui_help:
 當您從Docker 容器頁面單擊應用程序圖標時，WebUI 選項將鏈接到此字段中的路徑。
 使用[IP] 識別主機的IP，然後使用[PORT：####] 替換端口的＃。
-:end 
+:end
 
 :docker_extra_parameters_help:
 如果您希望在運行時將其他命令附加到Docker 容器，可以在此處指定。<br>
 有關所有可能的Docker 運行時命令，請參見此處：<a href="https://docs.docker.com/reference/run/" target="_blank">https://docs.docker.com/reference/run/</a>
 對於需要直接使用主機設備訪問權限或需要充分利用主機功能的容器，將需要選擇此選項。
-:end 
+:end
 
 :docker_post_arguments_help:
 如果希望在容器定義後附加其他參數，可以在此處指定。
 此字段的內容特定於容器。
-:end 
+:end
 
 :docker_cpu_pinning_help:
 選中一個或多個CPU 核心將限制該容器僅在選定的核心上運行。如果不選擇核心，容器將在所有可用核心上運行（默認）
-:end 
+:end
 
 :docker_fixed_ip_help:
 如果選擇網橋類型，應用程序的網絡訪問將被限制為僅在端口映射部分中指定的端口上進行通信。
@@ -2022,276 +2024,269 @@ Docker Registry 上應用程序的存儲庫。格式為作者名稱/應用名稱
 一般來說，建議將此設置保留為每個應用程序模板指定的默認值。
 
 重要說明：如果要調整端口映射，請不要修改容器端口的設置，因為只能調整主機端口。
-:end 
+:end
 
 :docker_privileged_help:
-有關更多信息，請參見以下鏈接：<a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a> 
+有關更多信息，請參見以下鏈接：<a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
 :end
- 
-; sysdevs help - added May 18, 2020 
+
+; sysdevs help - added May 18, 2020
 :sysdevs_iommu_groups_help:
 此項設置將顯示系統中可用的IOMMU 組的列表，以及每個IOMMU 組的lspci 命令的輸出。數字標識符用於配置PCI 直通。
 
 您選擇的設備將在引導時綁定到vfio-pci 驅動程序，這樣它們就可以用於分配給虛擬機，並且還可以防止Linux 內核自動將它們綁定到任何現有的主機驅動程序。
 
-**請注意，選擇設備不僅會綁定指定的設備，而且還會綁定同一IOMMU 組中其他*所有*設備。** 
+**請注意，選擇設備不僅會綁定指定的設備，而且還會綁定同一IOMMU 組中其他*所有*設備。**
 
 <i class="fa fa-circle orb green-orb middle"></i> 此符號表示設備當前已綁定到vfio-pci 驅動程序。
 
 <i class="fa fa-retweet grey-orb middle"></i>    此符號表示設備支持FLR （功能級復位）。
 
 <input type="checkbox" value="" disabled>   如果復選框為灰色，則表示該設備已被Unraid 使用，無法直通。
-:end 
+:end
 
 :sysdevs_thread_pairings_help:
 此項設置顯示CPU線程配對的列表。
-:end 
+:end
 
-: 
-sysdevs_usb_devices_help:此項設置顯示"lsusb" 命令的輸出。數字標識符用於配置PCI 直通。 
-:end 
+:sysdevs_usb_devices_help:
+此項設置顯示"lsusb" 命令的輸出。數字標識符用於配置PCI 直通。
+:end
 
 :sysdevs_scsi_devices_help:
 此項設置顯示"lsscsi" 命令的輸出。數字標識符用於配置PCI 直通。
 
 請注意，Linux 通過真正的SCSI 設備對ATA、SATA 和SAS 設備分組。
-:end 
-
-; unraid.net help - added March 11, 2021 
-:unraidnet_wanpanel_help: 
-WAN Port is the external TCP port number setup on your router to NAT/Port Forward traffic from the internet to this 
-Unraid server SSL port for secure web traffic. 
-:end 
-
-:unraidnet_inactivespanel_help:
-Click Activate to set up a local git repo for your local USB Flash boot device and connect to a dedicated remote on unraid.net tied to this server. 
-:end 
-
-:unraidnet_changespanel_help: 
-The Not Up-to-date status indicates there are local files which are changed vs. the remote on unraid.net. 
-
-Click Update to push changes to the remote. 
-
-Click Changes to see what has changed. 
-:end 
-
-:unraidnet_uptodatepanel_help: 
-The Up-to-date status indicates your local configuration matches that stored on the unraid.net remote. 
-:end 
-
-:unraidnet_activepanel_help: 
-Click Deactivate to pause communication with your remote on unraid.net.
-
-Click Reinitialize to erase all change history in both local and unraid.net remote. 
-:end 
-
-; WireGuard help text 
-
-:wg_local_name_help: 
-Use this field to set a name for this connection and make it easily recognizable. The same name will appear in the configuration of any peers. 
-:end 
- 
-:wg_generate_keypair_help:
-Use the **Generate Keypair** button to automatically create a uniqe private and public key combination.<br> 
-Or paste in an existing private key, generated by WireGuard. Do **NOT** share this private key with others! 
-:end 
-
-:wg_local_tunnel_network_pool_help: 
-WireGuard tunnels need an internal IP address. Assign a network pool using the default IPv4 network <?=$netpool['wg0']?>/24 
-or the default IPv6 network <?=$netpool6['wg0']?>/64 or assign your own network pool from which automatic assignment can be done for both this server and any peers. 
-
-The *tunnel network pool* must be a unique network not already existing on the server or any of the peers. 
-:end 
-
-:wg_local_tunnel_network_pool_X_help: 
-WireGuard tunnels need an internal IP address. Assign a network pool using the default IPv4 network <?=$netpool['wgX']?>/24 or
-the default IPv6 network <?=$netpool6['wgX']?>/64 or assign your own network pool from which automatic assignment can be done for both this server and any peers. 
-
-The *tunnel network pool* must be a unique network not already existing on the server or any of the peers. 
-:end 
-:wg_local_endpoint_help:
- 
-:wg_local_tunnel_address_help:
-This field is auto filled-in when a local tunnel network pool is created. It is allowed to overwrite the assignment, but this is normally not necessary. Use with care when changing manually. 
-:end 
-
-:wg_local_tunnel_address_help: 
-This field is auto filled-in when a local tunnel network pool is created. It is allowed to overwrite the assignment, but this is normally not necessary. Use with care when changing manually. 
-:end 
-
-This field is automatically filled in with the public management domain name *www.<hash>.unraid.net* or the public address of the server.<br> 
-This allows VPN tunnels to be established from external peers to the server.<br>
-Configure the correct port forwarding on your router (default port is <?=$netport['wg0']?> but this may be changed) to allow any incoming connections to reach the server. 
-
-Users with a registered domain name can use this field to specify how their server is known on the Internet. Eg www.myserver.mydomain.<br> 
-Again make sure your router is properly set up. 
-
-Note to Cloudflare users: the Cloudflare proxy is designed for http traffic, it is not able to proxy VPN traffic. You must disable the Cloudflare proxy in order to use VPN with your domain. 
-:end 
- 
-:wg_local_endpoint_X_help:
-This field is automatically filled in with the public management domain name *www.<hash>.unraid.net* or the public address of the server.<br>
-This allows VPN tunnels to be established from external peers to the server.<br> 
-Configure the correct port forwarding on your router (default port is <?=$netport['wgX']?> but this may be changed) to allow any incoming connections to reach the server. 
-
-Users with a registered domain name can use this field to specify how their server is known on the Internet. Eg www.myserver.mydomain.<br> 
-Again make sure your router is properly set up. 
- 
-Note to Cloudflare users: the Cloudflare proxy is designed for http traffic, it is not able to proxy VPN traffic.You must disable the Cloudflare proxy in order to use VPN with your domain.
-:end 
-
-:wg_local_server_uses_nat_help: 
-When NAT is enabled, the server uses its own LAN address when forwarding traffic from the tunnel to other devices in the LAN network. 
-Use this setting when no router modifications are desired, but this approach doesn't work with Docker containers using custom IP addressess.
- 
-When NAT is disabled, the server uses the WireGuard tunnel address when forwarding traffic. 
-In this case it is required that the default gateway (router) has a static route configured to refer tunnel address back to the server. 
-:end 
-
-:wg_local_gateway_uses_upnp_help: 
-Defaults to YES if the local gateway has UPnP enabled and is responding to requests.<br> 
-When UPnP is enabled, it is not necessary to configure port forwarding on the router to allow incoming tunnel connections. This is done automatically. 
-:end 
-
-:wg_local_tunnel_firewall_help: 
-The firewall function controls remote access over the WireGuard tunnel to specific hosts and/or subnets.<br>
-The default rule is "deny" and blocks addresses specified in this field, while allowing all others.<br> 
-Changing the rule to "allow" inverts the selection, meaning only the specified addresses are allowed and all others are blocked.<br> 
-Use a comma as separator when more than one IP address is entered. 
-:end 
-
-:wg_mtu_size_help: 
-Leave this to the default automatic mode to select the MTU size. This MTU size is common for all peer connections. 
-:end 
-
-:wg_peer_configuration_help: 
-The <i class='fa fa-fw fa-eye'></i> icon is used to view a peer's configuration. A configuration can be downloaded or read directly for instant set up of the peer.<br>
-The icon is disabled when no peer configuration exists or the user has made changes to the existing settings which are not applied yet. 
-
-The <i class='fa fa-fw fa-key'></i> icon is used to show or hide the private, public and preshared keys. Note that these fields are always shown when no keys are set. 
-:end 
- 
-:wg_peer_name_help:
-Use this field to set a name for this peer connection and make it easily recognizable. The same name will appear in the configuration of the peer at the opposite side. 
-:end 
-
-:wg_peer_preshared_key_help: 
-For added security a preshared key can be used. Use the **Generate Key** button to automatically create a unique preshared key.<br> 
-This key is the same at both server and peer side and is added to the peer configuration as well. 
-:end 
-
-:wg_peer_tunnel_address_help: 
-This field is auto filled-in when a local tunnel network pool is created. It is allowed to overwrite the assignment, but this is normally not necessary. Use with care when changing manually.<br> 
-Each peer must have a unique tunnel IP address. 
-:end 
-
-:wg_peer_endpoint_help: 
-When this field is left empty, the server operates in *passive mode* to establish the tunnel. It must be the peer which starts the tunnel.
- 
-When an IP address is entered to connect to the peer, the server operates in *active mode* and establishes the tunnel to the peer as soon as there is data to send. 
-
-*Note: this field is mandatory for "server-to-server" and "LAN-to-LAN" connections* 
 :end
 
-:wg_peer_allowed_ips_help: 
-This field is automatically filled in with the tunnel address of the peer. This allows the server to reach the peer over the tunnel.<br> 
-When the peer is another server or router with additional networks, then their subnets can be added here to make these networks reachable over the tunnel. 
-:end 
+; New entries (41) - 2022-05-20
 
-:wg_peer_dns_server_help: 
-Use this entry to overwrite the current DNS server assignment of the Peer 
-:end 
- 
-:wg_persistent_keepalive_help:
-By default a WireGuard tunnel stays silent when no traffic is present, which may cause the connection to drop. 
-Normally this isn't a problem since a WireGuard tunnel is automatically re-established when it is needed.<br>
-A keepalive timer will hold the connection open, for most situations a timer value of 20 seconds is suitable. 
+:info_share_assignment_help:
+The selected pool is available for user shares.
+:end
 
-Note that for mobile devices this will use more data and drain your battery faster. 
-:end 
+:docker_timeout_help:
+The time in seconds to allow a container to gracefully stop before forcing it to stop
+:end
 
-; New entries (5) - 2021-09-18 
+:docker_vdisk_type_help:
+Select where to keep the Docker persistent state.
 
-:info_share_assignment_help: 
-The selected pool is available for user shares. 
-:end 
+This can be an image file with a specific size or a dedicated folder.
+:end
 
-:docker_timeout_help: 
-The time in seconds to allow a container to gracefully stop before forcing it to stop 
-:end 
-
-:docker_vdisk_type_help: 
-Select where to keep the Docker persistent state. 
 :docker_vdisk_directory_help:
+You must specify a folder for Docker. The system will automatically create this folder when the Docker service is first started.
 
-This can be an image file with a specific size or a dedicated folder. 
-:end 
+It is recommended to create this folder under a share which resides on the Cache pool (setting: cache=Only). For best performance SSD devices are preferred.
+:end
 
-You must specify a folder for Docker. The system will automatically create this folder when the Docker service is first started. 
+:smb_multi_channel_help:
+When set to 'Yes' enables SMB Multi Channel support in the server. From
+[microsoft](https://docs.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel):
+"SMB Multichannel enables file servers to use multiple network connections simultaneously." 
+:end
 
-It is recommended to create this folder under a share which resides on the Cache pool (setting: cache=Only). For best performance SSD devices are preferred. 
-:end 
+:display_tty_size_help:
+Changes the font size of terminal windows.
+:end
 
-:docker_client_additional_requirements_help: 
-Any additional requirements the container has. Supports basic HTML mark-up. 
-:end 
+:display_page_view_help:
+Changes how certain pages are displayed. In **Tabbed** mode different sections will be displayed in different tabs,
+while in **Non-tabbed** mode sections are displayed under each other.
+:end
 
-; New entries (1) - 2021-11-07 
+:display_users_menu_help:
+The Users Menu can be part of the header or part of the Settings menu.
+You can move the Users Menu if insufficient space in the header is available to display all menus.
+:end
 
-:docker_client_readme_help: 
-Link to a readme file or page 
-:end 
+:display_listing_height_help:
+**Automatic** : long listings are displayed as is, and the user needs to scroll the whole page to see the bottom
 
-; New entries (3) - 2021-12-16 
+**Fixed** : long listings are displayed in a window with a fixed size, user can scroll this window to see the bottom
+:end
 
 :parity_cumulative_check_help:
-Change this setting to **Yes** to divide long duration parity checks over multiple periods. This is useful the system needs to be available and a parity check runs only during off hours. 
-:end 
-
-:parity_accumulation_frequency_help: 
-Specifies how accumulation periods are executed. 
-
-**Daily** means every subsequent day the parity check continuous until finished 
-
-**Weekly** means every subsequent week the parity check continuous until finished 
-:end 
-
-:parity_accumulation_duration_help: 
-Specifies how long each accumulated period runs, expressed in hours. The **Time of the day** speficies the start time of the period. 
-:end 
-
-; New entries (7) - 2022-02-19
- 
-:display_tty_size_help:
-Changes the font size of terminal windows. 
-:end 
-
-:display_page_view_help: 
-Changes how certain pages are displayed. In **Tabbed** mode different sections will be displayed in different tabs, 
-while in **Non-tabbed** mode sections are displayed under each other. 
-:end 
-
-:display_users_menu_help: 
-The Users Menu can be part of the header or part of the Settings menu. 
-You can move the Users Menu if insufficient space in the header is available to display all menus. 
-:end 
-
-:display_listing_height_help: 
-**Automatic** : long listings are displayed as is, and the user needs to scroll the whole page to see the bottom
- 
-**Fixed** : long listings are displayed in a window with a fixed size, user can scroll this window to see the bottom 
+Change this setting to **Yes** to divide long duration parity checks over multiple periods. This is useful when the system needs to be available and a parity check runs only during off hours.
 :end
 
-:unraidnet_extraorigins_help: 
-Provide a comma separated list of urls that are allowed to access the unraid-api (https://abc.myreverseproxy.com,https://xyz.rvrsprx.com,…) 
-:end 
-:myservers_local_t2fa_help:
- 
+:parity_accumulation_frequency_help:
+Specifies how accumulation periods are executed.
+
+**Daily** means every subsequent day the parity check continues until finished
+
+**Weekly** means every subsequent week the parity check continues until finished
+:end
+
+:parity_accumulation_duration_help:
+Specifies how long each accumulated period runs, expressed in hours. The **Time of the day** speficies the start time of the period.
+:end
+
+:docker_client_additional_requirements_help:
+Any additional requirements the container has.  Supports basic HTML mark-up.
+:end
+
+:docker_client_readme_help:
+Link to a readme file or page
+:end
+
+:unraidnet_wanpanel_help:
+WAN Port is the external TCP port number setup on your router to NAT/Port Forward traffic from the internet to this
+Unraid server SSL port for secure web traffic.
+:end
+
+:unraidnet_inactivespanel_help:
+Click Activate to set up a local git repo for your local USB Flash boot device and connect to a dedicated remote on unraid.net tied to this server.
+:end
+
+:unraidnet_changespanel_help:
+The Not Up-to-date status indicates there are local files which are changed vs. the remote on unraid.net.
+
+Click Update to push changes to the remote.
+
+Click Changes to see what has changed.
+:end
+
+:unraidnet_uptodatepanel_help:
+The Up-to-date status indicates your local configuration matches that stored on the unraid.net remote.
+:end
+
+:unraidnet_activepanel_help:
+Click Deactivate to pause communication with your remote on unraid.net.
+
+Click Reinitialize to erase all change history in both local and unraid.net remote.
+:end
+
+:unraidnet_extraorigins_help:
+Provide a comma separated list of urls that are allowed to access the unraid-api (https://abc.myreverseproxy.com,https://xyz.rvrsprx.com,…)
+:end
+
 :myservers_remote_t2fa_help:
-When Transparent 2FA for Remote Access is enabled, you will access your server by clicking the "Remote Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Remote Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes. 
+When Transparent 2FA for Remote Access is enabled, you will access your server by clicking the "Remote Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Remote Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
 :end
 
-When Transparent 2FA for Local Access is enabled, you will access your server by clicking the "Local Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Local Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes. 
- 
+:myservers_local_t2fa_help:
+When Transparent 2FA for Local Access is enabled, you will access your server by clicking the "Local Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Local Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
+
 This is fairly extreme for Local Access, and in most cases is not needed. It requires a solid Internet connection. If you need to access the webgui while the Internet is down, SSH to the server and run 'use_ssl no', this will give you access via http://<?=['NGINX_LANIP']?><?=['NGINX_PORT'] !== '80' ? ':'.['NGINX_PORT'] : '' ?>
+:end
+
+:wg_local_name_help:
+Use this field to set a name for this connection and make it easily recognizable. The same name will appear in the configuration of any peers.
+:end
+
+:wg_generate_keypair_help:
+Use the **Generate Keypair** button to automatically create a uniqe private and public key combination.<br>
+Or paste in an existing private key, generated by WireGuard. Do **NOT** share this private key with others!
+:end
+
+:wg_local_tunnel_network_pool_help:
+WireGuard tunnels need an internal IP address. Assign a network pool using the default IPv4 network <?=['wg0']?>/24
+or the default IPv6 network <?=['wg0']?>/64 or assign your own network pool from which automatic assignment can be done for both this server and any peers.
+
+The *tunnel network pool* must be a unique network not already existing on the server or any of the peers.
+:end
+
+:wg_local_tunnel_network_pool_X_help:
+WireGuard tunnels need an internal IP address. Assign a network pool using the default IPv4 network <?=['wgX']?>/24 or
+the default IPv6 network <?=['wgX']?>/64 or assign your own network pool from which automatic assignment can be done for both this server and any peers.
+
+The *tunnel network pool* must be a unique network not already existing on the server or any of the peers.
+:end
+
+:wg_local_tunnel_address_help:
+This field is auto filled-in when a local tunnel network pool is created. It is allowed to overwrite the assignment, but this is normally not necessary. Use with care when changing manually.
+:end
+
+:wg_local_endpoint_help:
+This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.unraid.net* or the public address of the server.<br>
+This allows VPN tunnels to be established from external peers to the server.<br>
+Configure the correct port forwarding on your router (default port is <?=['wg0']?> but this may be changed) to allow any incoming connections to reach the server.
+
+Users with a registered domain name can use this field to specify how their server is known on the Internet. E.g. www.myserver.mydomain.<br>
+Again make sure your router is properly set up.
+
+Note to Cloudflare users: the Cloudflare proxy is designed for http traffic, it is not able to proxy VPN traffic. You must disable the Cloudflare proxy in order to use VPN with your domain.
+:end
+
+:wg_local_endpoint_X_help:
+This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.unraid.net* or the public address of the server.<br>
+This allows VPN tunnels to be established from external peers to the server.<br>
+Configure the correct port forwarding on your router (default port is <?=['wgX']?> but this may be changed) to allow any incoming connections to reach the server.
+
+Users with a registered domain name can use this field to specify how their server is known on the Internet. E.g. www.myserver.mydomain.<br>
+Again make sure your router is properly set up.
+
+Note to Cloudflare users: the Cloudflare proxy is designed for http traffic, it is not able to proxy VPN traffic. You must disable the Cloudflare proxy in order to use VPN with your domain.
+:end
+
+:wg_local_server_uses_nat_help:
+When NAT is enabled, the server uses its own LAN address when forwarding traffic from the tunnel to other devices in the LAN network.
+Use this setting when no router modifications are desired, but this approach doesn't work with Docker containers using custom IP addressess.
+
+When NAT is disabled, the server uses the WireGuard tunnel address when forwarding traffic.
+In this case it is required that the default gateway (router) has a static route configured to refer tunnel address back to the server.
+:end
+
+:wg_local_gateway_uses_upnp_help:
+Defaults to YES if the local gateway has UPnP enabled and is responding to requests.<br>
+When UPnP is enabled, it is not necessary to configure port forwarding on the router to allow incoming tunnel connections. This is done automatically.
+:end
+
+:wg_local_tunnel_firewall_help:
+The firewall function controls remote access over the WireGuard tunnel to specific hosts and/or subnets.<br>
+The default rule is "deny" and blocks addresses specified in this field, while allowing all others.<br>
+Changing the rule to "allow" inverts the selection, meaning only the specified addresses are allowed and all others are blocked.<br>
+Use a comma as separator when more than one IP address is entered.
+:end
+
+:wg_mtu_size_help:
+Leave this to the default automatic mode to select the MTU size. This MTU size is common for all peer connections.
+:end
+
+:wg_peer_configuration_help:
+The <i class='fa fa-fw fa-eye'></i> icon is used to view a peer's configuration. A configuration can be downloaded or read directly for instant set up of the peer.<br>
+The icon is disabled when no peer configuration exists or the user has made changes to the existing settings which are not applied yet.
+
+The <i class='fa fa-fw fa-key'></i> icon is used to show or hide the private, public and preshared keys. Note that these fields are always shown when no keys are set.
+:end
+
+:wg_peer_name_help:
+Use this field to set a name for this peer connection and make it easily recognizable. The same name will appear in the configuration of the peer at the opposite side.
+:end
+
+:wg_peer_preshared_key_help:
+For added security a preshared key can be used. Use the **Generate Key** button to automatically create a unique preshared key.<br>
+This key is the same at both server and peer side and is added to the peer configuration as well.
+:end
+
+:wg_peer_tunnel_address_help:
+This field is auto filled-in when a local tunnel network pool is created. It is allowed to overwrite the assignment, but this is normally not necessary. Use with care when changing manually.<br>
+Each peer must have a unique tunnel IP address.
+:end
+
+:wg_peer_endpoint_help:
+When this field is left empty, the server operates in *passive mode* to establish the tunnel. It must be the peer which starts the tunnel.
+
+When an IP address is entered to connect to the peer, the server operates in *active mode* and establishes the tunnel to the peer as soon as there is data to send.
+
+*Note: this field is mandatory for "server-to-server" and "LAN-to-LAN" connections*
+:end
+
+:wg_peer_allowed_ips_help:
+This field is automatically filled in with the tunnel address of the peer. This allows the server to reach the peer over the tunnel.<br>
+When the peer is another server or router with additional networks, then their subnets can be added here to make these networks reachable over the tunnel.
+:end
+
+:wg_peer_dns_server_help:
+Use this entry to overwrite the current DNS server assignment of the Peer
+:end
+
+:wg_persistent_keepalive_help:
+By default a WireGuard tunnel stays silent when no traffic is present, which may cause the connection to drop.
+Normally this isn't a problem since a WireGuard tunnel is automatically re-established when it is needed.<br>
+A keepalive timer will hold the connection open, for most situations a timer value of 20 seconds is suitable.
+
+Note that for mobile devices this will use more data and drain your battery faster.
 :end
