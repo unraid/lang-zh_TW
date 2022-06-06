@@ -129,4 +129,4 @@ Update Recycle Bin Size in Background=在後台更新回收站大小
 > 單擊“清除”按鈕以清除日誌
 :end
 
-; Note: May 30, 2022 - 2 missing translations
+; Note: June 6, 2022 - 2 missing translations
