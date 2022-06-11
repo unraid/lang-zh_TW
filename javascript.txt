@@ -72,4 +72,4 @@ Container Variable=容器變量
 Container Label=容器標籤
 Container Device=容器設備
 
-; Note: June 6, 2022 - 9 missing translations
+; Note: June 11, 2022 - 8 missing translations
