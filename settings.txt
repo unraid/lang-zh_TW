@@ -463,6 +463,7 @@ Oops=糟糕
 optional metric lowest is preferred, 0 is no default gateway=可選指標（首選最低指標，0 表示無默認網關）
 optional metric lowest is preferred=optional metric (lowest is preferred)
 or=
+Output voltage=
 Page view=頁面視圖
 Parity Check=奇偶校驗
 Password=密碼
@@ -571,6 +572,7 @@ Shutdown VMs=關閉虛擬機
 shutdown=
 Sign In to Unraidnet required=Sign In to Unraid.net required
 Simple=簡單
+Slave=
 Small=小
 Smart=智能
 SMB Extras=SMB 額外
@@ -760,4 +762,4 @@ Transient errors in this log can be ignored unless you are having issues=
 Unraid API extra origins=
 View Flash Backup Error Log=
 
-; Note: June 6, 2022 - 205 missing translations
+; Note: September 16, 2022 - 207 missing translations
