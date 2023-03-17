@@ -7,8 +7,8 @@ Always=總是
 App to Host=應用到主機
 Application=應用程序
 apply update=套用更新
-Array must be Started to view Docker containers=必須**啟動**陣列才能查看Docker 容器
 Are you sure=是否確定
+Array must be Started to view Docker containers=必須**啟動**陣列才能查看Docker 容器
 Autostart=自動啟動
 Back=返回
 Backup=備份
@@ -59,6 +59,7 @@ Icon URL=圖標鏈接
 Image ID=鏡像ID
 Key=鍵
 Label=標籤
+Lock sortable items=
 Management=管理
 MediaApp=媒體應用
 MediaServer=媒體服務器
@@ -119,6 +120,7 @@ The command finished successfully=命令成功完成
 TOTAL DATA PULLED=**推送的數據總量**
 Total size=總大小
 Unknown action=未知操作
+Unlock sortable items=
 Update All=全部更新
 update ready=更新就緒
 Value=值
@@ -132,4 +134,4 @@ Web=Web
 WebUI=WebUI
 Writable=可寫
 
-; Note: June 6, 2022 - 4 missing translations
+; Note: March 17, 2023 - 6 missing translations

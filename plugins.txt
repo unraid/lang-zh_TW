@@ -1,4 +1,5 @@
 %s An update is available=%s 有可用更新
+Alert Message=
 anonymous=匿名
 Author=作者
 Check For Updates=檢查更新
@@ -19,13 +20,14 @@ Next=下一個
 No plugins installed=沒有安裝插件
 No release notes available=沒有可用的發行說明
 No response, aborting=沒有響應，正在中止
-Plugin File=插件文件
 Plugin File Install Errors=
+Plugin File=插件文件
 Plugin History=
 Plugin Update Check=插件更新檢查
 Plugin=插件
 Release Notes=發行說明
 Remove Plugin=移除插件
+Remove Selected Plugins=
 remove=移除
 Select local plugin file=選擇本地插件文件
 Stable=穩定
@@ -37,4 +39,4 @@ Update Plugin=更新插件
 Upgrade=升級
 View Release Notes=查看發行說明
 
-; Note: June 6, 2022 - 4 missing translations
+; Note: March 17, 2023 - 6 missing translations
