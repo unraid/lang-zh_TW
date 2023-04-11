@@ -195,6 +195,8 @@ raidz3=
 Raw Value=原始值
 Raw View=原始視圖
 Read-Check in progress=正在進行讀取檢查
+Read errors corrected=
+Read errors detected=
 Reading=
 Reboot in safe mode=以安全模式重啟
 Registration Key Manager=註冊密鑰管理器
@@ -373,4 +375,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: March 17, 2023 - 64 missing translations
+; Note: April 11, 2023 - 66 missing translations

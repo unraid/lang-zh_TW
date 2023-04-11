@@ -35,8 +35,9 @@ STALE=**舊版**
 Support Thread=支持論壇
 Uninstall=卸載
 Update All Plugins=更新所有插件
+Update Incompatible=
 Update Plugin=更新插件
 Upgrade=升級
 View Release Notes=查看發行說明
 
-; Note: March 17, 2023 - 6 missing translations
+; Note: April 11, 2023 - 7 missing translations
