@@ -579,7 +579,6 @@ Confirm closure then continue to webGUI=確認關閉，然後繼續訪問webGUI
 Confirm Password=確認密碼
 Confirm=確認
 Connect your Unraidnet account to get started=Connect your Unraid.net account to get started
-Connected to Mothership=連接到Mothership
 Continue to Unraid=繼續使用Unraid
 Continue Trial=繼續試用
 Create My Account=創建我的帳戶
@@ -763,7 +762,7 @@ Your trial will expire in 15 days=您的試用版將在15 天后過期
 Your trial will expire in 30 days=您的試用版將在30 天后過期
 Your USB Flash GUID and other relevant server data will also be sent=您的USB 閃存GUID 和其他相關服務器數據也將一併發送
 
-; Note: April 28, 2023 - 152 missing translations
+; Note: April 28, 2023 - 153 missing translations
 aborted=
 bond down=
 Cache=
@@ -842,17 +841,18 @@ Confirm Connect plugin removal=
 Connect Error=
 Connect plugin install failed=
 Connect=
+Connected=
 Continue using Connect=
 Copied key url=
 Copy Key URL=
 Customizable Dashboard Tiles=
 Deep Linking=
+Disconnected=
 Download latest backup from Connect Dashboard before signing out=
 Download latest backup from Go to Connect before signing out=
 Download unraid-api Logs=
 Dynamic Remote Access=
 Enhance your experience with Connect=
-Executes `unraid-api start`; no terminal needed=
 For best results, use one of these urls=
 Get quick real-time info on the status of your servers such as storage, container, and VM usage=
 Get started by installing the plugin=
