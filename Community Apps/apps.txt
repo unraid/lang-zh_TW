@@ -73,7 +73,6 @@ Added=最後更新
 ; Install Plugin title of openbox
 Install Plugin=安裝插件
 
-The sidebar for the app click info will list the details=The sidebar for the app (click info) will list the details
 
 BACK=返回
 
@@ -386,12 +385,10 @@ View Missing Translations=查看缺少的翻譯
 ; Update Checks
 
 ; dockerHub conversions
-Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template? This will entail performing a test installation of the container. It will be automatically deleted after processing. The container will not be started.
 ; WebGui
-Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
 
-; Note: April 28, 2023 - 59 missing translations
+; Note: April 29, 2023 - 62 missing translations
 Docker system failed to start - Only Plugins Available To Be Installed Or Managed=
 Array not started - Only Plugins Available To Be Installed Or Managed=
 Browser translation detected Display issues may result=
@@ -410,6 +407,7 @@ Registry=
 Update Plugin=
 Requirements not met=
 The requirements for this upgrade have not been met on your system=
+The sidebar for the app click info will list the details=The sidebar for the app (click info) will list the details
 Pin App=
 Unpin App=
 Downloading docker icons=
@@ -450,4 +448,6 @@ Checking for plugin updates=
 Checking for language updates=
 Checking %s=
 Determine configuration=
+Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
 An error occurred - Could not determine configuration=
+Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
