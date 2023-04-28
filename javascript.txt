@@ -9,7 +9,6 @@ day=天
 days=天
 disk image and definition=磁盤的映像和定義
 Disks=磁盤
-Donate=
 Done=Done
 Edit=編輯
 Execution error=執行錯誤
@@ -25,7 +24,6 @@ Ok=確定
 Pause=暫停
 Proceed=繼續
 Project Page=項目頁面
-Read Me First=
 Remove container=移除容器
 Remove definition=移除定義
 Remove image=移除映像
@@ -47,19 +45,13 @@ Yes, update it=是，請更新
 Yes=是
 
 ; footer messages
-Array Copying=
-Array Clearing=
 Array Starting=陣列正在啟動
 Array Stopping=陣列正在停止
 Mounting disks=正在安裝磁盤
 Retry unmounting user shares=Retry unmounting user share(s)
 Spinning up all drives=正在喚醒所有磁盤
-Stale configuration=
 Starting services=正在啟動服務
 Stopping services=正在停止服務
-Starting Recycle Bin=
-Stopping Recycle Bin=
-Sync filesystems=
 Unmounting disks=正在卸載磁盤
 Autostart disabled=禁用自動啟動
 Missing encryption key=缺少加密密鑰
@@ -72,4 +64,12 @@ Container Variable=容器變量
 Container Label=容器標籤
 Container Device=容器設備
 
-; Note: June 11, 2022 - 8 missing translations
+; Note: April 28, 2023 - 8 missing translations
+Donate=
+Read Me First=
+Array Copying=
+Array Clearing=
+Stale configuration=
+Starting Recycle Bin=
+Stopping Recycle Bin=
+Sync filesystems=
