@@ -65,6 +65,7 @@ Bonding members of=綁定其成員
 Bonding mode=綁定模式
 boost=
 Both=兩者
+Both Web Virt-Manager Remote Viewer=Both Web & Virt-Manager Remote Viewer
 bottom-left=左下
 bottom-right=右下
 Bridging members of=橋接其成員
@@ -110,6 +111,7 @@ Confirm sleep command=確認睡眠命令
 Confirmations=確認
 connect to any device on the VPN tunnel=
 connect to this server using IP address=
+Console Options=
 Container=容器
 Content=內容
 Correct file system errors=修正文件系統錯誤
@@ -726,6 +728,7 @@ View libvirt log=查看libvirt 日誌
 View Local Config=
 View Peer Config=
 view=查看
+Virt-Manager Remote Viewer=
 VLAN assignment mismatch=VLAN 分配不匹配
 VLAN number=VLAN 編號
 VM Manager=虛擬機管理器
@@ -743,6 +746,7 @@ VPN tunneled access=
 WAN Port=
 Warnings=警告
 Watts=瓦數
+Web interface=
 Week of the month=一月中的周
 Weekly=每週
 WireGuard Configuration=
@@ -809,4 +813,4 @@ Transient errors in this log can be ignored unless you are having issues=
 Unraid API extra origins=
 View Flash Backup Error Log=
 
-; Note: April 18, 2023 - 246 missing translations
+; Note: April 28, 2023 - 250 missing translations
