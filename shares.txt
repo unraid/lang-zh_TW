@@ -63,7 +63,7 @@ User Shares=用戶共享
 Write=寫入
 You cannot use the following within share names=您不能在共享名稱中使用以下內容
 
-; Note: April 29, 2023 - 17 missing translations
+; Note: July 9, 2023 - 18 missing translations
 Calculated free space value=
 Clean Up=
 CLEAN UP=
@@ -80,4 +80,5 @@ Remove unused share configurations=
 Removed share configurations=
 Secondary storage to Primary storage=
 Secondary storage=
+Share name contains invalid characters for ZFS use=
 Storage=

@@ -33,10 +33,11 @@ Update Plugin=更新插件
 Upgrade=升級
 View Release Notes=查看發行說明
 
-; Note: April 28, 2023 - 7 missing translations
+; Note: July 9, 2023 - 8 missing translations
 Alert Message=
 Checking connectivity=
 checking=
+I have read the release notes=
 Plugin File Install Errors=
 Plugin History=
 Remove Selected Plugins=

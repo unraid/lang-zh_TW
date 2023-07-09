@@ -699,7 +699,6 @@ Get started by signing in to Unraidnet=請登錄到Unraid.net 開始使用
 Get Started=開始
 Go Back=返回
 Go to Connect=
-Go to Go to Connect=
 GUID Error=GUID 錯誤
 GUID=GUID
 Have a USB flash device that already has an account associated with it=有一個已經關聯了帳戶的USB 閃存設備
@@ -919,4 +918,4 @@ Your Unraid registration key is ineligible for replacement as it has been replac
 Your Unraid registration key is ineligible for replacement as it is blacklisted=
 Your USB Flash GUID and other relevant server data will also be sent=您的USB 閃存GUID 和其他相關服務器數據也將一併發送
 
-; Note: April 29, 2023 - 190 missing translations
+; Note: July 9, 2023 - 189 missing translations
