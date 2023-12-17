@@ -68,12 +68,12 @@ Date=日期
 dedup - Deduplication Tables=
 Delete Pool=刪除快取池
 detected=檢測到
-Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device contents invalid=
 Device encrypted and unlocked=設備已加密並已解鎖
 Device encrypted=設備已加密
 Device is disabled=
-Device is missing disabled=Device is missing disabled=Device is missing disabled=Device is missing (disabled)
+Device is missing disabled=Device is missing (disabled)
 Device is part of a pool=該設備屬於一個快取池
 Device locked unknown error=該設備因未知錯誤而鎖定
 Device locked wrong encryption key=該設備因加密密鑰錯誤而鎖定
