@@ -191,7 +191,6 @@ Pool name already exists=快取池名稱已存在
 Pool of %s devices=該快取池包含%s 個設備
 Pool Status=
 Power=
-Power=
 Preclear in progress=正在進行預清除
 previous device=
 Printable Characters Only=僅可打印字符
@@ -396,4 +395,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: December 17, 2023 - 96 missing translations
+; Note: December 17, 2023 - 93 missing translations
