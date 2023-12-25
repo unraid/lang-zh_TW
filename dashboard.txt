@@ -22,6 +22,9 @@ BIOS dated=BIOS 日期
 Check free space=
 Click to toggle CPU chart=單擊以切換CPU 視圖
 Click to toggle details=單擊以切換詳細信息
+Clock is unsynchronized with no NTP servers=
+Clock synchronized with %s NTP server=
+Clock synchronized with %s NTP servers=
 Clone=
 Close Tile=
 Completed=已完成
@@ -172,4 +175,4 @@ W=
 Warnings=
 ZFS=
 
-; Note: December 17, 2023 - 61 missing translations
+; Note: December 25, 2023 - 64 missing translations
