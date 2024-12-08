@@ -167,7 +167,7 @@ Default appdata storage location=默認應用數據存儲位置
 Default critical disk temperature threshold=默認危險磁盤溫度閾值
 Default critical disk utilization threshold=默認危險磁盤利用率閾值
 Default critical SSD temperature threshold=
-Default file system=默認文件系統
+Default file system for Array disks=
 Default ISO storage path=默認ISO 存儲路徑
 Default network bridge=默認網橋
 Default network source=
@@ -216,6 +216,7 @@ Docker LOG maximum file size=Docker 日誌最大文件大小
 Docker LOG number of files=Docker 日誌文件數
 Docker LOG rotation=Docker 日誌輪換
 Docker only=僅限Docker
+Docker PID Limit=
 Docker service=Docker 服務
 Docker Stop Timeout=
 Docker update notification=Docker 更新通知
@@ -860,4 +861,4 @@ Transient errors in this log can be ignored unless you are having issues=
 Unraid API extra origins=
 View Flash Backup Error Log=
 
-; Note: December 25, 2023 - 346 missing translations
+; Note: December 8, 2024 - 348 missing translations

@@ -63,11 +63,13 @@ User Shares=用戶共享
 Write=寫入
 You cannot use the following within share names=您不能在共享名稱中使用以下內容
 
-; Note: July 9, 2023 - 18 missing translations
-Calculated free space value=
+; Note: December 8, 2024 - 24 missing translations
 Clean Up=
 CLEAN UP=
 Exclusive access=
+Free Space will be calculated=
+is missing=
+it references storage that does not exist=
 Mover action=
 Mover transfers files from Primary storage to Secondary storage=
 Mover transfers files from Secondary storage to Primary storage=
@@ -81,4 +83,8 @@ Removed share configurations=
 Secondary storage to Primary storage=
 Secondary storage=
 Share name contains invalid characters for ZFS use=
+Share is empty and is safe to delete=
+Share must be empty to be deleted=
 Storage=
+This share is invalid=
+Warning: Configured Pool=
