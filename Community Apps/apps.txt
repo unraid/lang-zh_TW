@@ -156,11 +156,14 @@ Run Anyways=
 Memory Requirements not met Problems may result=
 Installation already in progress=
 Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=
+Clear Flag=
 %s is incompatible with your OS version Please update the OS to proceed=
 %s is incompatible with your OS version Either uninstall %s or update the OS=
 Browser failed to communicate with Unraid Server=
 For unknown reasons, your browser was unable to communicate with Community Applications running on your server=
 Attempt to Fix Via Reload Page=
+External Link=
+Clicking OK will take you to a 3rd party website not associated with Limetech=
 
 ; CA Sections Keep the length reasonable
 Home=
@@ -341,7 +344,7 @@ Install=安裝
 Uninstall=
 Project=項目
 Read Me First=
-Install second instance=安裝第二個實例
+Install another instance=
 Install Using The Templates Default Tag=使用模板的默認標籤進行安裝
 Moderator Comments=版主評論
 Note not all authors keep up to date on change logs=請注意，並非所有作者的變更日誌都保持最新狀態
@@ -457,4 +460,4 @@ An error occurred - Could not determine configuration=
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
 
-; Note: February 10, 2024 - 69 missing translations
+; Note: December 8, 2024 - 73 missing translations

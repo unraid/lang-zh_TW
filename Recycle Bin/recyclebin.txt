@@ -131,6 +131,9 @@ Update Recycle Bin Size in Background=在後台更新回收站大小
 > 單擊“清除”按鈕以清除日誌
 :end
 
-; Note: April 28, 2023 - 2 missing translations
+; Note: December 8, 2024 - 5 missing translations
+Enable Empty All Trash Button=
+Enable Empty Share Trash Button=
+Enable Remove Aged Files Button=
 Recycle Bin is empty=
 These actions apply to all shares=
