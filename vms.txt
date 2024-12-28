@@ -284,4 +284,4 @@ Windows 82012, newer Linux distros=Windows 8/2012，新的Linux 發行版
 wsport for virtual console=
 XML View=XML 視圖
 
-; Note: December 28, 2024 - 150 missing translations
+; Note: December 28, 2024 - 146 missing translations
