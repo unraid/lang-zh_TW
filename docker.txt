@@ -128,10 +128,32 @@ Web=Web
 WebUI=WebUI
 Writable=可寫
 
-; Note: April 28, 2023 - 6 missing translations
+; Note: December 28, 2024 - 28 missing translations
+3rd Party=
 Additional Requirements=
+Addresses=
+available=
+Compose=
+Container IP=
+Container not running=
 Crypto Currency=
+DERP Relay=
+Error gathering Tailscale information from container=
+Exit Node=
+Expired RenewDisable key expiry=Expired! Renew/Disable key expiry!
+Hostname=
+Is Exit Node=
+Key Expiry=
+LAN IPPort=LAN IP:Port
 Lock sortable items=
 None Listed=
+Online=
+Please check the logs and refresh the page=
+Please check the logs=
 Read Me First=
+Real Hostname=
+Routes=
+Tailscale=
 Unlock sortable items=
+update available=
+URL=
