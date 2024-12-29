@@ -23,8 +23,8 @@ Check free space=
 checking=
 Click to toggle CPU chart=單擊以切換CPU 視圖
 Click to toggle details=單擊以切換詳細信息
-Clock is synchronized using NTP, time offset is %s %s=
-Clock is synchronized using PTP, time offset is %s %s=
+Clock is synchronized using %s NTP servers, time offset is %s %s=
+Clock is synchronized using %s PTP server, time offset is %s %s=
 Clock is unsynchronized with no NTP servers=
 Clock is unsynchronized with no PTP servers=
 Clock is unsynchronized, free-running clock=
@@ -74,6 +74,7 @@ Go to UPS settings=轉到UPS 設置
 Go to User settings=轉到用戶設置
 Go to VM settings=轉到虛擬機設置
 Go to VPN settings=轉到VPN 設置
+grandmaster=
 Handshake=握手
 has=有
 healthy=運行良好
@@ -95,6 +96,7 @@ Last checked on %s=上次檢查於**%s**
 Legend=
 Lock sortable items=
 Log filesystem=
+master=
 Maximum size=最大大小
 Memory dump=
 Memory Utilization=
@@ -196,4 +198,4 @@ W=
 Warnings=
 ZFS=
 
-; Note: December 28, 2024 - 84 missing translations
+; Note: December 29, 2024 - 86 missing translations
