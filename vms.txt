@@ -170,7 +170,6 @@ Remove OpenELEC image=移除OpenELEC 映像
 Remove this LibreELEC file=移除此LibreELEC 文件
 Remove this OpenELEC file=移除此OpenELEC 文件
 Remove User Template=
-Rename disabled, snapshots exists=Rename disabled, <?=$snapcount?> snapshot(s) exists.
 Repeat=
 Requires guest agent installed=
 Requires guest running=
@@ -266,4 +265,4 @@ Windows 82012, newer Linux distros=Windows 8/2012，新的Linux 發行版
 wsport for virtual console=
 XML View=XML 視圖
 
-; Note: December 29, 2024 - 131 missing translations
+; Note: December 29, 2024 - 130 missing translations
