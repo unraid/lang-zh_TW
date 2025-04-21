@@ -148,6 +148,7 @@ Last checked on %s=上次檢查時間為**%s**
 Last SMART test result=上次SMART 測試結果
 logs - Separate Intent Log SLOG=logs - Separate Intent Log (SLOG)
 logs - ZFS Intent Log=
+loopback=
 Maintenance mode=維護模式
 Maintenance Mode=維護模式
 Maintenance=維護
@@ -175,6 +176,7 @@ No parity check history present=沒有奇偶校驗歷史記錄
 No self-tests logged on this disk=此磁碟上沒有記錄任何自檢
 Not installed=未安裝
 Not present=
+not set=
 OK=確定
 Once copy completes, the array may be Started, to initiate Data-Rebuild of the disabled disk=複製完成後，可以啟動陣列，以啟動被禁用磁碟的數據重建。
 operation=操作
@@ -234,6 +236,7 @@ Repair corrupted blocks=修復損壞的塊
 Replacement disk installed=已安裝替換磁碟
 Replacement disk is too small=替換磁碟太小
 Retype passphrase=重新輸入密碼
+Rx=
 Schedule=計劃任務
 Scrub Status=清理狀態
 Scrub=清理
@@ -300,6 +303,7 @@ Toggle readswrites display=切換讀寫顯示
 Too many attached devices Please consider upgrading your=連接的設備過多，請考慮升級您的
 Too many wrong andor missing disks=錯誤和/或缺失的磁碟太多
 Total size=總大小
+Tx=
 Unassign ALL devices to delete this pool=取消分配**所有**設備以刪除此池
 Unassigned Devices=未分配設備
 Unavailable - disk must be spun up=不可用- 磁碟必須喚醒
@@ -413,4 +417,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: December 28, 2024 - 115 missing translations
+; Note: April 21, 2025 - 119 missing translations

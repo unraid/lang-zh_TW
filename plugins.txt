@@ -33,8 +33,9 @@ Update Plugin=更新插件
 Upgrade=升級
 View Release Notes=查看發行說明
 
-; Note: July 9, 2023 - 8 missing translations
+; Note: April 21, 2025 - 9 missing translations
 Alert Message=
+cannot check=
 Checking connectivity=
 checking=
 I have read the release notes=

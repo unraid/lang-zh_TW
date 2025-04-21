@@ -147,6 +147,7 @@ Select Case Model=選擇機箱型號
 Select time frame=選擇時間範圍
 Services=
 Share count %s with %s cache only and %s encrypted=共享總計**%s** 個，**%s** 個僅緩存，**%s** 個已加密
+Share count %s with %s public SMB and %s public NFS=Share count: %s with %s public SMB and %s public NFS
 Shares Information=
 Show details=顯示詳細信息
 Show Information=顯示信息
@@ -198,4 +199,4 @@ W=
 Warnings=
 ZFS=
 
-; Note: December 29, 2024 - 86 missing translations
+; Note: April 21, 2025 - 87 missing translations
