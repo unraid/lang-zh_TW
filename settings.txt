@@ -532,6 +532,7 @@ No Cache disk present=沒有緩存磁盤
 No change to report=
 No CPU pinning available. Docker service must be started=沒有可用的CPU 綁定。必須先啟動Docker 服務
 No CPU pinning available. VM service must be started=沒有可用的CPU 綁定。必須先啟動虛擬機服務
+No encrypted disks found=
 no name=
 No Parity disk present=沒有奇偶校驗磁盤
 No Reply=
@@ -581,6 +582,7 @@ Optional=
 Or if they are improperly configured, use this feature with care=
 or=
 Other networks=
+Otherwise use the keyfile method for UTF8 input=Otherwise use the **keyfile** method for UTF8 input
 Outgoing Proxy Manager=
 Outgoing Proxy=
 Output Voltage=
@@ -640,6 +642,7 @@ Port Up=端口啟動
 Power Mode=
 Preserve user defined networks=保留用戶定義網絡
 Preset service=預設服務
+Printable Characters Only=
 Priority in header=標頭優先級
 Protocol=協議
 Provision=預配
@@ -865,6 +868,7 @@ UPS Status=UPS 狀態
 UPS type=UPS 類型
 URL=
 USB=USB
+Use ASCII characters from space to tilde=Use **ASCII** characters from space ' ' to tilde '~'
 Use DEFAULT setting when public NTP servers are defined=
 Use image name dockerimg or docker-xfsimg or select a folder=Use image name docker.img or docker-xfs.img or select a folder
 Use NTP=使用NTP
@@ -989,4 +993,4 @@ Transient errors in this log can be ignored unless you are having issues=
 Unraid API extra origins=
 View Flash Backup Error Log=
 
-; Note: April 21, 2025 - 475 missing translations
+; Note: May 31, 2025 - 479 missing translations
