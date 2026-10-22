@@ -1,0 +1,116 @@
+Adaptive=自適應
+Cache pressure of directories on system=系統目錄快取回收壓力
+Check HELP for filter example=請參閱說明中的篩選範例
+Disk Idle Timer=磁碟閒置計時器
+Folder caching function=資料夾快取功能
+for adaptive depth=適用於自適應深度
+Important - check HELP if disks spin up=重要：若磁碟被喚醒，請參閱說明
+Included folders=包含的資料夾
+Memory available to the 'cache_dirs' script increase if it dies=cache_dirs 可使用的記憶體（處理程序中斷時可調高）
+Logging=日誌記錄
+Maximum interval between folder scans=資料夾掃描的最長間隔
+Maximum level depth=最大層級深度
+Minimum interval between folder scans=資料夾掃描的最短間隔
+Minimum level depth=最小層級深度
+or see=或參閱
+Run scan of each disk in a separate thread=每顆磁碟使用獨立執行緒掃描
+Timeout during disk-idle period=磁碟閒置期間的逾時
+Timeout during initial startup or less-idle period=初始啟動或磁碟較忙時的逾時
+Timeout when all directories have been cached=所有目錄已快取時的逾時
+Scan user shares mntuser=掃描使用者共享（/mnt/user）
+Suspend during Mover process=Mover 執行時暫停
+unlimited=無限制
+Unraid forum=Unraid 討論區
+Use Adaptive depth=使用自適應深度
+User defined options=自訂選項
+
+:cachedirs_info_plug:
+> **資料夾快取（cache_dirs）**會持續讀取目錄，以便讓目錄資訊保留在記憶體中。
+>
+> 處理程序無法確定目錄是否仍在記憶體裡，因此當 Linux 記憶體快取釋出目錄時，重新掃描可能喚醒休眠磁碟。
+> 在系統負載或檔案數量較高時，部分目錄可能被移出快取。
+>
+> 預設使用自適應模式：當偵測到掃描變慢或快取未命中時，會降低掃描深度以減少磁碟存取；但仍可能短暫造成磁碟活動。
+> 快取的目錄越少，喚醒磁碟的機率通常越低。
+:end
+
+:cachedirs_function_plug:
+> 選擇是否啟用資料夾快取。只有陣列啟動時快取才會運作；陣列啟動或停止時，快取服務也會自動啟動或停止。
+:end
+
+:cachedirs_pressure_plug:
+> 設定 Linux 的 `vm.vfs_cache_pressure`（預設 10）。數值越低，系統越不容易回收目錄快取。
+> 若磁碟被頻繁喚醒，可以嘗試調低到 1；若記憶體不足則應提高此值。
+> **警告：設為 0 可能讓核心持續保留目錄快取，導致記憶體耗盡或系統當機。**停止 cache_dirs 後此設定不會自動還原。
+> 若要手動還原，執行 `sudo sysctl vm.vfs_cache_pressure=100`。
+:end
+
+:cachedirs_suspend_plug:
+> Mover 執行時暫停資料夾快取，以避免兩者互相干擾。若使用固定掃描深度，通常建議選擇「是」。
+:end
+
+:cachedirs_included_folders_plug:
+> 從可用資料夾中選取要納入快取的項目。預設包含所有資料夾；若同時使用包含及排除清單，排除規則優先。
+:end
+
+:cachedirs_excluded_folders_plug:
+> 從清單中選取不需要快取的資料夾。預設沒有排除項目；建議避免同時使用過於複雜的包含和排除規則。
+:end
+
+:cachedirs_adaptive_depth_plug:
+> 啟用後，掃描深度會根據效能自動調整，但不會超過最大層級深度。掃描從深度 1 開始，在完成時間允許時逐步增加。
+> 停用後，cache_dirs 會固定掃描至最大深度。
+:end
+
+:cachedirs_min_level_plug:
+> 自適應掃描的最小目錄層級，預設為 4。
+:end
+
+:cachedirs_max_level_plug:
+> 設定掃描的最大目錄層級。選擇「無限制」或設為 0 可取消限制。
+:end
+
+:cachedirs_idle_timer_plug:
+> 磁碟閒置達到此時間後，自適應掃描才會開始建立目錄快取。
+:end
+
+:cachedirs_timeout_scan_plug:
+> 設定在目前掃描深度完成一次所有目錄掃描的最長時間。若無法掃描完所有目錄，可適度提高。
+> 停用自適應模式時仍會使用此逾時值。
+:end
+
+:cachedirs_timeout_initial_plug:
+> 若初次掃描或檔案系統忙碌時需要更多時間，可調高此逾時值。
+:end
+
+:cachedirs_timeout_cached_plug:
+> 降低此值可減少目錄快取被回收後的掃描負載；提高則有更多機會將目錄重新載入記憶體。
+:end
+
+:cachedirs_min_interval_plug:
+> 設定資料夾掃描的最短間隔。預設 1 秒，多數系統無須調整。
+:end
+
+:cachedirs_max_interval_plug:
+> 設定資料夾掃描的最長間隔。預設 10 秒，多數系統無須調整。
+:end
+
+:cachedirs_scan_disk_plug:
+> 每顆磁碟由獨立執行緒掃描，因此會同時讀取多顆磁碟。若也掃描使用者共享，會在磁碟掃描完成後單獨掃描，以減少磁碟來回尋址。
+:end
+
+:cachedirs_limit_memory_plug:
+> 設定 cache_dirs 指令碼的記憶體資源限制（預設 50000）；`-U 0` 不設定此限制，改為使用 shell 的預設值。
+:end
+
+:cachedirs_logging_plug:
+> 啟用或停用日誌記錄，日誌寫入 `/var/log/cache_dirs.log` 與 `/var/log/cache_dirs_lost_cache.csv`。
+> Unraid 將這些日誌保存在記憶體中，而且不會自動輪替，請注意日誌大小。
+:end
+
+:cachedirs_user_defined_plug:
+> 可設定 cache_dirs 的其他命令列選項，詳情請參閱線上文件或 `/usr/local/emhttp/plugins/dynamix.cache.dirs/scripts/cache_dirs`。
+> 例如要排除 `.Recycle.Bin`、`log`、`temp` 資料夾，可以使用：
+> <span class="strong orange-text">-a '-noleaf -name .Recycle.Bin -prune -o -name log -prune -o -name temp -prune -o -print'</span>
+> **注意：**`-a` 的參數必須使用單引號，依目前版本限制，雙引號可能無法正常運作。
+:end

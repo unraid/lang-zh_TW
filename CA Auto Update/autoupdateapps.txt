@@ -1,19 +1,25 @@
-Docker Auto Update Settings=Docker 自動更新設置
-Plugin Auto Update Settings=插件自動更新設置
-Autoupdate ON=打開自動更新
-Autoupdate OFF=關閉自動更新
+Docker Auto Update Settings=Docker 自動更新設定
+Plugin Auto Update Settings=外掛程式自動更新設定
+Autoupdate ON=啟用自動更新
+Autoupdate OFF=停用自動更新
 Send Notifications On Update=更新時發送通知
 Delay in days before updating applications=延遲更新的天數
-Auto Update All Plugins=自動更新所有插件
+Auto Update All Plugins=自動更新所有外掛程式
 Update Check Frequency=檢查更新頻率
-Support=支持
+Support=支援
 Day Of Week=星期
 Day Of Month=日期
 Hour=小時
 Minute=分鐘
-Custom cron expression=自定義計劃任務
-Credits=感謝
-Docker Must Be Enabled For This Module To Operate=需要啟用Docker 以使用本模塊
-Time to wait for graceful stop before killing=強制關閉等待時間
-Update All Docker Applications=更新所有Docker 應用
+Custom cron expression=自訂 cron 運算式
+Credits=致謝
+Docker Must Be Enabled For This Module To Operate=必須啟用 Docker 服務，才能使用此模組
+Time to wait for graceful stop before killing=容器正常停止的等待時間（逾時後強制停止）
+Update All Docker Applications=更新所有 Docker 應用程式
 Do not overlap with autoupdate=不要與自動更新重疊
+
+; Unraid 7.3.3 runtime UI audit: exact lookup variants and missing labels
+Selecting Yes also updates languages=選擇「是」也會更新語言包
+
+; Settings detailed-help audit (Unraid 7.3.3)
+Ignore 3rd Party Containers=略過第三方容器

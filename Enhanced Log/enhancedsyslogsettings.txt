@@ -1,0 +1,161 @@
+Configuration=設定
+Colors=顏色
+Syslog Colors=系統日誌顏色
+Custom Match=自訂比對
+Custom Syslog Match Strings=自訂系統日誌比對字串
+Syslog Filter=系統日誌篩選
+Syslog Configuration=系統日誌設定
+Syslog Filter Strings=系統日誌篩選字串
+Show All Lines in Log=顯示日誌所有行
+Number of Lines to Display=顯示行數
+Enable Error Highlighting=醒目標示錯誤訊息
+Enable Minor Issues Highlighting=醒目標示次要問題訊息
+Enable Lime Tech Highlighting=醒目標示Lime Tech訊息
+Enable Array Highlighting=醒目標示陣列訊息
+Enable System Highlighting=醒目標示系統訊息
+Enable File System Highlighting=醒目標示檔案系統訊息
+Enable Drive Related Highlighting=醒目標示磁碟相關訊息
+Enable Network Highlighting=醒目標示網路訊息
+Enable Login Highlighting=醒目標示登入訊息
+Enable emhttp Highlighting=醒目標示emhttp訊息
+Enable Other Highlighting=醒目標示其他訊息
+Color Selection Chart=色彩選擇表
+Error Highlight Color=錯誤訊息標示顏色
+Minor Issues Highlight Color=次要問題訊息標示顏色
+Lime Tech Highlight Color=Lime Tech訊息標示顏色
+Array Highlight Color=陣列訊息標示顏色
+System Highlight Color=系統訊息標示顏色
+File System Highlight Color=檔案系統訊息標示顏色
+Drive Related Highlight Color=磁碟相關訊息標示顏色
+Network Highlight Color=網路訊息標示顏色
+Login Highlight Color=登入訊息標示顏色
+emhttp Highlight Color=emhttp訊息標示顏色
+Other Highlight Color=其他訊息標示顏色
+;
+; Help
+;
+:enhanced_syslog_show_all_lines_plug:
+> 選擇 **是** 顯示日誌所有行，選擇 **否** 僅顯示醒目標示的行。
+:end
+
+:enhanced_log_number_of_lines_plug:
+> 設定顯示的系統日誌行數，預設為 1000 行。
+:end
+
+:enhanced_log_enable_error_plug:
+> 選擇 **是**，醒目標示「錯誤」訊息。
+:end
+
+:enhanced_log_enable_minor_plug:
+> 選擇 **是**，醒目標示「次要問題」訊息。
+:end
+
+:enhanced_log_enable_limetch_plug:
+> 選擇 **是**，醒目標示「Lime Tech」訊息。
+:end
+
+:enhanced_log_enable_array_plug:
+> 選擇 **是**，醒目標示「陣列」訊息。
+:end
+
+:enhanced_log_enable_system_plug:
+> 選擇 **是**，醒目標示「系統」訊息。
+:end
+
+:enhanced_log_enable_file_system_plug:
+> 選擇 **是**，醒目標示「檔案系統」訊息。
+:end
+
+:enhanced_log_enable_drive_plug:
+> 選擇 **是**，醒目標示「磁碟相關」訊息。
+:end
+
+:enhanced_log_enable_network_plug:
+> 選擇 **是**，醒目標示「網路」訊息。
+:end
+
+:enhanced_log_enable_login_plug:
+> 選擇 **是**，醒目標示「登入」訊息。
+:end
+
+:enhanced_log_enable_emhttp_plug:
+> 選擇 **是**，醒目標示「emhttp」訊息。
+:end
+
+:enhanced_log_enable_other_plug:
+> 選擇 **是**，醒目標示「其他」訊息。
+:end
+
+:enhancd_log_default_plug:
+> 按 **預設值** 重設設定與顏色，按 **套用** 儲存修改，按 **完成** 離開。
+:end
+
+:enhanced_log_color_error_plug:
+> 設定「錯誤」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_minor_plug:
+> 設定「次要問題」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_limetech_plug:
+> 設定「Lime Tech」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_array_plug:
+> 設定「陣列」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_system_plug:
+> 設定「系統」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_file_system_plug:
+> 設定「檔案系統」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_drive_plug:
+> 設定「磁碟相關」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_network_plug:
+> 設定「網路」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_login_plug:
+> 設定「登入」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_emhttp_plug:
+> 設定「emhttp」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_color_other_plug:
+> 設定「其他」的醒目標示顏色，可使用顏色名稱或以 # 開頭的色碼。
+:end
+
+:enhanced_log_custom_plug:
+> 輸入要在日誌中醒目標示的自訂事件。自訂規則會在內建事件規則之後處理。
+>
+> 每行輸入一組 `"搜尋字串", "事件類型"`，兩個值都必須以引號括住。搜尋不區分大小寫，並支援下列模式：
+>
+> * `"found.*chip"`：符合包含 found 與 chip、兩者之間可有任意文字的字串。
+> * `"(spinup|spindown)"`：符合包含 spinup 或 spindown 的字串。
+>
+> 例如：`"found.*chip", "system"`。字串格式錯誤可能造成 PHP 錯誤。
+>
+> 可用事件識別值為：`"error"`、`"minor issues"`、`"lime tech"`、`"array"`、`"system"`、`"file system"`、`"drive related"`、`"network"`、`"login"`、`"emhttp"`、`"other"`。這些識別值請保留英文。
+:end
+
+:enhanced_log_custom_buttons_plug:
+> 按 **套用** 儲存自訂事件，按 **重設** 取消尚未儲存的修改，按 **完成** 離開。
+:end
+
+:enhanced_log_filter_plug:
+> 您可以篩除不必要的偵錯或重複訊息，降低系統日誌的資料量。
+> **系統日誌對故障診斷很重要，請勿隨意篩除資料。**每行輸入一組以引號括住的篩選字串。
+:end
+
+:enhanced_log_filter_buttons_plug:
+> 按 **套用** 儲存篩選設定，按 **重設** 取消未儲存的修改，按 **完成** 離開。
+:end

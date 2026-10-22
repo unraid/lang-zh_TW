@@ -1,0 +1,22 @@
+Hotplug USB=USB 熱插拔
+Running VMs=執行中的虛擬機器
+Attach=連接
+Attach the USB device to the selected VM=將 USB 裝置連接至選取的虛擬機器
+Detach=中斷連接
+Refresh this page=重新整理此頁面
+Detach the USB device from the selected VM=從選取的虛擬機器卸除 USB 裝置
+Result=結果
+Result of attachdetach operation=連接／卸除操作的結果
+Note=注意
+Some USB Devices require detaching and attaching multiple times to be properly detected by VMs=部分 USB 裝置可能需要反覆卸除並重新連接，虛擬機器才能正確偵測
+If you disconnected the USB device while it was attached to a VM, you will have to detach it and then re-attach it=如果 USB 裝置仍連接至虛擬機器時就被拔除，請先在此卸除裝置，再重新連接
+Detaching Please wait=正在卸除，請稍候
+Attaching Please wait=正在連接，請稍候
+No VM Selected=尚未選取虛擬機器
+No USB devices=沒有 USB 裝置
+;
+; Help
+;
+:libvirt_hot_plug:
+> 選擇要連接／卸除 USB 裝置的虛擬機器，再選取 USB 裝置。請確認虛擬機器已安全卸除裝置，避免資料遺失。
+:end

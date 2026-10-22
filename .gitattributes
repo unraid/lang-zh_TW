@@ -1,0 +1,6 @@
+# Unraid language files require UTF-8 with Unix line endings.
+*.txt text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

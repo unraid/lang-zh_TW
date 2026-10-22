@@ -1,0 +1,37 @@
+
+
+; Settings detailed-help audit (Unraid 7.3.3)
+Topology=拓樸
+Empty Ports=空連接埠
+Local=本機
+Historic=歷史記錄
+Remote=遠端
+Ports=連接埠
+Serial Number=序號
+Switch On to Show USBIP Ports=開啟以顯示 USB/IP 連接埠
+Switch On to Show Remote Devices=開啟以顯示遠端裝置
+Switch On to Show Historic Devices=開啟以顯示歷史裝置
+Switch On to Show Devices=開啟以顯示本機裝置
+Switch On to Hide Empty Ports=開啟以隱藏空連接埠
+Switch Off to Hide Topology=關閉以隱藏拓樸
+Switch Off to Hide Serial=關閉以隱藏序號
+Auto Connect=自動連接
+Auto Connect on VM Start=虛擬機器啟動時自動連接
+VM Attach=連接至虛擬機器
+VM Detach=從虛擬機器中卸離
+VM Detact=從虛擬機器中卸離
+USBIP Settings=USB/IP 設定
+USB Devices=USB 裝置
+Port and Historical Device Mappings=連接埠與歷史裝置對應
+
+:usbip_devices_switches_plug:
+> 「本機」開關可顯示或隱藏本機 USB 裝置；「遠端」開關可顯示或隱藏遠端 USB 裝置。
+>
+> 「歷史記錄」開關可顯示曾連接的裝置；關閉後回復一般裝置清單。
+>
+> 按一下齒輪圖示，即可開啟 USB/IP 設定頁面。
+:end
+
+:usbip_devices_general_help_plug:
+> **USB/IP** 可透過網路提供 USB 裝置連線。裝置的連接、卸離與虛擬機器對應，請先確認目前使用狀態後再操作。
+:end

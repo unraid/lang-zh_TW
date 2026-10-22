@@ -1,0 +1,5 @@
+Not available=無法取得
+P + Q algorithm=P + Q 演算法
+System Overview=系統總覽
+Unraid server=Unraid 伺服器
+Unraid system=Unraid 系統

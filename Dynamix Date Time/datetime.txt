@@ -1,0 +1,41 @@
+Current date and time=目前日期與時間
+Hide map=隱藏地圖
+New date and time=新日期與時間
+NTP server=NTP 伺服器
+Show map=顯示地圖
+Time zone=時區
+Use NTP=使用 NTP
+
+:timezone_plug:
+> 從下拉式選單選擇您的時區。
+:end
+
+:datetime_map_plug:
+> 世界地圖會標示目前選取的時區。
+>
+> 將滑鼠移至地圖並選取所在國家／地區，系統會自動在下拉式選單選擇適用的時區。
+:end
+
+:use_ntp_plug:
+> 選擇「是」以使用網路時間協定（NTP）自動校準伺服器時間。
+> **強烈建議**使用 NTP，尤其在 Active Directory 環境。
+:end
+
+:ntp_server1_plug:
+> 輸入主要 NTP 伺服器的完整網域名稱（FQDN）或 IP 位址。
+:end
+
+:ntp_server2_plug:
+> 當主要 NTP 伺服器無法連線時，使用此備援 NTP 伺服器。
+:end
+
+:ntp_server3_plug:
+> 當前兩台 NTP 伺服器皆無法連線時，使用此備援伺服器。
+:end
+
+:ntp_server4_plug:
+> 當前三台 NTP 伺服器皆無法連線時，使用此備援伺服器。
+:end
+:current_time_plug:
+> 手動輸入日期與時間，格式為 YYYY-MM-DD HH:MM:SS。啟用 NTP 時無法手動修改。
+:end

@@ -1,0 +1,90 @@
+Abort Device Script=中止裝置指令碼
+Attach=連接
+Attach This Disk=連接此磁碟
+Attaching=正在連接
+Automount=自動掛載
+Click to select file or click Default button for the Device Script File=按一下以選擇指令碼檔案，或按「預設」載入範本
+Default=預設
+Delete Device Script File=刪除裝置指令碼檔案
+Detach=卸除
+Detach This Disk=卸除此磁碟
+Detaching=正在卸除
+Device Script=裝置指令碼
+Device Script content=裝置指令碼內容
+Disable Mount and Unmount Button=停用掛載／解除掛載按鈕
+Disable Mount Button=停用掛載按鈕
+Disk Name=磁碟名稱
+Disk Serial=磁碟序號
+Edit Device Script=編輯裝置指令碼
+Enter Device Script File Name=輸入裝置指令碼檔名稱
+Enter and Edit the Device Script that runs when a udev or operator event occurs=輸入或編輯 udev 或操作者事件觸發時執行的裝置指令碼
+Enter the User Script File Name=輸入使用者指令碼檔名稱
+Enter the User Script that will be using this device=輸入使用此裝置的使用者指令碼
+Enter the volume to mount on this apfs partition=輸入要掛載此 APFS 分割區的磁碟區
+Load the default Device Script=載入預設裝置指令碼
+Run in background=在背景執行
+Mark this Device as passed through to a VM or Docker=將此裝置標記為已直通至虛擬機器或 Docker
+Mount Device Read only=以唯讀模式掛載裝置
+Mount Device when Plugged in or Array is Started=裝置接入或陣列啟動時自動掛載
+Mount ISO File when Array is Started=陣列啟動時掛載 ISO 檔
+Mount Point=掛載點
+Mount Remote Share Read only=以唯讀模式掛載遠端共享
+Mount Remote SMB or NFS Share when Array is Started=陣列啟動時掛載遠端 SMB／NFS 共享
+Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=注意：請在未指派裝置設定中啟用 SMB 共享或 NFS 匯出，才能分享此裝置
+Passed Through=已直通
+Read Only=唯讀
+Run Device Script File in the background=在背景執行裝置指令碼
+Save your Device Script File=儲存裝置指令碼檔案
+Save your Device Script File changes=儲存裝置指令碼變更
+Share Device with SMB and NFS=透過 SMB 與 NFS 共享裝置
+Share Remote Mount with SMB and NFS=透過 SMB 與 NFS 共享遠端掛載
+Show all partitions on this device by default=預設顯示此裝置的所有分割區
+Show Partitions=顯示分割區
+Source=來源
+Unassigned Devices Settings=未指派裝置設定
+Undo your changes since last Save=復原上次儲存後的變更
+User Script=使用者指令碼
+Volume=磁碟區
+ZFS Volume=ZFS 磁碟區
+
+;
+; Help
+;
+:ud_edit_script_device_settings_plug:
+> 選擇此裝置及其掛載點的相關設定。
+:end
+
+:ud_edit_script_detach_plug:
+> 按下 **卸除**，裝置會移至歷史裝置清單；之後可以在該清單的設定中重新連接。
+:end
+
+:ud_edit_script_attach_plug:
+> 按下 **連接** 可重新連接已卸除的裝置，就像剛接入系統。若已啟用自動掛載，裝置稍後將顯示於 UD 並進行掛載。
+:end
+
+:ud_edit_script_abort_plug:
+> 按下 **中止** 可停止目前執行中的裝置指令碼。
+:end
+
+:ud_disk_name_plug:
+> 輸入此裝置的別名；留空則使用預設 devX 名稱。
+> 名稱最多 8 個字元，空白會轉成底線（_），區分大小寫，特殊字元有所限制。
+> **注意：**名稱不得以 `dev` 開頭，這是系統保留的命名前綴。
+:end
+
+:ud_edit_script_choose_name_plug:
+> 此指令碼將於裝置掛載時執行。請從下拉選單選擇檔案，或輸入要使用的裝置指令碼。
+:end
+
+:ud_edit_user_script_choose_name_plug:
+> 如果已安裝 User Scripts 外掛，可以在此指定使用此裝置的指令碼，讓未指派裝置頁面顯示其執行狀態。僅在裝置指令碼檔案已存在時啟用。
+:end
+
+:ud_edit_script_run_background_plug:
+> 選擇 **是**，將裝置指令碼放在背景執行，避免執行時間過長導致網頁介面無回應。
+:end
+
+:ud_edit_script_buttons_plug:
+> 按 **預設** 載入裝置指令碼範本（仍須按 **儲存** 才會生效）。
+> 按 **儲存** 寫入檔案；按 **刪除** 刪除檔案；按 **重設** 取消尚未儲存的變更；按 **套用** 套用編輯；按 **完成** 離開。
+:end

@@ -1,0 +1,17 @@
+Halt=停止
+Host Address=主機位址
+Host=主機
+No active streams=目前沒有使用中的串流
+Playtime=播放時間
+Stop stream=停止串流
+Stream=串流
+User Name=使用者名稱
+User=使用者
+
+:streams_plug:
+> 為 IP 位址設定易於辨識的名稱，這些名稱將顯示在「使用中的串流」頁面。
+>
+> 偵測到新的 IP 位址時會自動加入清單。
+>
+> 如需移除對應名稱，請清空使用者名稱欄位並按下「套用」。
+:end

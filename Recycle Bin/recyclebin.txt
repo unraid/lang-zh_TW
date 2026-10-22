@@ -1,139 +1,137 @@
 Age Days=過期天數
 Array=陣列
 Array is stopped=陣列已停止
-Browse the Share Recycle Bin=瀏覽此共享的回收站內容
-Deleted Files=已刪除文件
+Browse the Share Recycle Bin=瀏覽此共享的資源回收筒內容
+Deleted Files=已刪除檔案
 Deleted Files Log=刪除記錄
 Empty=清空
 Empty the=清空
-Empty All Trash=清空所有垃圾
-Empty Trash=清空回收站
-Enable on Unassigned Devices=在未分配的設備上啟用
-Enable Recycle Bin=啟用回收站
+Empty All Trash=清空所有資源回收筒
+Empty Trash=清空資源回收筒
+Enable on Unassigned Devices=在未指派裝置上啟用
+Enable Recycle Bin=啟用資源回收筒
 Excluded Directories=排除目錄
-Excluded Files=排除文件
+Excluded Files=排除檔案
 Excluded Shares=排除共享
-Log Deleted Files=記錄刪除的文件
-Recycle Bin=回收站
-Recycle Bin Log=回收站日誌
-Recycle Bin parameters=回收站參數
-Recycle Bin permissions=回收站權限
-Recycle Bin Total Size=回收站容量
-Refresh the Recycle Bin page=刷新回收站頁面
-Remove Aged Files=刪除過期文件
-Remove aged files from the Recycle Bin=刪除回收站過期文件
-Remove Aged Files Notification=刪除過期文件通知
-Remove Aged Files on Schedule=按計劃刪除過期文件
-Remove all files from the Recycle Bin=清空回收站
-Restart the Recycle Bin=重啟回收站
+Log Deleted Files=記錄刪除的檔案
+Recycle Bin=資源回收筒
+Recycle Bin Log=資源回收筒日誌
+Recycle Bin parameters=資源回收筒參數
+Recycle Bin permissions=資源回收筒權限
+Recycle Bin Total Size=資源回收筒容量
+Refresh the Recycle Bin page=重新整理資源回收筒頁面
+Remove Aged Files=刪除過期檔案
+Remove aged files from the Recycle Bin=刪除資源回收筒過期檔案
+Remove Aged Files Notification=刪除過期檔案通知
+Remove Aged Files on Schedule=按排程刪除過期檔案
+Remove all files from the Recycle Bin=清空資源回收筒
+Restart the Recycle Bin=重新啟動資源回收筒
 Share Type=共享類型
 SMB Share=SMB 共享
-Start the Recycle Bin=啟動回收站
-Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=啟動和停止回收站時可能會導致SMB共享短時間脫機
-Stop the Recycle Bin=停止回收站
-Trash Size=回收站大小
-Update Recycle Bin Size in Background=在後台更新回收站大小
+Start the Recycle Bin=啟動資源回收筒
+Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=啟動和停止資源回收筒時可能會導致SMB共享短時間離線
+Stop the Recycle Bin=停止資源回收筒
+Trash Size=資源回收筒大小
+Update Recycle Bin Size in Background=在背景更新資源回收筒大小
 ;
 ; Help
 ;
 :recycle_bin_shares_plug:
-> 共享回收站：
+> **共享資料夾資源回收筒**
 >
-> 包含回收站內容的共享將與共享的垃圾箱大小一起顯示
-> 點擊<strong>瀏覽</strong> 圖標查看該共享中已刪除的文件
-> 點擊<strong>清空</strong>按鈕移除該共享所有已刪除的文件
+> 顯示含有已刪除檔案的共享資料夾及其資源回收筒大小。
+> 點選 **瀏覽** 圖示可以查看刪除的檔案。
+> 點選 **清空** 按鈕將永久刪除該共享資料夾資源回收筒中的所有檔案。
 >
-> 未分配的設備共享僅在為未分配的設備啟用回收站並且有未分配的設備已安裝且具有回收站內容時才會顯示
+> 若已為未指派裝置啟用資源回收筒，且裝置已掛載並含有已刪除的檔案，也會顯示相關項目。
 >
-> 點擊表格標題列內容將被排序。“大小”列是按字母數字排序而非數字排序
+> 點選表格欄位標題可以排序；**大小** 欄位目前採字母與數字的字串順序，不一定是數值大小順序。
 :end
 
 :recycle_bin_enable_plug:
-> 設置為**是** 以在服務器啟動時**啟用**已刪除文件的回收站功能
+> 設為 **是**，即可在伺服器啟動時啟用資源回收筒功能。
 >
-> 要隱藏回收站文件夾，請在SMB 設置中將“隱藏(.) 文件”設置為“是”。<a href='/Settings/SMB'>去設置</a>
+> 若要隱藏資源回收筒資料夾，請前往 <a href='/Settings/SMB'>SMB 設定</a>，將「隱藏以點號開頭的檔案」設為「是」。
 :end
 
 :recycle_bin_hide_folder_plug:
-> Set to **No** to show the Recycle Bin folder in user shares.  The SMB setting "Hide dot files" controls if hidden folders show in user shares.
+> 設為 **否**，即可在使用者共享資料夾中顯示資源回收筒資料夾。SMB 的「隱藏以點號開頭的檔案」設定，也會影響隱藏資料夾是否可見。
 :end
 
 :recycle_bin_background_plug:
-> 設置為**是** 時會每分鐘在後台更新回收站佔用大小
-> 這可以使回收站設置和共享頁面更具響應性，並在訪問回收站時防止磁盤喚醒
-> 啟用此功能後，可能需要一分鐘才能刷新回收站佔用大小。
+> 設為 **是**，系統每分鐘會在背景更新資源回收筒的使用容量。
+> 這有助於提升相關設定及共享頁面的回應速度，並減少查詢容量時喚醒磁碟的機會。
+> 啟用後，使用容量的顯示最多可能延遲約一分鐘。
 :end
 
 :recycle_bin_ud_plug:
-> 設置為**是** 以在安裝Unassigned Devices 插件時為未分配的設備驅動器啟用回收站功能
-> 回收站功能不包括SMB/NFS 掛載及ISO 掛載
-> 如果遠程共享的來源是Unraid 服務器，請在遠程服務器上啟用回收站
+> 設為 **是**，可為透過 Unassigned Devices 外掛掛載的未指派裝置啟用資源回收筒。
+> 此功能不包含遠端 SMB／NFS 掛載或 ISO 掛載。
+> 如果遠端共享的來源是另一台 Unraid 伺服器，請在遠端伺服器上啟用資源回收筒。
 :end
 
 :recycle_bin_parameters_plug:
-> 回收站的附加參數。以下是可以設置的一些選項來控制已刪除文件的文件結構
-> 在列表中輸入參數，它們之間沒有空格或逗號，參數的順序會影響回收站中的文件結構
-> 將此字段留空會將所有已刪除的文件放入回收站，而沒有任何路徑信息。
+> 可以設定資源回收筒中已刪除檔案的目錄結構。請輸入所需的參數，參數之間**不要加入空白或逗號**；參數的順序會影響存放路徑。
+> 留白時，已刪除檔案會直接放在資源回收筒內，不保留原本的路徑資訊。
 >
-> Hint: Use the '/' for more control of the directory structure in the Recycle Bin.
-> 提示：使用**'/'** 可以更好地控制回收站中的目錄結構
-> 例如：**'%m/%S'**將按刪除文件的計算機名稱和共享名結構來組織已刪除的文件
+> **提示：**使用 **'/'** 可以建立不同層級的資料夾。
+> 例如 **'%m/%S'** 會依照刪除檔案的電腦名稱及共享名稱建立資料夾。
 >
-> + '%S' Samba 共享名稱（在Unraid 中等於共享名稱），例如：Storage
-> + '%P' 用戶共享完整路徑，例如：/mnt/user/Storage, /mnt/disk1, /mnt/disks/unassigned_device, /flash
-> + '%u' 當前服務的用戶名（如果有）
-> + '%m' 刪除文件的用戶的計算機名稱
+> + '%S'：Samba 共享名稱，例如 Storage。
+> + '%P'：共享完整路徑，例如 /mnt/user/Storage、/mnt/disk1、/mnt/disks/unassigned_device 或 /flash。
+> + '%u'：目前存取服務的使用者名稱（如果有）。
+> + '%m'：執行刪除操作的電腦名稱。
 :end
 
 :recycle_bin_permissions_plug:
-> 設置回收站的目錄和子目錄權限
-> 將權限設置為07xx 以使回收站正常運行，如果不知道如何使用權限，請不要將其從默認值更改
+> 設定資源回收筒資料夾及子資料夾的權限。
+> 通常應使用 07xx 權限；若不熟悉 Linux 權限，建議保留預設值。
 :end
 
 :recycle_bin_excluded_files_plug:
-> 要從回收站中排除的文件列表，以英文逗號(,)分隔，允許使用'*' 和'?' 通配符
+> 輸入不放入資源回收筒的檔案清單，以半形逗號（,）分隔。支援 `*` 和 `?` 萬用字元。
 :end
 
 :recycle_bin_excluded_dirs_plug:
-> 要從回收站中排除的目錄列表，以英文逗號(,)分隔，允許使用'*' 和'?' 通配符。要指定特定共享目錄請使用'共享名稱/目錄名稱' 的形式，未分配的設備同樣使用'掛載點/目錄' 的形式
+> 輸入不放入資源回收筒的資料夾清單，以半形逗號（,）分隔，支援 `*` 和 `?` 萬用字元。
+> 若要指定共享中的資料夾，請使用 `共享名稱/資料夾名稱`；未指派裝置則使用 `掛載點/資料夾`。
 :end
 
 :recycle_bin_excluded_shares_plug:
-> 要從回收站中排除的共享列表，以英文逗號分隔且共享名區分大小寫，此列表可以包括未分配的設備共享
+> 輸入不使用資源回收筒的共享資料夾名稱，以半形逗號分隔；名稱區分大小寫。也可以包含未指派裝置的共享。
 >
-> 排除的共享可以包含共享名稱的一部分，並且將排除實際共享名稱中包含排除共享文本的所有共享。如果您想要完全匹配，請使用完整的共享名稱
+> 此欄位支援部分字串比對：只要共享名稱包含指定文字，就會被排除。若要精確比對，請輸入完整共享名稱。
 >
-> 例如：'Squidbait'（不帶引號）將排除Ransom Ware 插件創建的所有共享
+> 例如輸入 'Squidbait'（不含引號）會排除名稱包含 Squidbait 的共享資料夾。
 >
-> 注意：排除共享只會將其從已刪除的文件中排除到共享上的'.Recycle.Bin' 文件夾中。現有'.Recycle.Bin' 文件夾中的文件仍將顯示在總大小和'Shares' 選項卡上。
+> **注意：**排除設定只影響**之後刪除的檔案**；原本已存在於 '.Recycle.Bin' 的檔案不會自動移除，仍會計入資源回收筒大小。
 :end
 
 :recycle_bin_age_day_plug:
-> 任何存放超過設置的過期天數的文件都會在計劃中刪除，或者在單擊“刪除過期文件”按鈕時刪除
+> 設定已刪除檔案的保留天數。超過此天數的檔案，會在排程執行時或您按下「移除過期檔案」時永久刪除。
 :end
 
 :recycle_bin_remove_age_files_plug:
-> 設置刪除過期文件的計劃任務，每小時為每小時一次，每日為每天凌晨三點，每週為周日的凌晨三點
+> 設定移除過期檔案的排程：「每小時」表示每小時執行一次；「每日」為每天凌晨 3 點；「每週」為星期日凌晨 3 點。
 :end
 
 :recycle_bin_age_files_notification_plug:
-> 當設置為**是** 時，將在計劃任務運行時發送通知
+> 設為 **是**，即可在排程移除過期檔案時傳送通知。
 :end
 
 :recycle_bin_log_deleted_files_plug:
-> 當設置為**是** 時，將記錄已刪除的文件日誌
+> 設為 **是**，即可在日誌中記錄刪除的檔案。
 :end
 
 :recycle_bin_show_log_plug:
-> 回收站日誌：
+> **資源回收筒日誌**：
 >
-> 刪除的文件將在日誌中顯示為未鏈接的文件
-> 單擊“清除”按鈕以清除日誌
+> 日誌會列出已刪除的檔案。按下「清除」可以清空日誌。
 :end
 
 ; Note: December 8, 2024 - 5 missing translations
-Enable Empty All Trash Button=
-Enable Empty Share Trash Button=
-Enable Remove Aged Files Button=
-Recycle Bin is empty=
-These actions apply to all shares=
+Enable Empty All Trash Button=顯示「清空所有資源回收筒」按鈕
+Enable Empty Share Trash Button=顯示「清空共享資源回收筒」按鈕
+Enable Remove Aged Files Button=顯示「移除過期檔案」按鈕
+Recycle Bin is empty=資源回收筒是空的
+These actions apply to all shares=這些操作會套用至所有共享資料夾

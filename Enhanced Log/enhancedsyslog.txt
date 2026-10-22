@@ -1,0 +1,4 @@
+Enhanced System Log=增強型系統日誌
+Minor Issues=次要問題
+File System=檔案系統
+Drive Related=磁碟相關

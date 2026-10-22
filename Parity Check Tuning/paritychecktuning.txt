@@ -1,0 +1,452 @@
+; Translation text for the Parity Check Tuning plugin
+
+; PART 1 - text strings
+
+; Parity Check Settings Page
+
+Parity Check Tuning=校驗檢查調整
+automatic=自動
+Basic=基本
+below critical disk temperature threshold=低於磁碟危險溫度臨界值
+below warning disk temperature threshold=低於磁碟警告溫度臨界值
+CAUTION=注意
+Click to show parity-check history=點選檢視校驗檢查歷史紀錄
+Data Rebuild=資料重建
+Debug=除錯
+Disk Clear=磁碟清除
+Donate to plugin author=贊助外掛作者
+entry in %s format=使用 %s 格式輸入
+High disk temperatures can shutdown server=磁碟溫度過高可能導致伺服器關機
+Increment frequency=分段執行頻率
+Increment pause time=分段暫停時間
+Increment resume time=分段繼續時間
+No parity check entries found in syslog=系統日誌中沒有校驗檢查紀錄
+ParityRead-Check History=校驗檢查／讀取檢查歷史紀錄
+Parity Check=同位元校驗檢查
+Parity Check Tuning logging=校驗檢查調整日誌
+Parity Sync=校驗同步
+Pause an array operation at=暫停陣列作業的時間
+Pause and Resume array operations if disks overheat=磁碟過熱時暫停及繼續陣列作業
+Read Check=讀取檢查
+Requires Unraid 67 or later=需要 Unraid 6.7 或更新版本
+Resume an array operation at=繼續陣列作業的時間
+Resume parity checks on next array start=下次啟動陣列時繼續校驗檢查
+Resume running Array operations on next array start=下次啟動陣列時繼續陣列作業
+Run %s %s in increments=分段執行 %s %s
+scheduled=依排程
+Send notifications for Pause or Resume of increments=分段作業暫停／繼續時傳送通知
+Send notifications for temperature related Pause or Resume=因溫度暫停／繼續時傳送通知
+Shutdown server at=伺服器關機溫度
+Syslog only=僅系統日誌
+Syslog and Flash=系統日誌與 USB 開機裝置
+Flash only=僅 USB 開機裝置
+Testing=測試中
+Unscheduled=非排程
+Use increments for %s %s=對 %s %s 使用分段執行
+Use increments for disk Clear operations=將磁碟清除作業分段執行
+Use increments for Parity-SyncData Rebuild operations=將校驗同步／資料重建分段執行
+You require a parity disk present for this option to be relevant=必須有校驗磁碟才能使用此選項
+
+; Parity Problems Assistant page
+
+Parity Problems Assistant=校驗問題助理
+
+; page intro text
+
+:parityProblems_intro_plug:
+> **校驗問題助理（Parity Problems Assistant）**是 **Parity Check Tuning** 外掛程式的一部分。<p/>
+> 此功能目前仍屬**實驗性質**，未來可能移除。歡迎提供對基本構想的回饋及改善建議。<p/>
+> 同位元校驗檢查或讀取檢查回報問題，並將異常磁區記錄到系統日誌後，可使用此助理進一步檢查。許多錯誤可能來自線材或電源供應器等外部因素，而非磁碟本身。<p/>
+> 記憶體超頻也可能造成隨機校驗錯誤，在 **Ryzen／ThreadRipper** 系統上尤其需要留意。**XMP 設定檔也屬於超頻**；主機板與 CPU 組合可支援的頻率，可能低於記憶體本身的額定能力。<p/>
+> 如果您認為已排除問題原因，可使用此助理針對小範圍執行局部檢查，確認問題是否仍會出現。相較於完整同位元校驗檢查、完整讀取檢查或磁碟的 S.M.A.R.T. 延伸測試，局部檢查通常更快。<p/>
+> **重要：確認問題排除後，仍須執行完整同位元校驗檢查；此助理不能取代完整檢查。**
+:end
+
+; fields
+
+Click to show Error Sectors from syslog=點選查看系統日誌中的錯誤磁區
+End point for check=檢查終點
+Method used to specify start and stop points=指定檢查起訖點的方式
+Only read checks can be performed=僅能執行讀取檢查
+percent=百分比
+Percentage=百分比
+sector=磁區
+Sector Numbers=磁區編號
+Show Sector Numbers=顯示磁區編號
+Start Check=開始檢查
+Start point for check=檢查起點
+Write Corrections to Parity=將修正寫入校驗磁碟
+
+; PHP file messages
+
+Analyze results from an array operation=分析陣列作業結果
+Array being shutdown due to drive overheating=磁碟過熱，正在關閉陣列
+Array operation will not be restarted=不會重新啟動陣列作業
+Array operation restarted=已重新啟動陣列作業
+Array shutdown=陣列已關閉
+Cancel a running parity check=取消執行中的校驗檢查
+Correcting=修正模式
+Detected a change to the disk configuration=偵測到磁碟配置變更
+Drives cooled down=磁碟溫度已下降
+Elapsed Time=經過時間
+ERROR=錯誤
+Following drives overheated=下列磁碟過熱
+IMPORTANT=重要
+Increments=分段執行
+Non-Correcting=不修正模式
+Pause a running array operation=暫停執行中的陣列作業
+Resume a paused array operation=繼續已暫停的陣列作業
+Sent notification=已傳送通知
+Show the status of a running parity check=顯示執行中的校驗檢查狀態
+Shutdown=關機
+Start a correcting parity check=啟動會修正錯誤的校驗檢查
+Start a parity check with scheduled settings=使用排程設定啟動校驗檢查
+Starting Shutdown=開始關機程序
+Unclean shutdown detected=偵測到非正常關機
+Unknown action=未知操作
+Unrecognized option=無法識別的選項
+Usage=用法
+where action is one of=可用操作如下
+
+; Notifications
+
+aborted due to Unclean shutdown=因非正常關機而中止
+array stopping so progress will be lost=陣列正在停止，作業進度將遺失
+
+; The type of array operation (parity check, clear, rebuild) will be appended to the following text
+
+Automatic Unraid=Unraid 自動作業
+Average Speed=平均速度
+completed=已完成
+Correcting Parity Check=修正型校驗檢查
+Drives cooled down=磁碟溫度已下降
+errors=錯誤
+finished=已完成
+Increments=分段執行
+NonCorrecting Parity Check=非修正型校驗檢查
+Pause=暫停
+Paused=已暫停
+Resume=繼續
+Resumed=已繼續
+Runtime=執行時間
+Scheduled pause=排程暫停
+Unclean shutdown detected=偵測到非正常關機
+will be started=即將啟動
+
+; Swal warnings
+
+A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week=crontab 項目應包含 5 個以空白分隔的欄位：分鐘、小時、每月日期、月份、星期
+At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=目前不會自動限制此檔案持續增長，請自行管理日誌大小
+Are you sure you have not got these the wrong way around=您確定沒有將這些數值填反嗎？
+Before you can set this option to Yes you must first have enabled system notifications=啟用此選項前必須先啟用系統通知
+Click on the crontab link to get more details on valid formats=點選 crontab 連結以瞭解有效的格式
+Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=除錯模式可能產生大量系統日誌，非排除問題時不應持續啟用
+Debug mode is intended to give users a feel for when the plugin is active=除錯模式用於瞭解外掛何時正在執行
+Do not leave this active if you are not interested in this information=不需要這些資訊時請勿保持啟用
+Do you really want Debug logging mode=確定要啟用除錯日誌模式嗎？
+Do you really want Testing logging mode=確定要啟用測試日誌模式嗎？
+Do you really want to log to the flash drive=確定要將日誌寫入 USB 開機裝置嗎？
+Do you really want this=確定要執行此操作嗎？
+Error in custom entry=自訂項目有錯誤
+extra time that will elapse before the system is once again in a protected state=陣列恢復完整校驗保護前，還需要額外等待的時間
+Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime=將日誌寫入 USB 開機裝置會增加寫入量，可能縮短裝置壽命
+Notifications not enabled=未啟用通知
+On most systems a disk Clear operation does not adversely affect performance so typically this option is left disabled=多數系統執行磁碟清除不會明顯影響效能，通常建議停用此選項
+Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=僅在作業明顯影響使用且願意延後恢復校驗保護時才啟用
+Pause and Resume times=暫停與繼續時間
+Pausing a disk Clear operation extends the time before the disk is successfully added to the array and becomes ready for formatting and then used for data storage=暫停磁碟清除會延後新磁碟加入陣列及開始使用的時間
+Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until=分段建立校驗資料或重建故障磁碟會延長陣列尚未恢復完整保護的時間，存在一定風險
+Temperature Pause and Resume=溫度觸發的暫停與繼續
+Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin=測試模式通常僅供作者或排查外掛錯誤時使用
+Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless this is really necessary=測試模式會產生大量詳細日誌，非必要請勿啟用
+The Pause and Resume times would give an increment length of more than 12 hours which is unusual=暫停與繼續時間設定使每段超過 12 小時，這並不常見
+The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=因溫度暫停／繼續使用的是相對於警告溫度的偏移值；繼續值必須大於暫停值
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the Unraid level=此值是相對於 Unraid 磁碟溫度警告臨界值的偏移量，不是絕對溫度
+This might affect array integrity=這可能影響陣列資料完整性
+Unusually large value=設定值異常偏高
+
+; Syslog messages (with debug logging disabled)
+
+%s Cancelled=%s 已取消
+Array not started so no action taken=陣列尚未啟動，因此未執行操作
+as drives now cooled down=因為磁碟溫度已下降
+Following drives overheated=下列磁碟過熱
+Only able to start a Read-Check due to number of disabled drives=因停用的磁碟數量過多，只能啟動讀取檢查
+
+; Syslog messages (with debug logging enabled)
+; (probably not worth translating these as they are mainly of use to the plugin developer)
+
+appears to be a regular scheduled check=這似乎是一般排程檢查
+%s cancel request sent %s=已傳送 %s 取消要求 %s
+already running=已在執行中
+array drives=陣列磁碟
+Array operation paused but drives not cooled enough to resume=陣列作業已暫停，但磁碟尚未降溫到可繼續的程度
+Array operation paused but not for temperature related reason=陣列作業已暫停，但原因與溫度無關
+Array stopping=陣列正在停止
+Array stopping while %s was in progress %s=陣列停止時 %s 仍在執行 %s
+but no action currently taken on started event=收到啟動事件，但目前無須採取操作
+but no parity check was in progress when array stopped=陣列停止時並沒有正在執行的校驗檢查
+Cancel request=取消要求
+cool=冷卻
+created cron entries for running increments=已建立分段執行的 cron 項目
+created cron entry for monitoring disk temperatures=已建立磁碟溫度監控的 cron 項目
+Detected that array has not yet been started=偵測到陣列尚未啟動
+Detected that array has just been started=偵測到陣列剛啟動
+detected that mdcmd had been called from %s with command %s=偵測到從 %s 呼叫 mdcmd，使用命令 %s
+ERROR=錯誤
+hot=過熱
+Loading progress file %s=正在載入進度檔案 %s
+No action specified=未指定操作
+No array operation currently in progress=目前沒有正在執行的陣列作業
+No cron events for this plugin are needed=此外掛不需要任何 cron 工作
+No drives appear to have reached shutdown threshold=沒有磁碟達到關機溫度門檻
+Not allowed as %s already running=不允許執行，因為 %s 已在執行中
+Option not currently recognized=目前不認得此選項
+Parity check appears to be paused=校驗檢查似乎已暫停
+Parity Check was in progress when array stopped at %s=陣列於 %s 停止時校驗檢查仍在執行
+Pause of=暫停
+Pause request=暫停要求
+Removed existing state file %s=已移除既有狀態檔案 %s
+Resume request=繼續要求
+so no further action to take=因此無需進一步操作
+Temperature monitoring switched off=已停用溫度監控
+Unscheduled array operation in progress=非排程陣列作業執行中
+using scheduled mode of %s=使用 %s 排程模式
+warm=溫度偏高
+with all array drives below temperature threshold for a Pause=所有陣列磁碟溫度均低於暫停臨界值
+
+; Syslog messages (with testing logging enabled)
+; (almost certainly not worth translating these as they are mainly of use to the plugin developer)
+
+analyze previous progress before starting new one=開始新工作前分析先前的進度
+Array not started so no action taken=陣列尚未啟動，因此未執行操作
+Drive %s%s appears to be critical=磁碟 %s%s 似乎已達危險溫度
+Plugin temperature settings=外掛溫度設定
+shutdown %s=關機 %s
+Shutdown not actioned as running in TESTING mode=目前為測試模式，不會真的執行關機
+updated cron settings are in %s=已更新 cron 設定：%s
+
+; PART 2 - TEXT Blocks ant HELP text
+
+End point for check=檢查終點
+Method used to specify start and stop points=指定檢查起訖點的方式
+
+; Help text on settings page
+; These could perhaps be left in English to keep translation task easier)
+
+:parity_tune_explain_plug:
+> 本外掛程式主要讓您將同位元校驗檢查等陣列作業，安排在不影響日常使用的時段執行。
+>
+> 設為**否**時，維持系統預設行為：檢查會持續執行直到完成，除非您手動停止、暫停或取消。
+>
+> 設為**是**時，檢查會分成多個時段，跨數天執行。例如：
+>
+> * 您已排定每月 1 日午夜開始同位元校驗檢查。
+> * 過去經驗顯示，不間斷的完整檢查需要 30 小時。
+> * 您在本外掛程式設定每天午夜至凌晨 3 點執行，每次 3 小時。
+> * 檢查將跨 10 天完成（10 × 3 = 30 小時），也就是當月 10 日完成。
+> * 這些時段安排在系統無人使用的午夜至凌晨 3 點。
+> * 雖然完成日期延後，平常使用時的系統回應速度則可改善。
+> * 該月剩餘日期若沒有尚未完成的檢查，即使到了執行時段，外掛程式也不會執行任何作業。
+>
+> **注意：依 Unraid 預設行為，若陣列作業尚未完成就停止陣列，目前進度會遺失，只能從頭重新開始。**
+:end
+
+:parity_tune_increments_plug:
+> 設為**是**時，同位元校驗檢查會分成多個時段，跨數天執行。
+>
+> 設為**否**時，維持系統預設行為：檢查持續執行直到完成，除非您手動停止、暫停或取消。
+>
+> **注意：依 Unraid 預設行為，若陣列作業尚未完成就停止陣列，目前進度會遺失，只能從頭重新開始。**
+:end
+
+:parity_tune_frequency_plug:
+> 設定分段同位元校驗檢查的執行頻率。
+>
+> 預設為<strong>每日</strong>，適合大多數使用者。若需要其他頻率，可選擇<strong>自訂</strong>，以設定更複雜的暫停與繼續時間排程。
+>
+> 選擇自訂時，請使用 Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> 格式指定時間。
+:end
+
+:parity_tune_manual_plug:
+> 設定手動啟動的同位元校驗檢查是否也要分段執行。
+>
+> 如果希望手動啟動的檢查持續執行直到完成，請保留為**否**。
+>
+> 設為**是**時，從主頁手動啟動同位元校驗檢查後，再手動**暫停**檢查，就會依排定的時段分段執行，直到檢查完成。
+:end
+
+:parity_tune_automatic_plug:
+> 若 Unraid 未正常關機，下次啟動陣列時，會自動開始不寫入修正的同位元校驗檢查；若沒有校驗磁碟，則執行讀取檢查。停電、硬體或軟體問題都可能造成非正常關機。校驗錯誤可能影響日後陣列磁碟故障時的資料復原能力，因此應儘早確認校驗資料有效。
+>
+> 啟用此選項後，自動檢查會先執行幾分鐘；若當時不在分段執行時段內，就會自動暫停。剩餘部分將依設定的時段分段執行。
+:end
+
+:parity_tune_resume_plug:
+> 設定繼續執行已暫停之同位元校驗檢查的時間。到達指定時間時，若沒有已暫停的檢查，就不會執行任何動作。
+>
+> 通常可設為夜間閒置時段的開始時間，也可與定期同位元校驗檢查的開始時間相同。
+>
+> 若分段頻率設為**自訂**，小時與分鐘欄位會隱藏，改用 <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> 格式指定時間。
+:end
+
+:parity_tune_pause_plug:
+> 設定暫停執行中同位元校驗檢查的時間。通常設在希望其他活動不受檢查影響的時段開始前。到達指定時間時，若沒有執行中的檢查，就不會執行任何動作。
+>
+> 暫停時間通常應晚於定期檢查的開始時間。第一段檢查會從定期檢查開始時，一直執行到這裡指定的結束時間。
+>
+> 若分段頻率設為**自訂**，小時與分鐘欄位會隱藏，改用 <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> 格式指定時間。
+>
+> 請確保分配的執行時間足以在下次定期檢查開始前完成本次檢查。多數人每月或每季才執行一次，通常不會遇到此問題，但仍應納入規劃。
+:end
+
+:parity_tune_notify_plug:
+> 設為<strong>是</strong>時，每當外掛程式暫停或繼續陣列作業，都會傳送通知。若不需要通知，請保留為**否**。
+>
+> 通知以**一般通知（Notice）**類別傳送至 <a href="Settings/Notifications">設定 → 通知設定</a> 中指定的接收目標。
+:end
+
+:parity_tune_allops_plug:
+> 設定建立新校驗資料或重建故障磁碟時，是否也要分段執行。
+>
+> 這些作業用於陣列可能有問題、需要恢復保護狀態的情況。
+>
+> **重要：作業完成前，陣列尚未恢復完整保護，因此建議大多數使用者保留為否。**除非您完全確定需要分段執行，否則請勿選擇**是**。
+:end
+
+:parity_tune_clear_plug:
+> 設定「磁碟清除」是否要分段執行。
+>
+> 將尚未透過預清除外掛程式處理的新磁碟加入受校驗保護的陣列時，會執行磁碟清除。清除作業會將新磁碟的所有磁區寫入零值，使磁碟加入陣列時不影響既有校驗資料。清除完成前，無法在 Unraid 中格式化該磁碟，也無法用來儲存資料。
+>
+> 由於清除完成前磁碟無法使用，大多數使用者可能會希望保留為**否**。此外，清除作業通常對系統負載的影響較小，比較不會影響日常使用的效能。
+:end
+
+:parity_tune_restart_plug:
+> 一般情況下，關機、重新啟動或停止陣列會放棄尚未完成的同位元校驗檢查，之後只能從頭開始。
+>
+> 啟用此選項後，只要符合下列條件，外掛程式就能從先前進度繼續檢查：
+>
+> * 陣列已正常停止。
+> * 使用者未變更陣列設定。
+>
+> 符合條件時，下次啟動陣列就會從原本進度繼續。
+>
+> **注意事項：**
+>
+> * 若原作業依分段排程執行，重新啟動作業時已不在執行時段內，作業會保持暫停。
+> * 若原作業是手動暫停，恢復後也會保持暫停。
+> * 若只想停止陣列，而不是立即按下**重新啟動**或**關機**，請先手動**暫停**陣列作業，再按**停止**。成功停止後，再次**啟動**陣列，或於重新啟動／關機後下次啟動陣列時，都能恢復原作業進度。
+:end
+
+:parity_tune_hot_plug:
+> 磁碟溫度超過您設定的限制時，暫停陣列作業，包括同位元校驗檢查、校驗同步／磁碟重建及磁碟清除。
+>
+> 判斷基準為磁碟的**警告溫度**。若個別磁碟有設定門檻（在主頁按一下磁碟可設定），就使用個別值；否則使用「設定 → 顯示設定」中的全域值。通常應在 Unraid 發出警告之前先暫停作業。
+>
+> 較理想的解決方式是改善機殼散熱，避免磁碟過熱；但實際環境未必能立即改善。
+>
+> 若作業依分段排程執行，在排定時段之外不會繼續；若作業因其他原因啟動，則溫度控制的暫停／繼續機制會持續生效。
+:end
+
+:parity_tune_warn_plug:
+> 設定磁碟溫度距離**警告溫度門檻**還差幾度時，就暫停執行中的陣列作業。有個別磁碟設定時使用個別門檻，否則使用全域設定。
+>
+> 通常應設定較小的正數，讓外掛程式在 Unraid 發出磁碟溫度警告前先暫停作業。
+>
+> 例如，磁碟的警告門檻為 50°C，暫停差值設為 5，該磁碟達到 45°C（50 − 5）時就會暫停作業。
+>
+> 若沒有執行中的陣列作業，即使超過指定溫度，也不會執行暫停動作。
+:end
+
+:parity_tune_low_plug:
+> 設定磁碟溫度必須低於**警告溫度門檻**多少度，才繼續執行已暫停的陣列作業。
+>
+> 請在避免過早繼續、很快又因過熱暫停，以及避免等待過久之間取得平衡。
+>
+> 磁碟若已停止轉動，溫度通常無法立即取得，此時會視為已符合降溫條件。
+>
+> 若沒有已暫停的陣列作業，就不會執行任何動作。
+:end
+
+:parity_tune_temp_notify_plug:
+> 設為**是**時，每當外掛程式因磁碟溫度而暫停或繼續陣列作業，都會傳送通知。<br>
+> 若不需要此類通知，請保留為**否**。通知以**一般通知（Notice）**類別傳送至 <a href="Settings/Notifications">設定 → 通知設定</a> 中指定的接收目標。
+:end
+
+:parity_tune_shutdown_plug:
+> 設為**是**時，若陣列或快取池中的任何磁碟達到指定溫度門檻，就會自動開始正常關機程序。
+>
+> 判斷基準為磁碟的**危急溫度**。若個別磁碟有設定（在主頁按一下磁碟可設定），就使用個別值；否則使用 <a href="Settings/DisplaySettings">設定 → 顯示設定</a> 中的全域值。
+>
+> 此功能用於散熱不足或散熱系統故障的情況，希望在嚴重過熱損壞磁碟前正常關機。其作用與在 Unraid 主頁按下**關機**相同；若已啟用通知，也會傳送關機通知。
+>
+> 伺服器再次開機並啟動陣列時，會通知您上次曾因溫度而關機，以便您確認原因。
+>
+> **注意：依預設行為，若陣列作業尚未完成就停止陣列，目前進度會遺失，只能從頭重新開始。**
+:end
+
+:parity_tune_critical_plug:
+> 設定磁碟溫度距離**危急溫度門檻**還差幾度時，就觸發伺服器關機。
+>
+> 可設定較小的正數，讓關機在 Unraid 發出磁碟危急溫度通知之前開始。
+>
+> 若個別磁碟有設定危急溫度，就使用個別值；否則使用全域設定。
+:end
+
+:parity_tune_logging_plug:
+> 設定日誌記錄的詳細程度。遇到外掛程式問題時，可提高詳細程度以協助偵錯。
+>
+> 依產生訊息的功能不同，外掛程式訊息會以下列來源名稱顯示：
+>
+> * **Parity-Check Tuning**
+> * **Parity Problems Assistant**
+>
+> **基本（Basic）**只記錄少量訊息，指出外掛程式已採取的動作。
+>
+> **偵錯（Debug）**會在系統日誌加入更多執行資訊，說明外掛程式的內部運作。這些訊息以 **DEBUG** 開頭。初次使用者也可藉此瞭解運作方式，但一般使用時不建議持續啟用。
+>
+> **測試（Testing）**主要供開發者使用，會記錄更詳細的訊息，對一般使用者可能沒有意義。訊息以 **TESTING** 開頭。**只有在支援人員要求時才啟用此等級，以免快速塞滿系統日誌。**
+>
+> 歡迎回饋是否需要新增介於基本與偵錯之間的等級，只記錄外掛程式活動資訊，省略用於診斷問題的底層細節。
+>
+> 測試模式可選擇記錄位置。預設為標準系統日誌，也是基本模式唯一允許的位置。系統日誌儲存在記憶體中，不會造成 USB 開機裝置過度寫入。
+>
+> 為便於偵錯，測試模式可改將日誌寫入 USB 開機裝置，或同時寫入系統日誌。產生的 `parityTuning.log` 會放在 USB 開機裝置的外掛程式資料夾中；將此檔案提供給開發者，有助於診斷非預期行為。
+:end
+
+:parityProblems_type_plug:
+> 選擇指定檢查起點與終點的方式。
+>
+> 若系統日誌已列出發生錯誤的磁區，可使用絕對磁區編號。這種方式通常較精確，檢查範圍也較小，但設定可能需要較多準備。
+>
+> 另一種方式是使用百分比；系統會依**最大校驗磁碟的容量**計算對應的磁區編號。
+:end
+
+:parityProblems_start_plug:
+> 設定檢查起點，可指定磁區編號，或最大校驗磁碟容量的百分比。
+>
+> 若已從原始檢查的 *syslog* 系統日誌取得異常磁區編號，指定絕對磁區尤其有用。未來版本可能自動擷取這些磁區，並提供下拉式選單，但目前尚未實作此功能。
+>
+> 受技術限制影響，實際檢查可能從指定位置稍早的地方開始，差距通常很小。
+:end
+
+:parityProblems_end_plug:
+> 設定檢查終點，可指定磁區編號，或最大校驗磁碟容量的百分比。
+>
+> 由於系統每分鐘才確認一次是否到達終點，實際停止位置可能略晚於指定位置。
+:end
+
+:parityProblems_correct_plug:
+> 設定是否嘗試更新校驗資料，以修正發現的錯誤；或只進行讀取檢查，確認是否回報校驗錯誤。
+:end
+
+:parityProblems_check_plug:
+> 按下**開始檢查**，會針對指定起點與終點之間的範圍執行局部檢查。
+>
+> 若**寫入修正**設為**是**，會執行修正型檢查；否則只進行讀取檢查。
+:end
+
+:parityProblems_sectors_plug:
+> 按下**顯示磁區編號**，對話框會列出從系統日誌擷取的校驗異常磁區記錄，並指出各磁區已修正，或仍有校驗錯誤。
+:end

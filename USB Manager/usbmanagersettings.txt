@@ -1,0 +1,29 @@
+
+
+:ud_settings_symlinks_plug:
+> 設為「是」可載入此欄位指定的核心模組。設為「否」不會卸除已載入的模組，只會避免在服務啟動或重新開機時自動載入。
+:end
+
+:usb_manager_settings_destructive_plug:
+> 啟用後會啟動 usbipd 背景服務；停用時會停止正在執行的服務，並取消開機自動啟動。
+:end
+
+:usbmgr_HostDisc_run_help:
+> 設定遠端主機探索方式。「手動」需自行透過介面新增主機；「自動」則依下方設定新增或移除偵測到的主機。
+:end
+
+:usbmgr_HostFind_freq_help:
+> 設定遠端主機探索的執行間隔，可選每 1 至 10 小時。工作會在對應小時的整點執行。
+:end
+
+:usbmgr_HostDisc_incexc_help:
+> 設定遠端主機探索時的處理原則。動作選項可決定新增找到的主機、移除已找不到的主機，或兩者皆執行；本機主機選項則決定是否將本機納入探索處理。
+:end
+
+:usbmgr_HostCheck_run_help:
+> 啟用或停用遠端主機狀態檢查。
+:end
+
+:usbmgr_HostCheck_freq_help:
+> 設定遠端主機狀態檢查的間隔，可選每 1 至 30 分鐘。
+:end

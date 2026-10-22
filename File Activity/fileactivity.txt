@@ -1,0 +1,36 @@
+Display Events=顯示事件數量
+File Activity=檔案活動
+File Activity Monitoring=檔案活動監控
+Start File Activity=開始監控檔案活動
+Stop File Activity Monitoring=停止檔案活動監控
+Clear the File Activity log=清除檔案活動日誌
+Refresh Page=重新整理頁面
+Enable File Activity Monitoring=啟用檔案活動監控
+Enable for Unassigned Devices=監控未指派裝置
+Enable for Cache and Pool Disks=監控快取與儲存池磁碟
+;
+; Help
+;
+:file_activity_logging_plug:
+> 檔案活動監控使用 inotify 記錄陣列、共享資料夾、未指派裝置與儲存池的檔案開啟、讀取、寫入及修改事件。
+> 啟動監控後才會開始記錄。建議僅於排除問題時短時間使用，以免大量活動填滿日誌。
+> 預設排除 appdata、docker、syslogs 及 system 目錄（不區分大小寫）。
+>
+> 停止陣列時監控也會停止；若已設定啟用，陣列重新啟動後將恢復監控。
+:end
+
+:file_activity_enable_logging_plug:
+> 選擇「是」，在伺服器啟動後啟用檔案活動監控。
+:end
+
+:file_activity_enable_ud_plug:
+> 選擇「是」，在安裝 Unassigned Devices 外掛時一併監控未指派裝置。
+:end
+
+:file_activity_enable_cache_plug:
+> 選擇「是」，監控快取與儲存池磁碟。
+:end
+
+:file_activity_display_events_plug:
+> 設定每個磁碟或共享資料夾從檔案活動日誌顯示的事件筆數。
+:end

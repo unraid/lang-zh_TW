@@ -1,0 +1,26 @@
+The author takes no responsibility if you blindly accept the folders offered to delete=若未確認要刪除的資料夾便直接操作，外掛作者不承擔因此造成的資料損失責任。
+Docker Not Running=Docker 未執行
+Because the docker service is not currently running, this module will prompt you to delete the appdata for any/all docker applications which are installed=由於 Docker 服務目前未執行，此工具可能將已安裝容器的 appdata 資料夾列為候選刪除項目，請務必確認。
+Are You Sure=確定要繼續嗎？
+Are you sure you want to delete these folders Read this carefully as there is no recovery in the event of a mistake=確定要刪除這些資料夾嗎？請仔細確認：誤刪後可能無法復原。
+Delete=刪除
+Deleting Folders=正在刪除資料夾
+Depending upon the size of the folders, this may take a few minutes=依資料夾大小，操作可能需要幾分鐘。
+Deleted=已刪除
+The following appdata paths have been determined based upon your previously installed applications to be no longer in use Select which ones you would like to be deleted=根據先前安裝的應用程式，偵測到下列可能已不再使用的 appdata 路徑。請仔細確認後再勾選要刪除的項目。
+; Note that this module reviews all of your previously installed Docker Containers to determine which appdata folders are abandoned. If you deleted the previously installed list (either through Community Applications or manually), those results will not be displayed. In other words, if there is no record for a folder within the previously installed Containers, you will not be prompted to delete it.
+In the case of a severely misconfigured previously installed app, the entire contents of a share may be proposed for deletion. It is your responsibility to confirm the folders proposed for deletion. If you inadvertently delete a share you intended to keep due to misconfiguration, the deletion is not reversible and the plugin author assumes no responsibility=**警告：**如果舊容器設定錯誤，整個共享資料夾都可能被列入刪除清單。請逐一核對路徑；誤刪資料不可復原，外掛作者不承擔責任。
+Select All=全選
+Delete Selected=刪除選取項目
+Done=完成
+Credits=致謝
+For support for this plugin, visit here=此外掛的支援資訊請參閱
+HERE=這裡
+Plugin Version=外掛版本
+
+; Additional runtime lookup variants
+Note that this module looks at all of your previously installed docker applications to determine which appdata folders are abandoned If you have deleted the previously installed list either through Community Applications or manually, then it will not display those result IE If there is not a record for the folder within the previously installed apps, then you will not be prompted to delete the folder=此模組會依據先前安裝過的 Docker 應用程式，判斷哪些 appdata 資料夾已不再使用。若透過 Community Applications 或手動刪除了先前安裝記錄，相關資料夾就不會出現在結果中；沒有對應記錄的資料夾，也不會顯示刪除提示。
+In case of a severely misconfigured app previously installed, the entire contents of a share MAY be offered up to delete It is your responsibility to confirm all of the folders being offered up to delete If you inadvertently delete a share which you actually do want to keep due to your own mistakes in configuring an application, the deletion is not reversable and the author of the plugin will take no responsiblility=**警告：**若先前安裝的應用程式設定嚴重錯誤，整個共享資料夾的內容都可能被列為可刪除項目。您必須逐一確認列出的資料夾。若因應用程式設定錯誤而誤刪仍需保留的共享資料夾，刪除將無法復原，外掛程式作者不承擔責任。
+
+; Settings detailed-help audit (Unraid 7.3.3)
+No orphaned appdata folders found=未找到沒有對應應用程式的 appdata 資料夾

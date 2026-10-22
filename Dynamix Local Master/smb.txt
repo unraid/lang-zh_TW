@@ -1,0 +1,22 @@
+Current elected master=目前選出的主要瀏覽器
+is current local master browser=目前是區域網路主要瀏覽器
+Local master=區域網路主要瀏覽器
+Monitor local master election=監控主要瀏覽器選舉
+please wait, obtaining=正在取得，請稍候
+Workgroup=工作群組
+
+:smb_workgroup_plug:
+> 輸入區域網路的工作群組名稱，通常是 WORKGROUP。
+:end
+
+:smb_master_plug:
+> 選擇「是」時，伺服器會參與 SMB 網路的主要瀏覽器選舉。如果沒有其他伺服器，通常會成為主要瀏覽器。
+:end
+
+:smb_master_election_plug:
+> 啟用或停用對區域網路主要瀏覽器選舉的背景監控。監控結果會顯示於頁首右上角。
+:end
+
+:smb_master_current_plug:
+> 即時顯示目前選出的區域網路主要瀏覽器。
+:end

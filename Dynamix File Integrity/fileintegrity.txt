@@ -1,0 +1,133 @@
+Apple metadata=Apple 中繼資料
+Array must be Started to use this feature=陣列必須**啟動**才能使用此功能
+Automatically protect new and modified files=自動保護新建和修改的檔案
+BLAKE2=BLAKE2
+Build=建立
+Continue=繼續
+Corz=Corz
+Custom files=自訂檔案
+Custom folders=自訂資料夾
+Day of the month=每月日期
+Day of the week=星期幾
+Disk selection=選擇磁碟
+Disk verification schedule=磁碟驗證排程
+Dont start=不要開始
+Download Now=立即下載
+Dynamix File Integrity=Dynamix 檔案完整性
+Error logging=錯誤日誌
+Excluded files=排除的檔案
+Excluded folders and files=排除的資料夾和檔案
+Excluded folders=排除的資料夾
+File Duplicates Check=重複檔案檢查
+Find=尋找
+Generate Corz Files=產生 Corz 檔案
+hash files=雜湊值
+Hashing method=雜湊演算法
+Header menu=標題選單
+HHMM=HH:MM
+Import=匯入
+Include duplicate file hashes in Find command=在**查詢**命令中包含重複檔案的雜湊值
+log files=日誌檔案
+Low=低
+MD5=MD5
+Output file=輸出檔案
+Placement of file integrity control=檔案完整性設定頁面的位置
+Process priority=處理程序優先順序
+Save new hashing results to flash=將新的雜湊值儲存至 USB 開機裝置
+saved files=已儲存檔案
+Send notifications=傳送通知
+SHA2=SHA2
+Syslog only=僅系統日誌
+Syslog Output file=系統日誌與輸出檔案
+Task=工作
+Time of the day=當日時間
+Toggle all=切換全部
+Tools menu=工具選單
+Verification tasks=驗證工作
+view hash files=檢視雜湊值
+view log files=檢視日誌檔案
+view saved files=檢視儲存檔案
+When parity operation is running=執行同位元校驗作業時
+
+:integrity_control_plug:
+> 選擇 檔案完整性控制的配置‌ 頁面的放置位置。預設放在**工具選單**下，也可移至標題選單。
+>
+> 注意，**標題選單**空間有限。
+:end
+
+:integrity_service_plug:
+> 當啟用時，會自動計算校驗值並新增到新建立或修改的檔案擴充套件屬性中‌。
+> 當檢測到檔案變化，但修改時間並未更新時，自動執行校驗和驗證，以檢查檔案是否損壞。
+>
+> 保護範圍可通過排除資料夾（共享）和磁碟來選擇，（參見下表）。
+>
+> 自動雜湊功能停用時，需手動更新雜湊值來確保資訊及時更新。
+:end
+
+:integrity_hashing_plug:
+> 選擇預設雜湊演算法。對於每個檔案，SHA2 生成 256 位校驗和值，MD5 生成 128 位校驗和值，BLAKE2 生成 512 位校驗和值。
+>
+> MD5是最常用的方法，當需要與外部程式相容時，應選擇MD5。BLAKE2則是最快的方法，且具有最高的檢測等級，不過這是一個專有解決方案。
+> SHA2是官方標準且預設被勾選，儘管它是三種方法中最慢的。如果處理器不支援BLAKE2，則該選項會被停用‌。
+> 所有雜湊方法（如MD5、SHA2、BLAKE2等）都需要處理器提供強大的計算能力，如果處理器效能過弱，可能無法達到預期的效能表現‌。
+:end
+
+:integrity_flash_plug:
+> 當在快閃記憶體裝置上啟用此功能時，每天都會建立一個檔案，用於儲存當天所有新檔案或修改過的檔案的校驗和值結果‌。
+> 此檔案與標準匯出檔案格式相同。每日檔案儲存為 */config/plugins/dynamix.file.integrity/saved/disks.export.&lt;date&gt;.new.hash*。
+:end
+
+:integrity_exluded_plug:
+> 在此選擇任何從自動雜湊計算和驗證功能中排除的資料夾（共享）。排除後，建立在多塊磁碟上的共享在對應磁碟執行計算時會跳過。
+>
+> 使用**自訂資料夾/自訂檔案**手動輸入排除項。多個排除項以逗號分隔。<br>
+> 例如資料夾名 **`.Recycle.Bin`**，檔名 **`my_workfile.tmp`** 和副檔名 **`*.tmp`**。
+>
+> 選擇 **Apple 後設資料**以排除 Apple 的 Netatalk 建立的後設資料檔案（.AppleDB 和 .DS_Store）。
+:end
+
+:integrity_verification_plug:
+> 啟用後，將建立 cron 排程以在背景執行檔案驗證。 需要決定哪些磁碟參與自動雜湊計算和驗證，見下方表單。
+> cron 排程可按日、周或月執行。
+>
+> 可建立多個任務，每個任務可包含多塊磁碟。同一任務中的所有磁碟並行驗證。如此可減少總執行時間，但增加了處理器負載。
+> 依據處理器算力調整磁碟的任務分組，確保你的處理器能承受如此的負載。一方面，所有磁碟都可放入同一任務以到達最高併發。
+> 另一方面，可為每塊磁碟建立它自己的任務，實現最低處理器負載。
+>
+> 核取方塊不可用且帶有紅色背景的磁碟，正在背景執行驗證任務。背景驗證任務無法停止。
+>
+> 存在多個任務時，每個任務按排程輪流執行。例如，建立包含 3 個任務的每週排程，每週都依次執行 1 個任務，3 週後所選磁碟上的驗證全部完成。
+>
+> 驗證排程關閉時，需手動操控以驗證檔案完整性。
+:end
+
+:integrity_priority_plug:
+> 背景任務可以正常或低優先順序執行。
+:end
+
+:integrity_parity_plug:
+> 若系統校驗操作正在執行，驗證任務可跳過或正常執行。
+> 如果跳過，到下一輪排程時才會執行驗證任務。
+:end
+
+:integrity_day_of_the_week_plug:
+> 若制定每週排程，在此選擇執行日。
+:end
+
+:integrity_day_of_the_month_plug:
+> 若制定月排程，在此選擇執行日期。
+:end
+
+:integrity_time_of_the_day_plug:
+> 選擇排程工作執行時分，以 5 分鐘為間隔。
+:end
+
+:integrity_notifications_plug:
+> 選擇是，檢測到檔案損壞時接收通知。
+> 如何設定並接收“警告”通知，請參閱系統通知設定頁面。
+:end
+
+:integrity_logging_plug:
+> 錯誤日誌記錄，包含檔案損壞檢測資訊，可記入系統日誌或作為檔案存入快閃記憶體。
+> 關閉錯誤日誌記錄將停止日誌建立，但仍可接收通知。
+:end

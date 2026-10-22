@@ -1,27 +1,37 @@
-Hide Deprecated Applications=隱藏已棄用的應用程序
-This setting hides deprecated applications from the list of available apps Deprecated apps will still however display within the installed and previous apps sections=此設置隱藏可用應用列表中已棄用的應用程序，但已棄用的應用仍將顯示在已安裝的應用和以前的應用中
-Hide Incompatible Applications=隱藏不兼容的應用程序
-This setting will hide applications that are listed as being incompatible with your version of Unraid=此設置將隱藏列出的與您的Unraid 版本不兼容的應用程序
-This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=此選項啟用卡片和彈出窗口上的另一個按鈕，該按鈕允許您使用默認模板值重新安裝已安裝的應用程序。此選項有時會令人混淆，通常在您希望安裝並且同時運行應用程序兩次時才使用
-Allow CA to check for updates to applications=允許CA 檢查應用程序的更新
-This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=此設置使CA 能夠檢查應用程序的更新，請注意：社區應用程序將始終檢查自身的更新
+Hide Deprecated Applications=隱藏已棄用的應用程式
+This setting hides deprecated applications from the list of available apps Deprecated apps will still however display within the installed and previous apps sections=從可安裝的應用程式清單隱藏已棄用項目；「已安裝」與「先前安裝」清單仍會顯示這些項目。
+Hide Incompatible Applications=隱藏不相容的應用程式
+This setting will hide applications that are listed as being incompatible with your version of Unraid=隱藏標示為不相容於目前 Unraid 版本的應用程式。
+This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=在應用程式卡片與彈出式視窗新增按鈕，讓您使用範本預設值重新安裝已安裝的應用程式。此選項可能造成混淆，通常僅在需要同時執行同一應用程式的兩個執行個體時使用。
+Allow CA to check for updates to applications=允許CA 檢查應用程式的更新
+This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=此設定使CA 能夠檢查應用程式的更新，請注意：社群應用程式將始終檢查自身的更新
 Allow CA to send any emergency notifications=允許CA 發送任何緊急通知
-This setting allows CA to periodically scan your system and alert you to the presence of=此設置支持CA 定期掃描系統並在存在此項目時向您發出警報
-1 Known malware and security vulnerabilities within applications=1 應用程序中的已知惡意軟件和安全漏洞
+This setting allows CA to periodically scan your system and alert you to the presence of=允許 Community Applications 定期掃描系統，發現下列問題時發出警報：
+1 Known malware and security vulnerabilities within applications=1 應用程式中的已知惡意軟體和安全漏洞
 2 Critical security vulnerabilities within Unraid OS=2 Unraid OS 中的嚴重安全漏洞
-3 Any installed applications which may seriously hinder the operation of your server=3 任何可能嚴重阻礙服務器運行的已安裝應用程序
-Save CA debugging information=保存CA 調試信息
-Only enable this when advised to from the author of Community Applications=僅在社區應用程序的作者建議時啟用此功能
+3 Any installed applications which may seriously hinder the operation of your server=3 任何可能嚴重阻礙伺服器執行的已安裝應用程式
+Save CA debugging information=儲存 CA 除錯資訊
+Only enable this when advised to from the author of Community Applications=僅在社群應用程式的作者建議時啟用此功能
 Enable developer mode=啟用開發者模式
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=這會解鎖CA 中的一些額外功能（通常僅由開發人員使用，不建議啟用）
-Support Thread=支持論壇
+Support Thread=支援論壇
 
 ; Note: April 21, 2025 - 8 missing translations
-Allow install of second instance=
-Automatically open the sidebar=
-Allows CA to automatically open the sidebar for more information when hovering over an application's icon=
-Disable Mouse Wheel Page Changes=
-This setting disables using left or right on a mouse wheel to change the page=
-Mouse wheel threshold=
-If you tilt the mouse wheel left or right, the browser returned value will change Set the threshold to the value returned Note that different browsers and operating systems may return different values=
-This is a global value for all devices If it causes issues, then disable Mouse Wheel Page Changes=
+Allow install of second instance=允許安裝第二個執行個體
+Automatically open the sidebar=自動開啟側邊欄
+Allows CA to automatically open the sidebar for more information when hovering over an application's icon=將滑鼠移至應用程式圖示上方時，自動開啟側邊欄顯示更多資訊
+Disable Mouse Wheel Page Changes=停用滑鼠滾輪切換頁面
+This setting disables using left or right on a mouse wheel to change the page=停用以滑鼠滾輪左右傾斜來切換頁面的功能
+Mouse wheel threshold=滑鼠滾輪切換門檻值
+If you tilt the mouse wheel left or right, the browser returned value will change Set the threshold to the value returned Note that different browsers and operating systems may return different values=左右傾斜滑鼠滾輪時，瀏覽器會回傳一個數值。請依回傳值設定門檻；不同瀏覽器及作業系統可能回傳不同數值。
+This is a global value for all devices If it causes issues, then disable Mouse Wheel Page Changes=此設定適用於所有裝置。如果造成操作問題，請停用滑鼠滾輪切換頁面功能。
+
+; Unraid 7.3.3 runtime UI audit: exact lookup variants and missing labels
+Disable Featured Applications=停用精選應用程式
+Use CloudFlare CDN=使用 Cloudflare CDN
+DOWNLOAD LOG=下載日誌
+
+; Settings detailed-help audit (Unraid 7.3.3)
+This setting enables CA to check for updates to applications=允許 Community Applications 檢查應用程式更新。
+This setting will disable Featured applications appearing on the home screen=停用後，應用程式首頁將不再顯示精選應用程式。
+This setting will download the application feed from the CloudFlare CDN=透過 Cloudflare 內容傳遞網路（CDN）下載應用程式目錄資料。

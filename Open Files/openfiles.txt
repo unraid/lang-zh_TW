@@ -1,0 +1,25 @@
+Enable Kill Button=啟用強制結束按鈕
+Process=處理程序
+Kill Process=強制結束處理程序
+Kill this Process holding files open=強制結束占用檔案的處理程序
+Process ID=處理程序 ID
+Open=開啟
+May prevent shutdown=可能阻止關機
+File Name and Path=檔名稱與路徑
+An entry for bash means you have a terminal session open with the working directory on the array=如果列出 bash，表示有終端機工作階段的工作目錄位於陣列
+If smbd is listed, it means that another computer has a samba share mounted=如果列出 smbd，表示其他電腦已掛載 Samba 共享
+Files open by Samba usually wont prevent array shutdown=Samba 開啟的檔案通常不會阻止陣列停止
+No open files=目前沒有開啟中的檔案
+Kill=強制結束
+Command timed out=命令執行逾時
+Cannot get list of open files=無法取得開啟中的檔案清單
+;
+; Help
+;
+:open_files_help_plug:
+> 按下 **強制結束** 可停止正在占用檔案的處理程序。系統會開啟對話方塊，顯示結束處理程序的進度。
+>
+> 按一下 **處理程序**、**處理程序 ID**、**可能阻止關機** 或 **檔名稱與路徑**，可以變更排序。
+>
+> **提醒：**強制結束處理程序可能造成未儲存資料遺失，請先確認該處理程序的用途。
+:end

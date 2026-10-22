@@ -1,0 +1,4 @@
+dist/
+__pycache__/
+.upstream-lang-en_US/
+.codebase-memory/

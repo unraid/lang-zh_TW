@@ -1,357 +1,352 @@
-A registration replacement key has been created for USB Flash GUID=已为 USB 闪存 GUID 创建了注册替换密钥
-About=关于
+A registration replacement key has been created for USB Flash GUID=已為 USB 開機裝置 GUID 建立了註冊替換金鑰
+About=關於
 alert=警告
-An email has been sent to=电子邮件已发送至
+An email has been sent to=電子郵件已傳送至
 and=和
-Anonymize diagnostics=匿名诊断
-Anytime=随时
-Archived Notifications=存档的通知
-Are you sure=是否确定
-Array has been Reset=阵列已**重置**
-Array must be Started to change permissions=阵列必须**启动**才能更改权限
-Array must be Stopped to change=阵列必须**停止**才能更改
-Array slots=阵列插槽
-Array=阵列
+Anonymize diagnostics=匿名診斷
+Anytime=隨時
+Archived Notifications=封存的通知
+Are you sure=是否確定
+Array has been Reset=陣列已**重設**
+Array must be Started to change permissions=陣列必須**啟動**才能更改權限
+Array must be Stopped to change=陣列必須**停止**才能更改
+Array slots=陣列插槽
+Array=陣列
 Author=作者
-Beta=测试版
-Blacklisted USB Flash GUID=USB 闪存的 GUID 在黑名单内
+Beta=測試版
+Blacklisted USB Flash GUID=USB 開機裝置的 GUID 已列入黑名單
 Branch=分支
-By using this software, you agree with our=使用此软件，即表示您同意我们的
-Cache slots=缓存插槽
-Cannot connect to key-server=无法连接到密钥服务器
-Check for Updates=检查更新
-click Install Key=点击<i>安装密钥</i>
-collecting diagnostic information this may take several minutes=正在收集诊断信息（这可能需要几分钟）
-Component=组件
-Credits=致谢
-Data slots=数据插槽
-Delete all notifications=删除所有通知
-Delete notification=删除通知
-Developer=开发人员
-Diagnostics=诊断
-Disks=磁盘
-Display Settings=显示设置
-Downloading=下载中
-End-User License Agreement=最终用户许可协议
-Enter URL of language pack XML file=输入语言包 XML 文件的 URL 地址
-Error accessing your physical USB Flash boot device=访问物理 USB 闪存引导设备时出错
-EULA=EULA
+By using this software, you agree with our=使用此軟體，即表示您同意我們的
+Cache slots=快取插槽
+Cannot connect to key-server=無法連線到金鑰伺服器
+Check for Updates=檢查更新
+click Install Key=點選<i>安裝金鑰</i>
+collecting diagnostic information this may take several minutes=正在收集診斷資訊（這可能需要幾分鐘）
+Component=元件
+Credits=致謝
+Data slots=資料插槽
+Delete all notifications=刪除所有通知
+Delete notification=刪除通知
+Developer=開發人員
+Diagnostics=診斷
+Disks=磁碟
+Display Settings=顯示設定
+Downloading=下載中
+End-User License Agreement=使用者授權合約
+Enter URL of language pack XML file=輸入語言包 XML 檔案的網址
+Error accessing your physical USB Flash boot device=存取 USB 開機裝置時發生實體硬體問題
+EULA=使用者授權合約
 Event=事件
-Expiration=到期时间
-Extend=延长
+Expiration=到期時間
+Extend=延長
 extended=已延期
-Get Trial Key=获取试用版密钥
-Hardware Profile=硬件配置文件
-Hide Details=隐藏详细信息
-If you do not receive an email, please check your spam or junk-email folder=如果您没有收到电子邮件，请检查您的垃圾邮件或垃圾邮件文件夹
+Get Trial Key=獲取試用版金鑰
+Hardware Profile=硬體資訊
+Hide Details=隱藏詳細資訊
+If you do not receive an email, please check your spam or junk-email folder=如果沒有收到電子郵件，請檢查垃圾郵件資料夾
 Importance=重要性
 Important=重要
-Install Language=安装语言
-Install=安装
-Installed languages=已安装的语言
-Invalid Trial Installation=无效的*试用*安装
-It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=它将收集所有系统硬件信息，移除所有序列号，然后将其安全地上载到 LimeTech
-Key file URL=密钥文件 URL
-Language support added=语言支持已添加
-Language support deleted=语言支持已删除
-Language=语言
-Log Viewer new=Log Viewer (new)
-Missing Key File=缺少密钥文件
-Missing Language=缺少语言
-Network Settings=网络设置
-New Config=新配置
-New Permissions=新权限
-Next=预览版
-No notifications present=没有通知
-No personal information such as user names, passwords, or any other file contents is included in the hardware profile=硬件配置文件中不包括用户名、密码或任何其他文件内容等个人信息
+Install Language=安裝語言
+Install=安裝
+Installed languages=已安裝的語言
+Invalid Trial Installation=無效的*試用*安裝
+It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=它將收集所有系統硬體資訊，移除所有序號，然後將其安全地上傳到 LimeTech
+Key file URL=金鑰檔案 URL
+Language support added=語言支援已新增
+Language support deleted=語言支援已刪除
+Language=語言
+Log Viewer new=日誌檢視器（新版）
+Missing Key File=缺少金鑰檔案
+Missing Language=缺少語言
+Network Settings=網路設定
+New Config=新設定
+New Permissions=新權限
+Next=下一步
+No notifications present=沒有通知
+No personal information such as user names, passwords, or any other file contents is included in the hardware profile=硬體設定檔不包含使用者名稱、密碼或其他檔案內容等個人資訊
 normal=正常
-Only ZIP files are allowed=仅允许 ZIP 文件
-Page Map=页面地图导航
-Parity slots=奇偶校验插槽
-Please check your=请检查您的
-please configure=请配置
-Please select a language before proceeding=请先选择一种语言，然后再继续
-Please=请
+Only ZIP files are allowed=僅允許 ZIP 檔案
+Page Map=頁面導覽
+Parity slots=校驗磁碟插槽
+Please check your=請檢查您的
+please configure=請設定
+Please select a language before proceeding=請先選擇一種語言，再繼續操作
+Please=請
 Pool slots=池插槽
-Preserve current assignments=保留当前分配
-previous=上一个
-Privacy Policy=隐私政策
-Processes=进程
-Purchase Key=购买密钥
-Registered GUID=GUID 已注册
-Registered on=注册于
-Registered to=注册到
-registering USB Flash GUID=正在注册 USB 闪存 GUID
-Release has been withdrawn=发布已撤回
-Remove the installed language=移除安装的语言
-Replaceable=可更换
-Request Extension=请求扩展
-Request Trial Extension=请求试用扩展
-Restore=恢复
+Preserve current assignments=保留目前指派
+previous=上一個
+Privacy Policy=隱私權政策
+Processes=處理程序
+Purchase Key=購買金鑰
+Registered GUID=GUID 已註冊
+Registered on=註冊於
+Registered to=註冊到
+registering USB Flash GUID=正在註冊 USB 開機裝置 GUID
+Release has been withdrawn=發布已撤回
+Remove the installed language=移除安裝的語言
+Replaceable=可替換
+Request Extension=申請延長
+Request Trial Extension=申請延長試用
+Restore=還原
 See=查看
-Select language file=选择语言文件
-Select language=选择语言
-Show Details=显示详细信息
+Select language file=選擇語言檔案
+Select language=選擇語言
+Show Details=顯示詳細資訊
 slots=插槽
-Stable=稳定版
-Subject=主题
-System Devices=系统设备
-System Update Check=系统更新检查
-Text=文本
-Thank you for choosing Unraid OS=感谢您选择 Unraid OS
-Thank you for registering USB Flash GUID=感谢您注册 USB 闪存的 GUID
-Thank you for trying Unraid OS=感谢您试用 Unraid OS
-The registered GUID does not match the USB Flash boot device GUID=注册的 GUID 与 USB 闪存引导设备 GUID 不匹配
-There is a physical problem accessing your USB Flash boot device=访问 USB 闪存引导设备时出现物理问题
-this may take several minutes=这可能需要几分钟的时间
-This release has been withdrawn for use with Trial keys=使用**试用**密钥的当前版本已被撤回
-This server has %s attached storage device=此服务器有 **%s** 个附加存储设备
-This server has %s attached storage devices=此服务器有 **%s** 个附加存储设备
-This utility is used for troubleshooting purposes=此实用程序用于故障排除目的
-This will delete all notification files=这将删除所有通知文件
-This will update folder file permissions=这将更新文件夹/文件权限
-Time=时间
-To install a registration key, paste the key file URL in the box below and click Install Key=要安装注册密钥，请将密钥文件 URL 粘贴在下面的框中，然后单击**安装密钥**
-to select your language=选择您的语言
-Trial key expires on=**试用**密钥过期日期为
-Trial=试用
-Update OS=系统更新
-Upgrade Key=升级密钥
-Uploaded=已上传
-uploading hardware information=正在上传硬件信息
-Uploading=正在上传
-Use this to develop language packs=使用它来开发语言包
-Use this to install official language packs=使用它来安装官方语言包
-User Shares=用户共享
-User=用户
-Vars=变量
+Stable=穩定版
+Subject=主旨
+System Devices=系統裝置
+System Update Check=系統更新檢查
+Text=文字
+Thank you for choosing Unraid OS=感謝您選擇 Unraid OS
+Thank you for registering USB Flash GUID=感謝您註冊 USB 開機裝置 GUID
+Thank you for trying Unraid OS=感謝您試用 Unraid OS
+The registered GUID does not match the USB Flash boot device GUID=註冊的 GUID 與 USB 開機裝置的 GUID 不相符
+There is a physical problem accessing your USB Flash boot device=存取 USB 開機裝置時發生實體硬體問題
+this may take several minutes=這可能需要幾分鐘
+This release has been withdrawn for use with Trial keys=使用**試用**金鑰的目前版本已被撤回
+This server has %s attached storage device=此伺服器已連接 %s 個儲存裝置
+This server has %s attached storage devices=此伺服器已連接 %s 個儲存裝置
+This utility is used for troubleshooting purposes=此工具用於疑難排解
+This will delete all notification files=這將刪除所有通知檔案
+This will update folder file permissions=這將更新資料夾/檔案權限
+Time=時間
+To install a registration key, paste the key file URL in the box below and click Install Key=若要安裝註冊金鑰，請在下方欄位貼上金鑰檔案網址，然後按一下 **安裝金鑰**
+to select your language=選擇您的語言
+Trial key expires on=**試用**金鑰過期日期為
+Trial=試用
+Update OS=系統更新
+Upgrade Key=升級金鑰
+Uploaded=已上傳
+uploading hardware information=正在上傳硬體資訊
+Uploading=正在上傳
+Use this to develop language packs=使用它來開發語言包
+Use this to install official language packs=使用它來安裝官方語言包
+User Shares=使用者共享
+User=使用者
+Vars=變數
 VFIO-PCI Log=VFIO-PCI 日志
 View VFIO-PCI Log=查看 VFIO-PCI 日志
 warning=警告
-webGUI=webGUI
-When received, please paste the URL into the Key file URL box and=收到邮件后，请将 URL 链接粘贴到<i>密钥文件</i> URL 框中，然后
-Wrong File Extension=文件扩展名错误
-You havent sent Limetech your hardware profile yet=您尚未向 Limetech 发送您的硬件配置文件
-Your hardware profile was last submitted on=您的硬件配置文件最后一次提交于
-Your Trial key has expired=您的**试用**密钥已过期
-Your Trial key requires an internet connection=您的**试用**密钥要求联网
+webGUI=網頁管理介面
+When received, please paste the URL into the Key file URL box and=收到郵件後，請將網址貼入「金鑰檔案網址」欄位，然後
+Wrong File Extension=副檔名錯誤
+You havent sent Limetech your hardware profile yet=您尚未向 Limetech 傳送您的硬體設定檔案
+Your hardware profile was last submitted on=上次提交硬體設定檔的日期
+Your Trial key has expired=您的**試用**金鑰已過期
+Your Trial key requires an internet connection=試用金鑰需要網際網路連線
 
 ; Sysdevs text - added May 18, 2020
-A reboot is required to apply changes=需要重启才能应用更改
-ALERT=警报
-Bind selected to VFIO at Boot=在引导时对 VFIO 选择了绑定
-CPU Thread Pairings=CPU 线程配对
-Changes saved=更改已保存
-Function Level Reset FLR supported=支持功能级复位 (FLR)
+A reboot is required to apply changes=需要重新啟動才能套用變更
+ALERT=警報
+Bind selected to VFIO at Boot=開機時將選取的裝置綁定至 VFIO
+CPU Thread Pairings=CPU 執行緒配對
+Changes saved=更改已儲存
+Function Level Reset FLR supported=支援功能級復位 (FLR)
 In use by Unraid=Unraid 正在使用
-Kernel driver in use vfio-pci=使用的内核驱动程序 vfio-pci
-No changes=无更改
-PCI Devices and IOMMU Groups=PCI 设备和 IOMMU 组
-PCI Devices No IOMMU Groups Available=PCI 设备 (没有可用的 IOMMU 组)
-Reboot to take effect=重启以生效
-SCSI Devices=SCSI 设备
-The below list doesnt not reflect the way IOMMU would naturally group devices=下面的列表没有反映 IOMMU 对设备进行自然分组的方式
-This controller is bound to vfio, connected USB devices are not visible=此控制器已绑定到 vfio，相连的 USB 设备不可见
-This controller is bound to vfio, connected drives are not visible=此控制器已绑定到 vfio，相连的驱动不可见
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=要查看硬件的自然 IOMMU 组，请执行以下操作, 转到[虚拟机管理器]页面，并将 **PCIe ACS 覆盖**设置为**已禁用**
-USB Devices=USB 设备
-Your system has booted with the PCIe ACS Override setting enabled=您的系统已启动且启用了 PCIe ACS 覆盖设置
+Kernel driver in use vfio-pci=目前使用的核心驅動程式：vfio-pci
+No changes=無更改
+PCI Devices and IOMMU Groups=PCI 裝置與 IOMMU 群組
+PCI Devices No IOMMU Groups Available=PCI 裝置（沒有可用的 IOMMU 群組）
+Reboot to take effect=重新啟動後生效
+SCSI Devices=SCSI 裝置
+The below list doesnt not reflect the way IOMMU would naturally group devices=以下清單不代表硬體原生的 IOMMU 分組方式
+This controller is bound to vfio, connected USB devices are not visible=此控制器已綁定至 vfio，無法顯示連接的 USB 裝置
+This controller is bound to vfio, connected drives are not visible=此控制器已綁定至 vfio，無法顯示連接的磁碟
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=若要檢視硬體原生的 IOMMU 分組，請前往「虛擬機器管理員」，將 **PCIe ACS Override** 設為 **停用**。
+USB Devices=USB 裝置
+Your system has booted with the PCIe ACS Override setting enabled=系統開機時已啟用 PCIe ACS Override 設定
 
 :diagnostics_1_plug:
-此实用程序用于故障排除。它将收集所有系统信息和配置文件，并将这些文件打包到一个可以保存在本地的 ZIP 文件。
-随后，此文件可以包含在您与 Limetech 或 UnRAID 论坛的通信中。
+此工具用於疑難排解，會收集系統資訊及設定檔，並打包成可儲存在本機的 ZIP 檔案。
+您可以在聯絡 Unraid 技術支援或前往 Unraid 討論區尋求協助時，附上這個檔案。
 
-这有助于其他人快速获取您系统的内部信息，并为您的问题提供更好的支持。将收集以下信息
-和配置文件:
+診斷資料有助於支援人員瞭解系統狀況，找出問題原因。以下列出會收集的資訊與設定檔：
 :end
 
 :diagnostics_2_plug:
 + */config*
-<br>复制所有的 *\*.cfg* 文件、*go* 文件和 *super.dat* 文件。这些都是是配置文件。
+<br>複製所有 *\*.cfg* 檔案、*go* 檔案及 *super.dat* 檔案；這些是系統設定檔。
 + */config/shares*
-<br>复制所有的 *\*.cfg* 文件。这些是用户共享设置文件。
+<br>複製所有 *\*.cfg* 檔案；這些是使用者共享資料夾的設定檔。
 + *Syslog file(s)*
-<br>复制当前的 *syslog* 文件和以前存在的任何 *syslog* 文件。
+<br>複製目前及先前保留的 *syslog* 系統日誌。
 + *System*
-<br>保存以下命令的输出：
-<br>lsscsi、lspci、lsusb、free、lsof、ps、ethtool 和 ifconfig。
-<br>显示 IOMMU 组。
-<br>显示命令行参数（例如 PCIe ACS 覆盖、PCI 存根等）。
-<br>保存系统变量。
+<br>儲存下列命令的輸出：
+<br>lsscsi、lspci、lsusb、free、lsof、ps、ethtool、ifconfig。
+<br>列出 IOMMU 群組、核心命令列參數（例如 PCIe ACS Override 與 PCI Stub）及系統變數。
 + *SMART reports*
-<br>保存系统中存在的每个磁盘的 SMART 报告。
+<br>儲存每顆磁碟的 S.M.A.R.T. 報告。
 + *Docker*
-<br>保存文件 *docker.log*、*libvirtd.log*、*libvirt/qemu/\*.log* 和 *vfio-pci*。
+<br>儲存 *docker.log*、*libvirtd.log*、*libvirt/qemu/\*.log* 及 *vfio-pci* 相關資料。
 :end
 
 :diagnostics_3_plug:
-单击**下载**将启动采集过程，然后指示您的浏览器将 zip 文件保存到本地。
+按一下 **下載**，系統就會開始收集資料，完成後由瀏覽器下載 ZIP 檔案。
 
-*不包括任何个人信息，如用户名、密码或上面未指定的任何其他文件内容
-通过 UnRAID OS；但是，您的服务器名称、IP 地址和用户共享名称**将**包括在内。*
+*Unraid OS 不會刻意將使用者名稱、密碼或上述清單以外的檔案內容納入診斷資料；不過，伺服器名稱、IP 位址與使用者共享資料夾名稱可能包含在其中。*
 
-*请注意第三方插件**可能**也许不会将个人信息存储在插件特定的配置文件和/或
-系统日志输出中。*
+*第三方外掛**可能**會將個人資訊寫入外掛設定檔或系統日誌，因此分享診斷檔前，請留意是否含有敏感資訊。*
 
-在公共论坛上发布诊断文件时*使用* **匿名诊断**。*在与 Limetech 的私人通信中，建议取消选中此设置，并捕获所有未更改的信息。*
+若要將診斷檔張貼至**公開討論區**，請啟用 **匿名診斷**。若透過私人支援管道與 Limetech 聯絡，則可依支援人員指示決定是否提供未匿名化的完整資料。
 :end
 
 :newconfig_plug:
-该实用程序用于重置阵列磁盘配置，以使所有磁盘都显示为“新”磁盘，
-就好像它是全新的服务器一样。
+此工具會重設陣列的磁碟設定，讓所有磁碟在設定上都被視為「新磁碟」，就像首次設定伺服器一樣。
 
-当您添加或删除了多个驱动器并且希望基于新配置重建奇偶校验时，
-此功能很有用。
+當您新增或移除多顆磁碟，並希望依照新的磁碟配置重新計算校驗資料時，可以使用此功能。
 
-重置阵列***之后***，使用 *'保留当前分配'* 选项填充所需的磁盘插槽。默认情况下，**不**填充磁盘插槽。
+重設陣列***之後***，可使用 *「保留目前指派」* 選項重新填入所需的磁碟插槽。預設情況下，磁碟插槽不會自動填入。
 
-**请勿使用此实用程序，因为它会重建故障驱动器** —— 它将产生相反的效果，
-将***无法***重建现有的故障驱动器 —— 您已受到警告！
+**警告：如果您打算重建故障磁碟，請勿使用此工具！** 重設陣列設定會破壞原本用來重建故障磁碟的條件，可能使現有的故障磁碟***無法重建***。
 :end
 
 :newperms_1_plug:
-从 5.0 之前的 Unraid 服务器版本升级到 Unraid v5 或更高版本之后，必须执行这项一次性操作。
-执行这项一次性操作时，选择**所有磁盘**。
+從 Unraid 5.0 之前的版本升級至 Unraid 5 或更新版本後，可能需要執行一次此操作。若要進行這項版本升級後的權限調整，請選取 **所有磁碟**。
 
-从 Active Directory 过渡到非 Active Directory 集成时，
-该实用程序还可用于恢复文件和目录的默认所有权/权限。
+從 Active Directory 改為非 Active Directory 環境時，也可以使用此工具還原檔案與目錄的預設擁有者及權限。
 
-该实用程序将启动一个后台进程，该进程将访问每个数据磁盘和缓存磁盘，
-选择用户共享并将文件和目录所有权更改为*无人/用户*（即 uid / gid 更改为 99/100），
-并按以下方式设置权限：
+工具會啟動背景處理程序，逐一存取選取的資料磁碟及快取磁碟，將使用者共享資料夾內的檔案與目錄擁有者設為 *nobody/users*（UID/GID：99/100），並套用下列權限：
 :end
 
 :newperms_2_plug:
-对于目录：
+目錄：
 drwxrwxrwx
 
-对于读/写文件：
+可讀寫檔案：
 -rw-rw-rw-
 
-对于只读文件：
+唯讀檔案：
 -r--r--r--
 :end
 
 :newperms_3_plug:
-单击**开始**将打开另一个窗口并启动后台进程。
+按一下 **開始**，系統會開啟另一個視窗並執行背景處理程序。
 
-在完成之前关闭窗口将终止后台进程 - 因此请不要这样做。如果您有许多文件，则此进程可能耗时较长。
+**在處理程序完成之前，請勿關閉該視窗**，否則可能中斷操作。若檔案數量較多，處理時間也會較長。
 
-请注意，如果允许包含您的应用数据共享，则此工具可能会对 Docker 容器产生不利影响。
+**注意：** 若處理範圍包含 `appdata` 等應用程式資料，變更檔案權限可能影響 Docker 容器的正常運作。
 :end
 
 :registration_1_plug:
-在您购买注册密钥或安装免费的 30 天**试用**密钥之前，您的服务器将无法可用。
-**试用**密钥提供 **Pro** 注册密钥的所有功能。
+在購買註冊金鑰或安裝免費的 30 天 **試用** 金鑰之前，伺服器將無法正常使用。
+**試用** 金鑰提供與 **Pro** 註冊金鑰相同的功能。
 
-注册密钥绑定到您的 USB 闪存引导设备序列号 (GUID)。请使用容量至少
-为 1GB 的优质品牌设备。
+註冊金鑰會綁定至 USB 開機裝置的唯一識別碼（GUID）。建議使用容量至少 1 GB、品質可靠的品牌 USB 隨身碟。
 
-注意：通常**不**支持 USB 存储卡读卡器，因为大多数读卡器不提供唯一的序列号。
+**注意：** 一般不建議使用 USB 記憶卡讀卡機，因為多數讀卡機無法提供唯一的序號。
 :end
 
 :registration_2_plug:
-+ 请确保您的 [服务器时间](DateTime) 精确到5分钟以内。
-+ 请确保指定 [DNS 服务器](NetworkSettings) 。
++ 請確認您的 [伺服器時間](DateTime) 誤差不超過 5 分鐘。
++ 請確認已正確設定 [DNS 伺服器](NetworkSettings)。
 :end
 
 :registration_3_plug:
-您的**试用**密钥包括 **Pro** 注册密钥的所有功能和设备支持。
+**試用** 金鑰包含 **Pro** 註冊金鑰的所有功能及裝置支援。
 
-在您的**试用**密钥到期后，您的服务器**仍能正常工作**，直到您下次**停止**阵列为止。
+**試用** 金鑰到期後，伺服器仍可繼續運作，直到您下次 **停止陣列** 為止。
 
-此时，您可以购买注册密钥，也可以请求延长**试用**。
+屆時，您可以購買正式註冊金鑰，或提出延長 **試用期** 的申請。
 :end
 
 :registration_4_plug:
-要继续使用 UnRAID OS，您可以购买注册密钥。也可以申请**试用**延期密钥。
+若要繼續使用 Unraid OS，您可以購買註冊金鑰，也可以申請延長 **試用期**。
 
-大多数**试用**延期请求都会立即处理，但请给我们最多一个工作日接收您的**试用**延期密钥。
+多數試用延長申請會立即處理，但請預留最多一個工作天以收到新的試用金鑰。
 :end
 
 :registration_5_plug:
-无法在现有的 UnRAID OS 安装中使用**试用**密钥。
+此安裝環境無法使用試用金鑰。
 
-您可以购买与此 USB 闪存设备对应的注册密钥以继续使用此安装。
+若要繼續使用，請購買與此 USB 開機裝置對應的註冊金鑰。
 
-要了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
+詳情請參閱 [聯絡支援](https://lime-technology.com/contact)。
 :end
 
 :registration_6_plug:
-您的注册密钥文件似乎已损坏或丢失。密钥文件应位于
-您的 USB 闪存启动设备上的 [config](/Registration/Browse?dir&#61;/boot/config) 目录。
+您的註冊金鑰檔案可能已損毀或遺失。金鑰檔案應位於 USB 開機裝置的
+[config](/Registration/Browse?dir&#61;/boot/config) 目錄中。
 
-如果您没有注册密钥文件的备份副本，请[联系支持人员](https://lime-technology.com/contact)。
+如果您沒有金鑰檔案的備份，請 [聯絡支援](https://lime-technology.com/contact)。
 
-如果这是**试用**安装，您可以购买注册密钥。
+若目前使用的是 **試用** 授權，也可以購買正式註冊金鑰。
 :end
 
 :registration_7_plug:
-**试用**安装仅适用于最初注册的 USB 闪存设备。
+**試用** 授權僅適用於最初註冊的 USB 開機裝置。
 
-若要在此 USB 闪存设备上继续使用此安装，您可以购买注册密钥。
+若要繼續使用此 USB 開機裝置，您可以購買正式註冊金鑰。
 :end
 
 :registration_8_plug:
-注册密钥文件与 USB 闪存引导设备不相符。
-请将正确的密钥文件复制到 USB 闪存引导设备上的
-[config](/Registration/Browse?dir&#61;/boot/config) 目录。如果您没有密钥文件的备份副本，请[联系支持人员](https://lime-technology.com/contact)。
+註冊金鑰檔案與目前的 USB 開機裝置不相符。
+請將正確的金鑰檔案複製到 USB 開機裝置的
+[config](/Registration/Browse?dir&#61;/boot/config) 目錄。如果沒有備份，請 [聯絡支援](https://lime-technology.com/contact)。
 
-如果要用绑定到此 USB 闪存设备的新密钥替换您的注册密钥，请单击下面的替换密钥。原始密钥可以
-随时更换。此后，可以在一年之后再次更换替换密钥。如果您需要更快获得
-替换密钥，请[联系支持人员](https://lime-technology.com/contact)。
+若要將註冊金鑰改為綁定目前 USB 開機裝置的新金鑰，請使用下方的「替換金鑰」功能。原始金鑰可申請更換；更換後再次申請可能受到一年內的更換次數限制。若有緊急需求，請 [聯絡支援](https://lime-technology.com/contact)。
 
-**注意：**替换注册密钥会导致以前的 USB 闪存 GUID 被永久**列入黑名单**。
+**注意：** 更換註冊金鑰後，舊 USB 開機裝置的 GUID 將被永久 **列入黑名單**。
 :end
 
 :registration_9_plug:
-此 USB 闪存引导设备已被**列入黑名单**。这可能是由于您的注册密钥传输到
-替换的USB闪存设备，并且您当前是从旧的 USB 闪存设备启动的。
+此 USB 開機裝置的 GUID 已被 **列入黑名單**。可能是因為您已將註冊金鑰移轉至其他 USB 裝置，目前卻仍使用原本的 USB 裝置開機。
 
-如果没有序列号，或者如果我们发现序列号不唯一（这种情况在 USB 读卡器中很常见），
-USB 闪存设备也可能被**列入黑名单**。
+若 USB 裝置沒有序號，或其序號並非唯一（常見於部分 USB 讀卡機），也可能被列入黑名單。
 
-如需了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
+如需協助，請 [聯絡支援](https://lime-technology.com/contact)。
 :end
 
 ; Note: May 31, 2025 - 40 missing translations
-Alert Message=
-Alerts=
-All Categories=
-Clear Log=
-Creating Flash backup=
-Creation error=
-Delete Modprobe config=
-Deprecated Only=
-Downgrade OS=
-Driver=
-Edit Modprobe config=
-Error reporting level=
-Errors Only=
-Flash backup=
-Insufficient free disk space available=
-Log file cleared=
-Log size=
-LOG size=
-Modprobed config file=Modprobe.d config file
-No filter=
-Notices Only=
-Notices=
-PHP Info=
-PHP Information=
-PHP Log File=
-PHP Settings=
-Please provide diagnostics when experiencing problems=
-Post these in the forums=
-Rebuild Modules=
-Remove custom modprobed configuration=Remove custom modprobe.d configuration?
-Save Modprobe config=
-Select View=
-Show errors on screen=
-State=
-Support page=
-System Drivers=
-This will delete the selected notification files=
-View Log=
-Warnings Only=
-Warnings=
+Alert Message=警示訊息
+Alerts=警示
+All Categories=所有類別
+Clear Log=清除日誌
+Creating Flash backup=正在備份 USB 開機裝置
+Creation error=建立失敗
+Delete Modprobe config=刪除 modprobe 設定
+Deprecated Only=僅顯示已棄用項目
+Downgrade OS=降級作業系統
+Driver=驅動程式
+Edit Modprobe config=編輯 modprobe 設定
+Error reporting level=錯誤回報等級
+Errors Only=僅錯誤
+Flash backup=USB 開機裝置備份
+Insufficient free disk space available=磁碟可用空間不足
+Log file cleared=已清除日誌檔案
+Log size=日誌大小
+LOG size=日誌大小
+Modprobed config file=modprobe.d 設定檔
+No filter=不篩選
+Notices Only=僅通知
+Notices=通知
+PHP Info=PHP 資訊
+PHP Information=PHP 資訊
+PHP Log File=PHP 日誌檔案
+PHP Settings=PHP 設定
+Please provide diagnostics when experiencing problems=遇到問題時，請提供系統診斷資料
+Post these in the forums=請將這些資料貼至討論區
+Rebuild Modules=重新建置模組
+Remove custom modprobed configuration=移除自訂的 modprobe.d 設定？
+Save Modprobe config=儲存 modprobe 設定
+Select View=選擇檢視方式
+Show errors on screen=在畫面上顯示錯誤
+State=狀態
+Support page=支援頁面
+System Drivers=系統驅動程式
+This will delete the selected notification files=這會刪除選取的通知檔案
+View Log=檢視日誌
+Warnings Only=僅警告
+Warnings=警告
+
+; Unraid 7.3.3 runtime UI audit: exact lookup variants and missing labels
+Items=項目
+
+; PHP settings help missing from the official language reference
+:php_settings_plug:
+此工具僅供開發使用，讓外掛程式作者透過不同的 PHP 錯誤回報等級檢查程式碼。預設只記錄少量錯誤，且不在畫面上顯示。
+
+調整**錯誤回報等級**後，所選類別的錯誤會寫入日誌檔案。您可以在獨立視窗開啟日誌，即時觀察瀏覽管理頁面或執行伺服器背景處理程序時產生的事件。
+
+若存在多個錯誤，日誌可能快速增大。建議只在開發期間提高回報等級，一般運作時使用預設設定。
+:end

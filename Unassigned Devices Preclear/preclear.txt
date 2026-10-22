@@ -1,0 +1,79 @@
+A disk must be cleared of all partitions before it can be precleared=預清除磁碟前，必須先移除所有分割區。
+Cannot Preclear=無法進行磁碟預清除
+Clear Disk=清除磁碟（將刪除資料）
+Clear Signature=清除預清除標記
+Clear Stats=清除統計資料
+Click to show reports=點選以查看報告
+Concurrent Sessions=同時執行工作數
+Cycles=循環次數
+Device Model=裝置型號
+Disk Log Information=磁碟日誌資訊
+Disk Size=磁碟容量
+Download Logs=下載日誌
+Enable Testing for debugging=啟用測試除錯功能
+Fast Post-read=快速後讀取測試
+Firmware=韌體
+Fix Preclear=修正預清除
+Identification=識別資訊
+If you set a queue limit, all running preclear sessions above that limit will be paused and remain in the queue until a session finishes=設定佇列上限後，超出上限的預清除工作會暫停並等候，直到其他工作完成。
+Notifications=通知
+On every cycle and step end=每次循環及步驟結束
+On every 25% of progress=每完成 25% 進度
+On every cycle end=每次循環結束
+On preclear end=預清除完成時
+Operation=操作
+Post-read Verify=後讀取驗證
+Preclear Disks=預清除磁碟
+Preclear Disk Log=預清除磁碟日誌
+Preclear Log=預清除日誌
+Preclear Status=預清除狀態
+Preview Progress=預覽進度
+Read size=讀取大小
+Remove Report=移除報告
+Resume all Sessions=繼續所有工作
+Resume Preclear=繼續預清除
+Preview Progress Report=預覽進度報告
+Select Disks=選擇磁碟
+Serial Number=序號
+Set Preclear Queue=設定預清除佇列
+Show Preclear Report=顯示預清除報告
+Skip Pre-read=略過預先讀取
+Skip Post-Read=略過後讀取
+Start Multiple Sessions=開始多個工作
+Start New=開始新工作
+Start Preclear=開始預清除
+Stop all Sessions=停止所有工作
+Stop Preclear=停止預清除
+Temp=溫度
+Testing=測試中
+There are no disks that can be precleared=目前沒有可預清除的磁碟
+Verify Signature=驗證預清除標記
+Write size=寫入大小
+You can use Unassigned Devices to clear the disk=您可以使用 Unassigned Devices 清除磁碟。
+
+:preclear_general_help_plug:
+> Unassigned Devices Pre-clear 可用來準備要加入陣列的磁碟、清除準備淘汰的磁碟，以及在磁碟加入陣列前進行壓力測試。
+>
+> 只有**未用於陣列、且沒有包含檔案系統之分割區**的磁碟，才會列為預清除候選裝置。
+>
+> 預清除期間，可在本頁、Unassigned Devices 頁面，或 Unraid 網頁頁尾的預清除狀態圖示查看進度。
+>
+> 可選擇下列預清除方式：
+>
+> * **Enhanced**：由 **gfjardim** 開發的增強版指令碼，支援暫停、繼續等進階功能，並提供詳細日誌。
+> * **Docker**：使用 binhex 的 Docker 容器執行預清除，讓作業隔離在容器內。
+>
+> 各項操作如下：
+>
+> * **清除磁碟（Clear Disk）**：清除磁碟並寫入 Unraid 簽章，在磁碟上建立空白分割區。
+> * **抹除磁碟（Erase Disk）**：將整顆磁碟覆寫為零，並移除預清除簽章。
+> * **抹除並清除磁碟（Erase and Clear Disk）**：先寫入隨機資料，再寫入零值。適用於準備淘汰磁碟、希望覆寫檔案殘留內容的情況。
+> * **驗證簽章（Verify Signature）**：檢查磁碟的預清除簽章。
+> * **驗證磁碟（Verify Disk）**：檢查簽章，並確認磁碟已全部寫入零值。
+> * **寫入後讀取驗證（Post-read Verify）**：以寫入後讀取驗證檢查磁碟。
+> * **清除簽章（Clear Signature）**：移除磁碟的預清除簽章。
+>
+> 磁碟序號旁顯示 <em style='color:#00BE37;'>已預清除</em>，表示磁碟具有預清除簽章。只有磁碟已完成預清除，且預清除統計資料已移除時，才會顯示此文字。
+>
+> **注意：清除與抹除作業會覆寫磁碟資料，執行前請確認裝置及備份。**
+:end

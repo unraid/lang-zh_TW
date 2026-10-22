@@ -1,0 +1,111 @@
+Console=主控台
+Counters only=僅計數器
+Custom commands after wake-up=喚醒後執行的自訂命令
+Custom commands before sleep=睡眠前執行的自訂命令
+Device activity monitoring=裝置活動監控
+DHCP renewal after wake-up=喚醒後更新 DHCP 租約
+Enable DEBUG mode=啟用除錯模式
+Enter custom commands here=在此輸入自訂命令
+Ethernet interface=乙太網路介面
+Excluded days=排除日期
+Excluded hours=排除時段
+Execute function=執行功能
+Extra delay after array inactivity=陣列閒置後額外等待時間
+Force gigabit speed after wake-up=喚醒後強制使用 Gigabit 速度
+High traffic=高流量
+IP address=IP 位址
+Local Remote=本機與遠端
+Local=本機
+Log will be stored in bootlogss3_sleeplog=日誌將儲存於 **/boot/logs/s3_sleep.log**
+Low traffic=低流量
+Medium traffic=中等流量
+Mega traffic=極高流量
+Monitor disks outside array=監控陣列外磁碟
+Network idle threshold=網路閒置判定門檻
+no host=沒有主機
+Remote=遠端
+Set WOL options before sleep=睡眠前設定 WOL 選項
+Silent traffic=近乎無流量
+Status counters=狀態與計數器
+Status only=僅狀態
+Syslog and flash=系統日誌與 USB 開機裝置
+Syslog=系統日誌
+Wait for array inactivity=等待陣列閒置
+Wait for host inactivity=等待主機閒置
+Wait for network inactivity=等待網路閒置
+Wait for user login inactivity=等待使用者登出
+Yes, exclude Cache=是，但排除快取
+
+:s3sleep_function_plug:
+> 選擇要讓伺服器進入睡眠（S3）或完全關機。以下設定會決定觸發睡眠／關機的條件。
+:end
+
+:s3sleep_excluded_days_plug:
+> 選擇不執行睡眠或關機的星期／日期，會與排除時段一併判斷。
+:end
+
+:s3sleep_excluded_hours_plug:
+> 選擇不執行睡眠或關機的時段，會與排除日期一併判斷。
+:end
+
+:s3sleep_inactivity_plug:
+> 設定是否必須在陣列完全閒置、所有磁碟停止旋轉時才能睡眠或關機。
+> 您可以選擇將快取磁碟納入或排除，避免持續運作的快取磁碟阻止睡眠。
+:end
+
+:s3sleep_activity_plug:
+> **狀態**：監控裝置的硬體狀態。
+> **計數器**：監控裝置的讀取／寫入計數器。
+:end
+
+:s3sleep_outside_plug:
+> 如果陣列以外還有其他磁碟，可以分別監控它們的活動。
+:end
+
+:s3sleep_extra_delay_plug:
+> 設定陣列閒置後額外等待的時間。設為 0 表示不額外等待。
+:end
+
+:s3sleep_network_plug:
+> 設定是否將網路活動列為睡眠或關機的判斷條件。
+:end
+
+:s3sleep_ethernet_plug:
+> 如果有多個網路介面，請選擇用於監控網路活動的介面。
+:end
+
+:s3sleep_idle_plug:
+> 依據網路流量門檻判定閒置程度（從近乎無流量到極高流量）。請依實際使用情況調整。
+:end
+
+:s3sleep_host_plug:
+> 可以監控外部主機的可連線狀態。輸入 IP 位址，多個位址以逗號分隔；只要其中一台回應 ping，便不會進入睡眠或關機。
+:end
+
+:s3sleep_login_plug:
+> 設定是否要求主控台或 Telnet／SSH 登入中的使用者先登出，才允許睡眠或關機。
+:end
+
+:s3sleep_wol_plug:
+> 設定進入 S3 睡眠前的 Wake-on-LAN 選項。請先確認主機板及網路卡支援。
+:end
+
+:s3sleep_before_plug:
+> 在此設定進入睡眠或關機之前要執行的自訂命令（例如清理工作）。
+:end
+
+:s3sleep_after_plug:
+> 在此設定喚醒之後要執行的自訂命令，用來還原先前的狀態。
+:end
+
+:s3sleep_gigabit_plug:
+> 預設應保持停用。如果網路介面在喚醒後無法正常連線，可以嘗試啟用。
+:end
+
+:s3sleep_dhcp_plug:
+> 預設應保持停用。如果系統在喚醒後無法正常取得網路設定，可以嘗試啟用。
+:end
+
+:s3sleep_debug_plug:
+> 預設停用。只在問題排除時啟用除錯模式，系統將記錄 s3_sleep 各階段的詳細訊息。
+:end

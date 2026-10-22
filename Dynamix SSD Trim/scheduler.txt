@@ -1,0 +1,40 @@
+Any=不限
+Daily schedule=每日排程
+Day Date=日期／日
+Hour=小時
+Hourly schedule=每小時排程
+Minute=分鐘
+Monthly schedule=每月排程
+Scheduled Tasks=排程工作
+Weekly schedule=每週排程
+Day of the month=每月日期
+Day of the week=星期幾
+Every 2 hours=每 2 小時
+Every 3 hours=每 3 小時
+Every 4 hours=每 4 小時
+Every 6 hours=每 6 小時
+Every 8 hours=每 8 小時
+Every hour=每小時
+HHMM=HH:MM
+SSD TRIM schedule=SSD TRIM 排程
+Time of the day=當日時間
+
+:trim_schedule_plug:
+> 選擇 SSD TRIM 的執行頻率，可以是每小時、每日、每週或每月。
+>
+> TRIM 將依所選間隔在背景執行。
+:end
+
+:trim_day_of_the_week_plug:
+> 選擇每週排程的執行日。若未選擇每週排程，則無法使用此設定。
+:end
+
+:trim_day_of_the_month_plug:
+> 選擇每月排程的執行日期。若未選擇每月排程，則無法使用此設定。
+:end
+
+:trim_time_of_the_day_plug:
+> 每小時排程會指定執行間隔，從整點（0 分）開始。
+>
+> 其他排程請選擇當日開始 TRIM 的時間。
+:end

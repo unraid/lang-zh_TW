@@ -1,0 +1,38 @@
+name: Validate zh-TW translations
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout language pack
+        uses: actions/checkout@v4
+      - name: Check translation structure and placeholders
+        run: python3 scripts/validate_translations.py
+      - name: Check localization validator regressions
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Checkout pinned official English reference
+        uses: actions/checkout@v4
+        with:
+          repository: unraid/lang-en_US
+          ref: 98e4e91e870663720f749c27035d69c31a680ce9
+          path: .upstream-lang-en_US
+          persist-credentials: false
+      - name: Compare exact source keys and help blocks
+        run: python3 scripts/check_upstream_coverage.py .upstream-lang-en_US
+      - name: Build installable zh_TW.zip
+        run: python3 scripts/build_language_zip.py
+      - name: Upload test language pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: zh_TW-language-pack
+          path: dist/zh_TW.zip
+          if-no-files-found: error

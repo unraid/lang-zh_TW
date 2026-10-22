@@ -1,0 +1,11 @@
+Disabling Spectre, Meltdown and Zombieload MDS mitigations may improve your CPU speed But these are security risks for certain workloads, and disabling the mitigations is purely all at your own risk=停用 Spectre、Meltdown 與 Zombieload／MDS 安全緩解措施可能改善 CPU 效能，但也會增加遭受漏洞攻擊的風險。請自行評估並承擔相關風險。
+Mitigations currently disabled=目前已停用安全緩解措施
+Mitigations currently enabled=目前已啟用安全緩解措施
+Status=狀態
+will be updated after rebooting the server=重新啟動伺服器後才會更新
+Enable Mitigations=啟用安全緩解措施
+Disable Mitigations=停用安全緩解措施
+Disable Security Mitigations A Reboot Is Required For Changes To Take Effect=停用安全緩解措施（變更須重新啟動才會生效）
+A Reboot Is Required For Changes To Take Effect=需要重新啟動才能套用變更
+Mitigations will be enabled after a reboot=重新啟動後將啟用安全緩解措施
+Mitigations will be disabled after a reboot=重新啟動後將停用安全緩解措施

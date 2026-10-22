@@ -1,36 +1,40 @@
 
 :outgoing_proxy_enable_plug:
-> Select the Proxy to use.  Only online Proxies will be selectable.
+> 選擇要使用的對外代理伺服器。只有目前可連線的代理伺服器可供選取。
 >
-> If your network environment requires an outgoing http proxy, define that here.
+> 若您的網路環境需要使用對外 HTTP 代理伺服器，請在此設定。
 >
-> Outgoing connections from the webgui and some system processes will use the specified http proxy.  Docker container installs and updates will use the proxy, but the container itself will not, neither will any VMs.
+> 網頁管理介面及部分系統處理程序的對外連線會使用指定的 HTTP 代理。Docker 容器的安裝與更新會使用此代理，但**容器本身及虛擬機器不會自動套用**這項設定。
 >
-> For a more comprehensive solution you might consider setting up <u><a href='https://docs.unraid.net/unraid-os/manual/security/vpn/#configuring-vpn-tunneled-access-for-system/' target='_blank'>_(VPN tunnel access for System)_</a></u>.
+> 如需讓更多系統流量經由特定網路路徑，可參考 <u><a href='https://docs.unraid.net/unraid-os/manual/security/vpn/#configuring-vpn-tunneled-access-for-system/' target='_blank'>透過 VPN 通道存取系統</a></u>。
 :end
 
 :outgoing_proxy_name_plug:
-> Outgoing Proxy name for this Proxy
+> 輸入這個對外代理伺服器的名稱。
 :end
 
 :outgoing_proxy_url_plug:
-> Outgoing Proxy URL for this Proxy.  The URL can be entered with or without credentials.  The credentials will be parsed from the URL.
+> 輸入對外代理伺服器網址。網址可以包含或不包含帳號密碼；若網址中有認證資訊，系統會嘗試解析。
 >
-> If you enter a User and Password, they will be used as new credentials.
+> 若另外填寫「使用者」與「密碼」欄位，將改用這組認證資訊。
 :end
 
 :outgoing_proxy_user_plug:
-> Outgoing Proxy User Name for this Proxy
+> 輸入對外代理伺服器使用的帳號名稱。
 :end
 
 
 ; Note: December 29, 2024 - 9 missing translations
-Enable Outgoing Proxy=
-Name=
-Optional=
-Outgoing Proxy=
-Password=
-Please match the requested format=
-Required=
-Select Proxy=
-User=
+Enable Outgoing Proxy=啟用對外代理伺服器
+Name=名稱
+Optional=選填
+Outgoing Proxy=對外代理伺服器
+Password=密碼
+Please match the requested format=請依照指定格式輸入
+Required=必填
+Select Proxy=選擇代理伺服器
+User=使用者
+
+:outgoing_proxy_password_plug:
+> 輸入這個對外代理伺服器使用的密碼。
+:end
